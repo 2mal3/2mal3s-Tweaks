@@ -21,5 +21,5 @@ team remove 2tw.invisible
 tellraw @a [{"text":"2mal3's Tweaks Datapack v1.0.0 by 2mal3 was successfully uninstalled."}]
 
 # Disables the datapack
-datapack disable "file/2mal3's-Tweaks-v1.0.0"
-datapack disable "file/2mal3's-Tweaks-v1.0.0.zip"
+datapack disable "file/2mal3s-Tweaks-v1.0.0"
+datapack disable "file/2mal3s-Tweaks-v1.0.0.zip"
