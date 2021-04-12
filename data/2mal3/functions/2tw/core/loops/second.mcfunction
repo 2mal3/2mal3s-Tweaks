@@ -13,5 +13,8 @@ execute if score $better_end_crystals 2tw.config matches 1 as @e[type=minecraft:
 # Prevents creeper from doing blok damage
 execute if score $anti_creeper_grief 2tw.config matches 1 as @e[type=minecraft:creeper,tag=!2tw.anti_creeper_grief.processed,tag=!global.ignore] run function 2mal3:2tw/tweaks/anti_creeper_grief
 
+# Perform various things with lit entitys
+execute if score $realistic_fire 2tw.config matches 1 run function 2mal3:2tw/tweaks/realistic_fire/main
+
 # Calls the function in the next second
 schedule function 2mal3:2tw/core/loops/second 1s replace

@@ -17,6 +17,9 @@ scoreboard objectives remove 2tw.debug_mode
 # Remove teams
 team remove 2tw.invisible
 
+# Remove entitys
+kill @e[type=minecraft:area_effect_cloud,tag=2tw.fire]
+
 # Sends an uninstallation message to all players
 tellraw @a [{"text":"2mal3's Tweaks Datapack v1.0.0 by 2mal3 was successfully uninstalled."}]
 
