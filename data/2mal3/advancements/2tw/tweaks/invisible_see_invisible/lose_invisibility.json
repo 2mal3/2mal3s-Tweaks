@@ -1,0 +1,23 @@
+{
+    "criteria": {
+        "requirement": {
+            "trigger": "minecraft:tick",
+            "conditions": {
+                "player": {
+                    "effects": {
+                        "minecraft:invisibility": {
+                            "amplifier": {
+                                "min": 0,
+                                "max": 255
+                            },
+                            "duration": 1
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "2mal3:2tw/tweaks/invisible_see_invisible/lose_invisibility"
+    }
+}

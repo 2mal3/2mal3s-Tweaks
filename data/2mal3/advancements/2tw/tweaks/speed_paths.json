@@ -1,0 +1,13 @@
+{
+    "criteria": {
+        "requirement": {
+            "trigger": "minecraft:enter_block",
+            "conditions": {
+                "block": "minecraft:grass_path"
+            }
+        }
+    },
+    "rewards": {
+        "function": "2mal3:2tw/tweaks/speed_paths"
+    }
+}

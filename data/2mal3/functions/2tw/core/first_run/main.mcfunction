@@ -1,0 +1,32 @@
+# Description: Installs the Datapack on first start
+# Called from function: 2mal3:2tw/core/reload
+# Datapack by 2mal3
+
+# Output debug message in chat, if enabled (INFO)
+tellraw @a[scores={2tw.debug_mode=3..}] [{"text":"[","color":"gray"},{"text":"2mal3'sTweaks","color":"green"},{"text":"/","color":"gray"},{"text":"INFO","color":"green"},{"text":"]: ","color":"gray"},{"text":"Datapack installed!","color":"green"}]
+
+
+# Adds scoreboards
+scoreboard objectives add 2tw.data dummy
+scoreboard objectives add 2tw.config dummy
+scoreboard objectives add 2tw.debug_mode dummy
+# Add teams
+team add 2tw.invisible
+
+# Set the version in format: xx.xx.xx
+scoreboard players set $version 2tw.data 010000
+# Set the start config
+scoreboard players set $invisible_see_invisible 2tw.config 0
+scoreboard players set $speed_paths 2tw.config 0
+scoreboard players set $server_time 2tw.config 0
+scoreboard players set $nerfed_elytra 2tw.config 0
+scoreboard players set $better_end_crystals 2tw.config 0
+scoreboard players set $anti_creeper_grief 2tw.config 0
+
+
+# Sends Insatlations message after 4 sekonds
+schedule function 2mal3:2tw/core/first_run/send_message 4s
+
+
+# Remembers that the Datapack was installed
+scoreboard players set .first_run 2tw.data 1
