@@ -14,4 +14,4 @@ setblock ~-2 ~-2 ~-2 minecraft:obsidian
 setblock ~2 ~-2 ~-2 minecraft:obsidian
 
 # Stores that the crystals have been improved
-tag @e[type=minecraft:ender_dragon,tag=!2tw.processed] add 2tw.processed
+tag @e[type=minecraft:ender_dragon,tag=!2tw.better_end_crystals.processed] add 2tw.better_end_crystals.processed

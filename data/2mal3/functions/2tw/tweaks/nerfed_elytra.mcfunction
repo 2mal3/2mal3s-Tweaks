@@ -11,4 +11,4 @@ tellraw @a[scores={2tw.debug_mode=4..}] [{"text":"[","color":"gray"},{"text":"2m
 data modify entity @s Item.tag.RepairCost set value 40
 
 # Saves that the item frame has been processed
-tag @s add 2tw.processed
+tag @s add 2tw.nerfed_elytra.processed

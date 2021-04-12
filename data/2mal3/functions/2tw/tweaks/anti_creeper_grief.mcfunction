@@ -11,4 +11,4 @@ tellraw @a[scores={2tw.debug_mode=4..}] [{"text":"[","color":"gray"},{"text":"2m
 data modify entity @s ExplosionRadius set value -3
 
 # Saves that the creeper has been processed
-tag @s add 2tw.processed
+tag @s add 2tw.anti_creeper_grief.processed
