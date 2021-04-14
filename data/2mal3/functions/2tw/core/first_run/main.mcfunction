@@ -23,6 +23,7 @@ scoreboard players set $nerfed_elytra 2tw.config 0
 scoreboard players set $better_end_crystals 2tw.config 0
 scoreboard players set $anti_creeper_grief 2tw.config 0
 scoreboard players set $realistic_fire 2tw.config 0
+scoreboard players set $wandering_trader_notifications 2tw.config 0
 
 
 # Sends Insatlations message after 4 sekonds
