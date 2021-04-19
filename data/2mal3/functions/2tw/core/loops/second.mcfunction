@@ -16,5 +16,9 @@ execute if score $anti_creeper_grief 2tw.config matches 1 as @e[type=minecraft:c
 # Perform various things with lit entitys
 execute if score $realistic_fire 2tw.config matches 1 run function 2mal3:2tw/tweaks/realistic_fire/main
 
+# Write all players who die their death coordinates in the chat
+execute if score $death_coordinates 2tw.config matches 1 as @a[scores={2tw.death=1..}] run function 2mal3:2tw/tweaks/death_coordinates
+scoreboard players reset @a[scores={2tw.death=1..}] 2tw.death
+
 # Calls the function in the next second
 schedule function 2mal3:2tw/core/loops/second 1s replace

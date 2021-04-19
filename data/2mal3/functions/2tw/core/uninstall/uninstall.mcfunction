@@ -15,6 +15,7 @@ schedule clear 2mal3:2tw/core/loops/4_tick
 scoreboard objectives remove 2tw.data
 scoreboard objectives remove 2tw.config
 scoreboard objectives remove 2tw.debug_mode
+scoreboard objectives remove 2tw.death
 # Remove teams
 team remove 2tw.invisible
 
