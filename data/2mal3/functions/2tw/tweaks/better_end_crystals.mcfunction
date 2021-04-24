@@ -4,7 +4,7 @@
 # Datapack by 2mal3
 
 # Output debug message in chat, if enabled (DEBUG)
-tellraw @a[scores={2tw.debug_mode=4..}] [{"text":"[","color":"gray"},{"text":"2mal3'sTweaks","color":"aqua"},{"text":"/","color":"gray"},{"text":"DEBUG","color":"aqua"},{"text":"]: ","color":"gray"},{"text":"End Crystal improved!","color":"aqua"}]
+tellraw @a[scores={2tw.debug_mode=4..}] [{"text":"[","color":"gray"},{"text":"2mal3sTweaks","color":"aqua"},{"text":"/","color":"gray"},{"text":"DEBUG","color":"aqua"},{"text":"]: ","color":"gray"},{"text":"End Crystal improved!","color":"aqua"}]
 
 
 # Improves the end crystals

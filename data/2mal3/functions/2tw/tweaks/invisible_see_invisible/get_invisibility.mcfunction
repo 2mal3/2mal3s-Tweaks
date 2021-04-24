@@ -4,7 +4,7 @@
 # Datapack by 2mal3
 
 # Output debug message in chat, if enabled (DEBUG)
-tellraw @a[scores={2tw.debug_mode=4..}] [{"text":"[","color":"gray"},{"text":"2mal3'sTweaks","color":"aqua"},{"text":"/","color":"gray"},{"text":"DEBUG","color":"aqua"},{"text":"]: ","color":"gray"},{"text":"Player ","color":"aqua"},{"selector":"@s","color":"gray"},{"text":" is invisible.","color":"aqua"}]
+tellraw @a[scores={2tw.debug_mode=4..}] [{"text":"[","color":"gray"},{"text":"2mal3sTweaks","color":"aqua"},{"text":"/","color":"gray"},{"text":"DEBUG","color":"aqua"},{"text":"]: ","color":"gray"},{"text":"Player ","color":"aqua"},{"selector":"@s","color":"gray"},{"text":" is invisible.","color":"aqua"}]
 
 # Adds player to the invisible team
 team join 2tw.invisible @s
