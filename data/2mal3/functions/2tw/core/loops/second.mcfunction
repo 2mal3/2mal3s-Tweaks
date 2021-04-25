@@ -20,5 +20,8 @@ execute if score $realistic_fire 2tw.config matches 1 run function 2mal3:2tw/twe
 execute if score $death_coordinates 2tw.config matches 1 as @a[scores={2tw.death=1..}] run function 2mal3:2tw/tweaks/death_coordinates
 scoreboard players reset @a[scores={2tw.death=1..}] 2tw.death
 
+# Slowly generates a path along much traveled routes 
+execute if score $path_generator 2tw.config matches 1 run function 2mal3:2tw/tweaks/path_generator/main
+
 # Calls the function in the next second
 schedule function 2mal3:2tw/core/loops/second 1s replace

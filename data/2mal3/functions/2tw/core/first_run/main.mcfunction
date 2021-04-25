@@ -11,6 +11,8 @@ scoreboard objectives add 2tw.data dummy
 scoreboard objectives add 2tw.config dummy
 scoreboard objectives add 2tw.debug_mode dummy
 scoreboard objectives add 2tw.death deathCount
+scoreboard objectives add 2tw.walk minecraft.custom:minecraft.walk_one_cm
+scoreboard objectives add 2tw.sprint minecraft.custom:minecraft.sprint_one_cm
 # Add teams
 team add 2tw.invisible
 
@@ -27,6 +29,7 @@ scoreboard players set $realistic_fire 2tw.config 0
 scoreboard players set $wandering_trader_notifications 2tw.config 0
 scoreboard players set $disabled_ender_eyes 2tw.config 0
 scoreboard players set $death_coordinates 2tw.config 0
+scoreboard players set $path_generator 2tw.config 0
 
 
 # Sends Insatlations message after 4 sekonds
