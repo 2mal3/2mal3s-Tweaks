@@ -1,9 +1,9 @@
 {
     "display": {
-        "title": "2mal3's Tweaks v1.0.0",
-        "description": "<datapack description>",
+        "title": "2mal3s Tweaks v1.0.0",
+        "description": "Adds many small improvements to the game.",
         "icon": {
-            "item": "minecraft:crafting_table"
+            "item": "minecraft:redstone_torch"
         },
         "announce_to_chat": false,
         "show_toast": false
