@@ -25,6 +25,7 @@ All modules can be turned on and off via the in-game menu, so you only have to u
 - **Disabled ender eyes**: Ender eyes can no longer be used.
 - **Death coordinates**: In case of a death, the coordinates and the dimension of the dead point are displayed.
 - **Path generator**: Slowly generates a path along much-used routes.
+- **Damage infection**: Players who take damage have a certain probability to get infected and receive negative effects.
 
 ***
 

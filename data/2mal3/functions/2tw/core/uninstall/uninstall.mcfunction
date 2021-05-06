@@ -18,6 +18,7 @@ scoreboard objectives remove 2tw.debug_mode
 scoreboard objectives remove 2tw.death
 scoreboard objectives remove 2tw.walk
 scoreboard objectives remove 2tw.sprint
+scoreboard objectives remove 2tw.damage
 # Remove teams
 team remove 2tw.invisible
 

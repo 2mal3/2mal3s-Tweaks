@@ -59,6 +59,10 @@ execute if score $death_coordinates 2tw.config matches 1 run tellraw @s [{"text"
 execute if score $path_generator 2tw.config matches 0 run tellraw @s [{"text":"[\u274c]","color":"dark_red","clickEvent":{"action":"run_command","value":"/function 2mal3:2tw/menu/buttons/path_generator/true"},"hoverEvent":{"action":"show_text","contents":"*click*"}},{"text":" Path generator","color":"gold","hoverEvent":{"action":"show_text","contents":"Slowly generates a path along much-used routes."}}]
 execute if score $path_generator 2tw.config matches 1 run tellraw @s [{"text":"[\u2714]","color":"dark_green","clickEvent":{"action":"run_command","value":"/function 2mal3:2tw/menu/buttons/path_generator/false"},"hoverEvent":{"action":"show_text","contents":"*click*"}},{"text":" Path generator","color":"gold","hoverEvent":{"action":"show_text","contents":"Slowly generates a path along much-used routes."}}]
 
+# damage_infection
+execute if score $damage_infection 2tw.config matches 0 run tellraw @s [{"text":"[\u274c]","color":"dark_red","clickEvent":{"action":"run_command","value":"/function 2mal3:2tw/menu/buttons/damage_infection/true"},"hoverEvent":{"action":"show_text","contents":"*click*"}},{"text":" Damage infection","color":"gold","hoverEvent":{"action":"show_text","contents":"Players who take damage have a certain probability to get infected and receive negative effects."}}]
+execute if score $damage_infection 2tw.config matches 1 run tellraw @s [{"text":"[\u2714]","color":"dark_green","clickEvent":{"action":"run_command","value":"/function 2mal3:2tw/menu/buttons/damage_infection/false"},"hoverEvent":{"action":"show_text","contents":"*click*"}},{"text":" Damage infection","color":"gold","hoverEvent":{"action":"show_text","contents":"Players who take damage have a certain probability to get infected and receive negative effects."}}]
+
 # End
 tellraw @s {"text":""}
 
