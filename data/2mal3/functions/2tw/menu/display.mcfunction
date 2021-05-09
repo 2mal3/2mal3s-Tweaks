@@ -63,6 +63,10 @@ execute if score $path_generator 2tw.config matches 1 run tellraw @s [{"text":"[
 execute if score $damage_infection 2tw.config matches 0 run tellraw @s [{"text":"[\u274c]","color":"dark_red","clickEvent":{"action":"run_command","value":"/function 2mal3:2tw/menu/buttons/damage_infection/true"},"hoverEvent":{"action":"show_text","contents":"*click*"}},{"text":" Damage infection","color":"gold","hoverEvent":{"action":"show_text","contents":"Players who take damage have a certain probability to get infected and receive negative effects."}}]
 execute if score $damage_infection 2tw.config matches 1 run tellraw @s [{"text":"[\u2714]","color":"dark_green","clickEvent":{"action":"run_command","value":"/function 2mal3:2tw/menu/buttons/damage_infection/false"},"hoverEvent":{"action":"show_text","contents":"*click*"}},{"text":" Damage infection","color":"gold","hoverEvent":{"action":"show_text","contents":"Players who take damage have a certain probability to get infected and receive negative effects."}}]
 
+# no_to_expensive
+execute if score $no_to_expensive 2tw.config matches 0 run tellraw @s [{"text":"[\u274c]","color":"dark_red","clickEvent":{"action":"run_command","value":"/function 2mal3:2tw/menu/buttons/no_to_expensive/true"},"hoverEvent":{"action":"show_text","contents":"*click*"}},{"text":" No to expensive","color":"gold","hoverEvent":{"action":"show_text","contents":"Place an unrepairable item in an item frame on an anvil to reset its repair cost."}}]
+execute if score $no_to_expensive 2tw.config matches 1 run tellraw @s [{"text":"[\u2714]","color":"dark_green","clickEvent":{"action":"run_command","value":"/function 2mal3:2tw/menu/buttons/no_to_expensive/false"},"hoverEvent":{"action":"show_text","contents":"*click*"}},{"text":" No to expensive","color":"gold","hoverEvent":{"action":"show_text","contents":"PPlace an unrepairable item in an item frame on an anvil to reset its repair cost."}}]
+
 # End
 tellraw @s {"text":""}
 

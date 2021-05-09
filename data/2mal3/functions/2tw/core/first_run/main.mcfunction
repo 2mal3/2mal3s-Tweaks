@@ -32,6 +32,7 @@ scoreboard players set $disabled_ender_eyes 2tw.config 0
 scoreboard players set $death_coordinates 2tw.config 0
 scoreboard players set $path_generator 2tw.config 0
 scoreboard players set $damage_infection 2tw.config 0
+scoreboard players set $no_to_expensive 2tw.config 0
 
 
 # Sends Insatlations message after 4 sekonds
