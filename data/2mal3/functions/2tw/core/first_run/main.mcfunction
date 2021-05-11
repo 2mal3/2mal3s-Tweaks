@@ -1,4 +1,5 @@
 # Description: Installs the Datapack on first start
+# AS: server, AT: server
 # Called from function: 2mal3:2tw/core/reload
 # Datapack by 2mal3
 
@@ -33,6 +34,7 @@ scoreboard players set $death_coordinates 2tw.config 0
 scoreboard players set $path_generator 2tw.config 0
 scoreboard players set $damage_infection 2tw.config 0
 scoreboard players set $no_to_expensive 2tw.config 0
+scoreboard players set $random_respawn 2tw.config 0
 
 
 # Sends Insatlations message after 4 sekonds
