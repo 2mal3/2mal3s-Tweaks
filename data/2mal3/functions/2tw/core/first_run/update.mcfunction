@@ -7,4 +7,4 @@ tellraw @a[scores={2tw.debug_mode=3..}] [{"text":"[","color":"gray"},{"text":"2m
 
 
 # Set version variable in format xx.xx.xx
-scoreboard players set .version nola.data 010000
+scoreboard players set $version nola.data 010000
