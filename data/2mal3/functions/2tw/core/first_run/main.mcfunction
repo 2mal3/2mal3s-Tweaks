@@ -15,6 +15,9 @@ scoreboard objectives add 2tw.death deathCount
 scoreboard objectives add 2tw.walk minecraft.custom:minecraft.walk_one_cm
 scoreboard objectives add 2tw.sprint minecraft.custom:minecraft.sprint_one_cm
 scoreboard objectives add 2tw.damage minecraft.custom:minecraft.damage_taken
+scoreboard objectives add 2tw.health health
+scoreboard objectives add 2tw.food food
+scoreboard objectives add 2tw.regeneration dummy
 # Add teams
 team add 2tw.invisible
 
@@ -35,6 +38,7 @@ scoreboard players set $path_generator 2tw.config 0
 scoreboard players set $damage_infection 2tw.config 0
 scoreboard players set $no_to_expensive 2tw.config 0
 scoreboard players set $random_respawn 2tw.config 0
+scoreboard players set $old_regeneration 2tw.config 0
 
 
 # Sends Insatlations message after 4 sekonds

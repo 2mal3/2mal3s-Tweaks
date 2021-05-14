@@ -19,6 +19,9 @@ scoreboard objectives remove 2tw.death
 scoreboard objectives remove 2tw.walk
 scoreboard objectives remove 2tw.sprint
 scoreboard objectives remove 2tw.damage
+scoreboard objectives remove 2tw.food
+scoreboard objectives remove 2tw.health
+scoreboard objectives remove 2tw.regeneration
 # Remove teams
 team remove 2tw.invisible
 

@@ -1,10 +1,10 @@
 # 2mal3s Tweaks
 ![GitHub release (latest by date)](https://img.shields.io/github/v/release/2mal3/2mal3s-Tweaks?style=flat-square) ![GitHub all releases](https://img.shields.io/github/downloads/2mal3/2mal3s-Tweaks/total?style=flat-square) ![GitHub](https://img.shields.io/github/license/2mal3/2mal3s-Tweaks?style=flat-square)
 
-This datapack adds over 10 small adjustable improvements and tweaks to the normal vanilla game and spice it up a bit. At the same time no big changes are made to the gameplay, so it still feels "vanilla".
+This datapack adds over 14 small adjustable improvements and tweaks to the normal vanilla game and spice it up a bit. At the same time no big changes are made to the gameplay, so it still feels "vanilla".
 
 ## 📖 Features:
-- Over 10 different improvements and tweaks
+- Over 14 different improvements and tweaks
 - Still feels "vanilla"
 - All modules can be easily switched on and off via the in-game menu
 - Good performace
@@ -28,6 +28,7 @@ All modules can be turned on and off via the in-game menu, so you only have to u
 - **Damage infection**: Players who take damage have a certain probability to get infected and receive negative effects.
 - **No to expensive**: Place an unrepairable item in an item frame on an anvil to reset its repair cost.
 - **Random respawn**: When you die, you respawn at a random location within a radius of 2000 blocks around the spawn.
+- **Old regeneration**: The old pre 1.9 regeneration.
 
 ***
 

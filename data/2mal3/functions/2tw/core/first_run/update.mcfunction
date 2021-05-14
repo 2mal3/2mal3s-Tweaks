@@ -8,3 +8,15 @@ tellraw @a[scores={2tw.debug_mode=3..}] [{"text":"[","color":"gray"},{"text":"2m
 
 # Set version variable in format xx.xx.xx
 scoreboard players set $version nola.data 010000
+
+# Set the new start config
+scoreboard players set $damage_infection 2tw.config 0
+scoreboard players set $no_to_expensive 2tw.config 0
+scoreboard players set $random_respawn 2tw.config 0
+scoreboard players set $old_regeneration 2tw.config 0
+
+# Add new scoreboards
+scoreboard objectives add 2tw.damage minecraft.custom:minecraft.damage_taken
+scoreboard objectives add 2tw.food food
+scoreboard objectives add 2tw.health health
+scoreboard objectives add 2tw.regeneration dummy

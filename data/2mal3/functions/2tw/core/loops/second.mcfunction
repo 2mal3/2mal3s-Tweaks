@@ -19,8 +19,10 @@ execute if score $path_generator 2tw.config matches 1 run function 2mal3:2tw/twe
 execute if score $damage_infection 2tw.config matches 1 as @a[scores={2tw.damage=1..}] at @s run function 2mal3:2tw/tweaks/damage_infection/main
 # Sets the spawn point of a dead player at a random within a radius of 2000 blocks around the spawn
 execute if score $random_respawn 2tw.config matches 1 as @a[scores={2tw.death=1..}] run function 2mal3:2tw/tweaks/random_respawn
+# The 1.8.9 regeneration
+execute if score $old_regeneration 2tw.config matches 1 as @a run function 2mal3:2tw/tweaks/old_regeneration/main
 
-# Reset
+# Reset scooreboard triggers
 scoreboard players reset @a[scores={2tw.death=1..}] 2tw.death
 
 # Calls the function in the next second

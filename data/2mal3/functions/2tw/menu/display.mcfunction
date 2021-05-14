@@ -71,6 +71,10 @@ execute if score $no_to_expensive 2tw.config matches 1 run tellraw @s [{"text":"
 execute if score $random_respawn 2tw.config matches 0 run tellraw @s [{"text":"[\u274c]","color":"dark_red","clickEvent":{"action":"run_command","value":"/function 2mal3:2tw/menu/buttons/random_respawn/true"},"hoverEvent":{"action":"show_text","contents":"*click*"}},{"text":" Random respawn","color":"gold","hoverEvent":{"action":"show_text","contents":"When you die, you respawn at a random location within a radius of 2000 blocks around the spawn."}}]
 execute if score $random_respawn 2tw.config matches 1 run tellraw @s [{"text":"[\u2714]","color":"dark_green","clickEvent":{"action":"run_command","value":"/function 2mal3:2tw/menu/buttons/random_respawn/false"},"hoverEvent":{"action":"show_text","contents":"*click*"}},{"text":" Random respawn","color":"gold","hoverEvent":{"action":"show_text","contents":"When you die, you respawn at a random location within a radius of 2000 blocks around the spawn."}}]
 
+# old_regeneration
+execute if score $old_regeneration 2tw.config matches 0 run tellraw @s [{"text":"[\u274c]","color":"dark_red","clickEvent":{"action":"run_command","value":"/function 2mal3:2tw/menu/buttons/old_regeneration/true"},"hoverEvent":{"action":"show_text","contents":"*click*"}},{"text":" Old regeneration","color":"gold","hoverEvent":{"action":"show_text","contents":"The old pre 1.9 regeneration."}}]
+execute if score $old_regeneration 2tw.config matches 1 run tellraw @s [{"text":"[\u2714]","color":"dark_green","clickEvent":{"action":"run_command","value":"/function 2mal3:2tw/menu/buttons/old_regeneration/false"},"hoverEvent":{"action":"show_text","contents":"*click*"}},{"text":" Old regeneration","color":"gold","hoverEvent":{"action":"show_text","contents":"The old pre 1.9 regeneration."}}]
+
 # End
 tellraw @s {"text":""}
 
