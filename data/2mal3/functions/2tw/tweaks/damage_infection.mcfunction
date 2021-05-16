@@ -1,6 +1,6 @@
 # Description: Gives an infected player negative effects
 # AS: @a[scores={2tw.damage=1..}], AT: @s
-# Called from functions: 2mal3:2tw/tweaks/damage_infection/main
+# Called from functions: 2mal3:2tw/core/loops/second
 # Datapack by 2mal3
 
 # Output debug message in chat, if enabled (DEBUG)
