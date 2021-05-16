@@ -1,0 +1,17 @@
+
+Update v1.1.0 (16.5.2021)
+
+This update only brings 4 new modules for the survival world and a few bug fixes.
+
+Added:
+- No to expensive module
+- Damage infection module
+    - Debug messages
+- Random respawn module
+- Old regeneration module
+
+Bug fixes:
+- With a new datapack version the datapack would update itself constantly
+- Spelling mistake fixed
+
+----------------------------------------------------------------

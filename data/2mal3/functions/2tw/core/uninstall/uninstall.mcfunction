@@ -29,8 +29,8 @@ team remove 2tw.invisible
 kill @e[type=minecraft:area_effect_cloud,tag=2tw.fire]
 
 # Sends an uninstallation message to all players
-tellraw @a [{"text":"2mal3's Tweaks Datapack v1.0.0 by 2mal3 was successfully uninstalled."}]
+tellraw @a [{"text":"2mal3's Tweaks Datapack v1.1.0 by 2mal3 was successfully uninstalled."}]
 
 # Disables the datapack
-datapack disable "file/2mal3s-Tweaks-v1.0.0"
-datapack disable "file/2mal3s-Tweaks-v1.0.0.zip"
+datapack disable "file/2mal3s-Tweaks-v1.1.0"
+datapack disable "file/2mal3s-Tweaks-v1.1.0.zip"
