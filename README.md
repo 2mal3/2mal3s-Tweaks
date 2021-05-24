@@ -29,6 +29,7 @@ All modules can be turned on and off via the in-game menu, so you only have to u
 - **No to expensive**: Place an unrepairable item in an item frame on an anvil to reset its repair cost.
 - **Random respawn**: When you die, you respawn at a random location within a radius of 2000 blocks around the spawn.
 - **Old regeneration**: The old pre 1.9 regeneration.
+- **Armor Stand Arms**: Gives all armor stands arms.
 
 ***
 

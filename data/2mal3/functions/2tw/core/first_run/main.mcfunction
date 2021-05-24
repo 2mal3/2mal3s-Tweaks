@@ -39,6 +39,7 @@ scoreboard players set $damage_infection 2tw.config 0
 scoreboard players set $no_to_expensive 2tw.config 0
 scoreboard players set $random_respawn 2tw.config 0
 scoreboard players set $old_regeneration 2tw.config 0
+scoreboard players set $armor_stand_arms 2tw.config 0
 
 
 # Sends Insatlations message after 4 sekonds

@@ -75,6 +75,11 @@ execute if score $random_respawn 2tw.config matches 1 run tellraw @s [{"text":"[
 execute if score $old_regeneration 2tw.config matches 0 run tellraw @s [{"text":"[\u274c]","color":"dark_red","clickEvent":{"action":"run_command","value":"/function 2mal3:2tw/menu/buttons/old_regeneration/true"},"hoverEvent":{"action":"show_text","contents":"*click*"}},{"text":" Old regeneration","color":"gold","hoverEvent":{"action":"show_text","contents":"The old pre 1.9 regeneration."}}]
 execute if score $old_regeneration 2tw.config matches 1 run tellraw @s [{"text":"[\u2714]","color":"dark_green","clickEvent":{"action":"run_command","value":"/function 2mal3:2tw/menu/buttons/old_regeneration/false"},"hoverEvent":{"action":"show_text","contents":"*click*"}},{"text":" Old regeneration","color":"gold","hoverEvent":{"action":"show_text","contents":"The old pre 1.9 regeneration."}}]
 
+# armor_stand_arms
+execute if score $armor_stand_arms 2tw.config matches 0 run tellraw @s [{"text":"[\u274c]","color":"dark_red","clickEvent":{"action":"run_command","value":"/function 2mal3:2tw/menu/buttons/armor_stand_arms/true"},"hoverEvent":{"action":"show_text","contents":"*click*"}},{"text":" Armor Stand Arms","color":"gold","hoverEvent":{"action":"show_text","contents":"Gives all armor stands arms."}}]
+execute if score $armor_stand_arms 2tw.config matches 1 run tellraw @s [{"text":"[\u2714]","color":"dark_green","clickEvent":{"action":"run_command","value":"/function 2mal3:2tw/menu/buttons/armor_stand_arms/false"},"hoverEvent":{"action":"show_text","contents":"*click*"}},{"text":" Armor Stand Arms","color":"gold","hoverEvent":{"action":"show_text","contents":"Gives all armor stands arms."}}]
+
+
 # End
 tellraw @s {"text":""}
 

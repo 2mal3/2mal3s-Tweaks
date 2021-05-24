@@ -21,6 +21,8 @@ execute if score $damage_infection 2tw.config matches 1 as @a[scores={2tw.damage
 execute if score $random_respawn 2tw.config matches 1 as @a[scores={2tw.death=1..}] run function 2mal3:2tw/tweaks/random_respawn
 # The 1.8.9 regeneration
 execute if score $old_regeneration 2tw.config matches 1 as @a run function 2mal3:2tw/tweaks/old_regeneration/main
+# Gives all armor stands arms
+execute if score $armor_stand_arms 2tw.config matches 1 as @e[type=minecraft:armor_stand,tag=!2tw.armor_stand_arms.processed,tag=!global.ignore] run function 2mal3:2tw/tweaks/armor_stand_arms
 
 # Reset scooreboard triggers
 scoreboard players reset @a[scores={2tw.death=1..}] 2tw.death
