@@ -79,6 +79,10 @@ execute if score $old_regeneration 2tw.config matches 1 run tellraw @s [{"text":
 execute if score $armor_stand_arms 2tw.config matches 0 run tellraw @s [{"text":"[\u274c]","color":"dark_red","clickEvent":{"action":"run_command","value":"/function 2mal3:2tw/menu/buttons/armor_stand_arms/true"},"hoverEvent":{"action":"show_text","contents":"*click*"}},{"text":" Armor Stand Arms","color":"gold","hoverEvent":{"action":"show_text","contents":"Gives all armor stands arms."}}]
 execute if score $armor_stand_arms 2tw.config matches 1 run tellraw @s [{"text":"[\u2714]","color":"dark_green","clickEvent":{"action":"run_command","value":"/function 2mal3:2tw/menu/buttons/armor_stand_arms/false"},"hoverEvent":{"action":"show_text","contents":"*click*"}},{"text":" Armor Stand Arms","color":"gold","hoverEvent":{"action":"show_text","contents":"Gives all armor stands arms."}}]
 
+# bush_hiding
+execute if score $bush_hiding 2tw.config matches 0 run tellraw @s [{"text":"[\u274c]","color":"dark_red","clickEvent":{"action":"run_command","value":"/function 2mal3:2tw/menu/buttons/bush_hiding/true"},"hoverEvent":{"action":"show_text","contents":"*click*"}},{"text":" Bush hiding","color":"gold","hoverEvent":{"action":"show_text","contents":"Players who sneak in high plants become invisible."}}]
+execute if score $bush_hiding 2tw.config matches 1 run tellraw @s [{"text":"[\u2714]","color":"dark_green","clickEvent":{"action":"run_command","value":"/function 2mal3:2tw/menu/buttons/bush_hiding/false"},"hoverEvent":{"action":"show_text","contents":"*click*"}},{"text":" Bush hiding","color":"gold","hoverEvent":{"action":"show_text","contents":"Players who sneak in high plants become invisible."}}]
+
 
 # End
 tellraw @s {"text":""}
