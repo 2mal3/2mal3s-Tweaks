@@ -7,7 +7,7 @@ tellraw @a[scores={2tw.debug_mode=3..}] [{"text":"[","color":"gray"},{"text":"2m
 
 
 # Set version variable in format xx.xx.xx
-scoreboard players set $version nola.data 010100
+scoreboard players set $version 2tw.data 010100
 
 # Add new configs
 scoreboard players set $armor_stand_arms 2tw.config 0
