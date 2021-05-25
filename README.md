@@ -31,6 +31,7 @@ All modules can be turned on and off via the in-game menu, so you only have to u
 - **Old regeneration**: The old pre 1.9 regeneration.
 - **Armor Stand Arms**: Gives all armor stands arms.
 - **Bush hiding**: Players who sneak in high plants become invisible.
+- **Projectile block damage**: Some projectiles can break glass panes.
 
 ***
 

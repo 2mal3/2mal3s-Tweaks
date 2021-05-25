@@ -12,3 +12,4 @@ scoreboard players set $version 2tw.data 010100
 # Add new configs
 scoreboard players set $armor_stand_arms 2tw.config 0
 scoreboard players set $bush_hiding 2tw.config 0
+scoreboard players set $projectile_block_damage 2tw.config 0

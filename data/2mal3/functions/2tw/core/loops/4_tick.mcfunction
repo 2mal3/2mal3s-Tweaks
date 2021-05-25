@@ -9,6 +9,8 @@ execute if score $speed_paths 2tw.config matches 1 as @a[gamemode=!spectator] at
 execute if score $realistic_fire 2tw.config matches 1 run function 2mal3:2tw/tweaks/realistic_fire/fire/main
 # Players who sneak in high plants become invisible
 execute if score $bush_hiding 2tw.config matches 1 as @a[tag=!global.ignore] at @s run function 2mal3:2tw/tweaks/bush_hiding/main
+# Some projectiles can break glass pane
+execute if score $projectile_block_damage 2tw.config matches 1 as @e[type=#2mal3:2tw/block_damage_projectiles,predicate=2mal3:2tw/in_ground] at @s if block ~ ~ ~ #2mal3:2tw/glass_panes run setblock ~ ~ ~ minecraft:air destroy
 
 # Calls the function in the next second
 schedule function 2mal3:2tw/core/loops/4_tick 4t replace
