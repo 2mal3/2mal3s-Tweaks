@@ -3,6 +3,10 @@
 # Called from function: 2mal3:2tw/core/loops/second
 # Datapack by 2mal3
 
+# Output debug message in chat, if enabled (DEBUG)
+tellraw @a[scores={2tw.debug_mode=4..}] [{"text":"[","color":"gray"},{"text":"2mal3sTweaks","color":"aqua"},{"text":"/","color":"gray"},{"text":"DEBUG","color":"aqua"},{"text":"/","color":"gray"},{"selector":"@s","color":"aqua"},{"text":"]: ","color":"gray"},{"text":"Wandering Trader spawned","color":"aqua"}]
+
+
 # Performs the effects to better find the wandering trader
 effect give @s minecraft:glowing 180 0 true
 tellraw @a [{"text":"A "},{"selector":"@s"},{"text":" has arrived near "},{"selector":"@p"},{"text":"."}]

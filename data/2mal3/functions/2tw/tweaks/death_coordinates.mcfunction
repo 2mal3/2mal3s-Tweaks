@@ -3,6 +3,10 @@
 # Called from function: 2mal3:2tw/core/loops/second
 # Datapack by 2mal3
 
+# Output debug message in chat, if enabled (DEBUG)
+tellraw @a[scores={2tw.debug_mode=4..}] [{"text":"[","color":"gray"},{"text":"2mal3sTweaks","color":"aqua"},{"text":"/","color":"gray"},{"text":"DEBUG","color":"aqua"},{"text":"/","color":"gray"},{"selector":"@s","color":"aqua"},{"text":"]: ","color":"gray"},{"text":"Died","color":"aqua"}]
+
+
 # Saves the position and dimension
 execute store result score .temp_0 2tw.data run data get entity @s Pos[0]
 execute store result score .temp_1 2tw.data run data get entity @s Pos[1]

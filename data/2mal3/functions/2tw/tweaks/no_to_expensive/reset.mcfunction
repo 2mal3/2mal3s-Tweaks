@@ -4,7 +4,7 @@
 # Datapack by 2mal3
 
 # Output debug message in chat, if enabled (DEBUG)
-tellraw @a[scores={2tw.debug_mode=4..}] [{"text":"[","color":"gray"},{"text":"2mal3sTweaks","color":"aqua"},{"text":"/","color":"gray"},{"text":"DEBUG","color":"aqua"},{"text":"]: ","color":"gray"},{"text":"Player ","color":"aqua"},{"selector":"@p","color":"gray"},{"text":" has resetted the repair cost of a item.","color":"aqua"}]
+tellraw @a[scores={2tw.debug_mode=4..}] [{"text":"[","color":"gray"},{"text":"2mal3sTweaks","color":"aqua"},{"text":"/","color":"gray"},{"text":"DEBUG","color":"aqua"},{"text":"/","color":"gray"},{"selector":"@p","color":"aqua"},{"text":"]: ","color":"gray"},{"text":"Resetted the repair cost of a item","color":"aqua"}]
 
 
 # Makes the item repairable again
