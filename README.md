@@ -14,25 +14,25 @@ All modules can be turned on and off via the in-game menu, so you only have to u
 **At the beginning all modules are switched off.**
 
 ## 📝 Tweaks:
-- **Invisible see invisible**: Invisible can see each other.
-- **Speed paths**: You can run faster on path blocks.
-- **Server time**: As long as no player is on the server, the time is stopped.
-- **Nerfed elytra**: Nerfs Elytras by making them impossible to enchant or repair.
-- **Better End Crystals**: Prevents protected End Crystals from being easily destroyed from the ground.
-- **Anti creeper grief**: Prevents Creeper from causing block damage.
-- **Realistic fire**: Fire is more relaistic.
-- **Wandering Trader notifications**: When a Wandering Trader appears a notification is sent to all players and gets a short glowing effect.
-- **Disabled ender eyes**: Ender eyes can no longer be used.
-- **Death coordinates**: In case of a death, the coordinates and the dimension of the dead point are displayed.
 - **Path generator**: Slowly generates a path along much-used routes.
-- **Damage infection**: Players who take damage have a certain probability to get infected and receive negative effects.
-- **No to expensive**: Place an unrepairable item in an item frame on an anvil to reset its repair cost.
-- **Random respawn**: When you die, you respawn at a random location within a radius of 2000 blocks around the spawn.
-- **Old regeneration**: The old pre 1.9 regeneration.
-- **Armor Stand Arms**: Gives all armor stands arms.
+- **Invisible see invisible**: Invisible can see each other.
+- **Nerfed elytra**: Nerfs Elytras by making them impossible to enchant or repair.
+- **Realistic fire**: Fire is more relaistic.
+- **Anti creeper grief**: Prevents Creeper from causing block damage.
 - **Bush hiding**: Players who sneak in high plants become invisible.
 - **Projectile block damage**: Some projectiles can break glass panes.
+- **No to expensive**: Place an unrepairable item in an item frame on an anvil to reset its repair cost.
 - **Block damage**: Players standing in rose bushes or stonecutters get damage.
+- **Speed paths**: You can run faster on path blocks.
+- **Wandering Trader notifications**: When a Wandering Trader appears a notification is sent to all players and gets a short glowing effect.
+- **Old regeneration**: The old pre 1.9 regeneration.
+- **Death coordinates**: In case of a death, the coordinates and the dimension of the dead point are displayed.
+- **Armor Stand Arms**: Gives all armor stands arms.
+- **Better End Crystals**: Prevents protected End Crystals from being easily destroyed from the ground.
+- **Random respawn**: When you die, you respawn at a random location within a radius of 2000 blocks around the spawn.
+- **Damage infection**: Players who take damage have a certain probability to get infected and receive negative effects.
+- **Disabled ender eyes**: Ender eyes can no longer be used.
+- **Server time**: As long as no player is on the server, the time is stopped.
 
 ***
 
