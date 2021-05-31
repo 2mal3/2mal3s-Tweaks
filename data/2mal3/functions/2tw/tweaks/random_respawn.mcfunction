@@ -4,7 +4,7 @@
 # Datapack by 2mal3
 
 # Output debug message in chat, if enabled (DEBUG)
-tellraw @a[scores={2tw.debug_mode=4..}] [{"text":"[","color":"gray"},{"text":"2mal3sTweaks","color":"aqua"},{"text":"/","color":"gray"},{"text":"DEBUG","color":"aqua"},{"text":"/","color":"gray"},{"selector":"@s","color":"aqua"},{"text":"]: ","color":"gray"},{"text":"Died","color":"aqua"}]
+tellraw @a[scores={2tw.debug_mode=4..}] [{"text":"[","color":"gray"},{"text":"2mal3sTweaks","color":"aqua"},{"text":"/","color":"gray"},{"text":"DEBUG","color":"aqua"},{"text":"/","color":"gray"},{"selector":"@s","color":"aqua"},{"text":"]: ","color":"gray"},{"text":"Respawned at a random position","color":"aqua"}]
 
 
 summon minecraft:area_effect_cloud ~ ~ ~ {UUID: [I; 669842609, -1209579212, -2001643774, 1708722797]}
