@@ -16,4 +16,5 @@ execute if score .first_run 2tw.data matches 1 unless score $version 2tw.data ma
 # Starts the loops
 schedule function 2mal3:2tw/core/loops/minute 60s replace
 schedule function 2mal3:2tw/core/loops/second 1s replace
-schedule function 2mal3:2tw/core/loops/4_tick 6t replace
+schedule function 2mal3:2tw/core/loops/10_tick 10t replace
+schedule function 2mal3:2tw/core/loops/4_tick 4t replace

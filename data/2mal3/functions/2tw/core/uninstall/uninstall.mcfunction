@@ -9,6 +9,7 @@ tellraw @a[scores={2tw.debug_mode=3..}] [{"text":"[","color":"gray"},{"text":"2m
 # Stops the loops
 schedule clear 2mal3:2tw/core/loops/minute
 schedule clear 2mal3:2tw/core/loops/second
+schedule clear 2mal3:2tw/core/loops/10_tick
 schedule clear 2mal3:2tw/core/loops/4_tick
 
 # Deletes the scoreboards

@@ -87,6 +87,10 @@ execute if score $bush_hiding 2tw.config matches 1 run tellraw @s [{"text":"[\u2
 execute if score $projectile_block_damage 2tw.config matches 0 run tellraw @s [{"text":"[\u274c]","color":"dark_red","clickEvent":{"action":"run_command","value":"/function 2mal3:2tw/menu/buttons/projectile_block_damage/true"},"hoverEvent":{"action":"show_text","contents":"*click*"}},{"text":" Projectile block damage","color":"gold","hoverEvent":{"action":"show_text","contents":"Some projectiles can break glass panes."}}]
 execute if score $projectile_block_damage 2tw.config matches 1 run tellraw @s [{"text":"[\u2714]","color":"dark_green","clickEvent":{"action":"run_command","value":"/function 2mal3:2tw/menu/buttons/projectile_block_damage/false"},"hoverEvent":{"action":"show_text","contents":"*click*"}},{"text":" Projectile block damage","color":"gold","hoverEvent":{"action":"show_text","contents":"Some projectiles can break glass panes."}}]
 
+# block_damage
+execute if score $block_damage 2tw.config matches 0 run tellraw @s [{"text":"[\u274c]","color":"dark_red","clickEvent":{"action":"run_command","value":"/function 2mal3:2tw/menu/buttons/block_damage/true"},"hoverEvent":{"action":"show_text","contents":"*click*"}},{"text":" Block damage","color":"gold","hoverEvent":{"action":"show_text","contents":"Players standing in rose bushes or stonecutters get damage."}}]
+execute if score $block_damage 2tw.config matches 1 run tellraw @s [{"text":"[\u2714]","color":"dark_green","clickEvent":{"action":"run_command","value":"/function 2mal3:2tw/menu/buttons/block_damage/false"},"hoverEvent":{"action":"show_text","contents":"*click*"}},{"text":" Block damage","color":"gold","hoverEvent":{"action":"show_text","contents":"Players standing in rose bushes or stonecutters get damage."}}]
+
 
 # End
 tellraw @s {"text":""}
