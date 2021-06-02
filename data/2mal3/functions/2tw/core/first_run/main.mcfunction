@@ -18,6 +18,7 @@ scoreboard objectives add 2tw.damage minecraft.custom:minecraft.damage_taken
 scoreboard objectives add 2tw.health health
 scoreboard objectives add 2tw.food food
 scoreboard objectives add 2tw.regeneration dummy
+scoreboard objectives add 2tw.torches_time dummy
 # Add teams
 team add 2tw.invisible
 
@@ -43,6 +44,8 @@ scoreboard players set $armor_stand_arms 2tw.config 0
 scoreboard players set $bush_hiding 2tw.config 0
 scoreboard players set $projectile_block_damage 2tw.config 0
 scoreboard players set $block_damage 2tw.config 0
+scoreboard players set $realistic_torches 2tw.config 0
+scoreboard players set $realistic_torches_time 2tw.config 20
 
 
 # Sends Insatlations message after 4 sekonds

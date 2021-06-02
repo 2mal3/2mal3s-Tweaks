@@ -1,0 +1,13 @@
+{
+    "criteria": {
+        "requirement": {
+            "trigger": "minecraft:placed_block",
+            "conditions": {
+                "block": "minecraft:torch"
+            }
+        }
+    },
+    "rewards": {
+        "function": "2mal3:2tw/tweaks/realistic_torches/place/test"
+    }
+}
