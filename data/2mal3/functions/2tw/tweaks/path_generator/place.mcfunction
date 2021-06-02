@@ -4,7 +4,7 @@
 # Datapack by 2mal3
 
 # Path blocks in the overworld
-execute if block ~ ~ ~ minecraft:coarse_dirt run setblock ~ ~ ~ minecraft:grass_path
+execute if block ~ ~ ~ minecraft:coarse_dirt run setblock ~ ~ ~ minecraft:dirt_path
 execute if block ~ ~ ~ minecraft:dirt run setblock ~ ~ ~ minecraft:coarse_dirt
 execute if block ~ ~ ~ #2mal3:2tw/grass run setblock ~ ~ ~ minecraft:dirt
 

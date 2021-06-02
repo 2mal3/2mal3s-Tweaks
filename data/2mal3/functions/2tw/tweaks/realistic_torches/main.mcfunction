@@ -1,5 +1,5 @@
 # Description: Loop for the realistic torches module
-# AS: @e[type=minecraft:area_effect_cloud,tag=2tw.realistic_torch], AT: @s
+# AS: @e[type=minecraft:marker,tag=2tw.realistic_torch], AT: @s
 # Called from function: 2mal3:2tw/core/loops/minute
 # Datapack by 2mal3
 
