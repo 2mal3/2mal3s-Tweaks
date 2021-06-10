@@ -23,7 +23,7 @@ scoreboard objectives add 2tw.torches_time dummy
 team add 2tw.invisible
 
 # Set the version in format: xx.xx.xx
-scoreboard players set $version 2tw.data 010100
+scoreboard players set $version 2tw.data 010200
 # Set the start config
 scoreboard players set $invisible_see_invisible 2tw.config 0
 scoreboard players set $speed_paths 2tw.config 0

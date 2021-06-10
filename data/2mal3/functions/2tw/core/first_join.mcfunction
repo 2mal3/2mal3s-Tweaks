@@ -11,6 +11,6 @@ execute unless score .temp_1 2tw.data matches 1.. store success score .temp_1 2t
 execute unless score .temp_1 2tw.data matches 1.. store success score .temp_1 2tw.data run data get entity @s "Paper.SpawnReason"
 
 # Gives an error message for wrong versions
-execute unless score .temp_0 2tw.data matches 2716.. run tellraw @s [{"text":"[","color":"gray"},{"text":"2mal3sTweaks","color":"gold"},{"text":"/","color":"gray"},{"text":"WARN","color":"gold"},{"text":"]: ","color":"gray"},{"text":"This Minecraft version is not supported by the datapack. Please use a version later than 1.16.","color":"gold"}]
+execute unless score .temp_0 2tw.data matches 2724.. run tellraw @s [{"text":"[","color":"gray"},{"text":"2mal3sTweaks","color":"gold"},{"text":"/","color":"gray"},{"text":"WARN","color":"gold"},{"text":"]: ","color":"gray"},{"text":"This Minecraft version is not supported by the datapack. Please use a version later than 1.16.","color":"gold"}]
 
 execute if score .temp_1 2tw.data matches 1 run tellraw @s [{"text":"[","color":"gray"},{"text":"2mal3sTweaks","color":"gold"},{"text":"/","color":"gray"},{"text":"WARN","color":"gold"},{"text":"]: ","color":"gray"},{"text":"This server software is not supported by the datapack, so errors may occur. Please use another server software for better stability.","color":"gold"}]

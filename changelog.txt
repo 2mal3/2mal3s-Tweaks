@@ -1,4 +1,29 @@
 
+Update v1.2.0 (10.6.2021)
+
+With this update the datapack is finally compatible with 1.17. In addition, 5 new modules are added, so that the config menu now gets a second page.
+With the new possibilities and things added in 1.17, I also got new ideas for more modules, so a next update will come soon.
+
+Added:
+- Armor Stand arms rule
+- Bush hiding module
+- Projectile block damage module
+- Block damage module
+- Realistic torches module
+
+Changed:
+- Better debug messages
+- Improved config menu
+  - Added second page for better overview
+  - Modules sorted alphabetically
+- Compatibility with 1.17
+- Lantern Load library updated
+
+Bug fixes:
+- Datapack has updated itself all the time
+
+----------------------------------------------------------------
+
 Update v1.1.0 (16.5.2021)
 
 This update only brings 4 new modules for the survival world and a few bug fixes.
