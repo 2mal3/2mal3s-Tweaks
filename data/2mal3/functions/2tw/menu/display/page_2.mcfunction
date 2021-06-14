@@ -16,6 +16,10 @@ tellraw @s {"text":" \u0020 \u0020 \u00202mal3's Tweaks Config","bold":true,"col
 tellraw @s [{"text":"<","color":"gold","clickEvent":{"action":"run_command","value":"/function 2mal3:2tw/menu/display/page_1"}},{"text":" ------------ ","color":"yellow","clickEvent":{"action":"run_command","value":""}},{"text":"2/2","color":"gold","clickEvent":{"action":"run_command","value":""}},{"text":" ------------ >","color":"yellow","clickEvent":{"action":"run_command","value":""}}]
 tellraw @s {"text":""}
 
+# random_respawn
+execute if score $random_respawn 2tw.config matches 0 run tellraw @s [{"text":"[\u274c]","color":"dark_red","clickEvent":{"action":"run_command","value":"/function 2mal3:2tw/menu/buttons/random_respawn/true"},"hoverEvent":{"action":"show_text","contents":"*click*"}},{"text":" Random respawn","color":"gold","hoverEvent":{"action":"show_text","contents":"When you die, you respawn at a random location within a radius of 2000 blocks around the spawn."}}]
+execute if score $random_respawn 2tw.config matches 1 run tellraw @s [{"text":"[\u2714]","color":"dark_green","clickEvent":{"action":"run_command","value":"/function 2mal3:2tw/menu/buttons/random_respawn/false"},"hoverEvent":{"action":"show_text","contents":"*click*"}},{"text":" Random respawn","color":"gold","hoverEvent":{"action":"show_text","contents":"When you die, you respawn at a random location within a radius of 2000 blocks around the spawn."}}]
+
 # realistic_fire
 execute if score $realistic_fire 2tw.config matches 0 run tellraw @s [{"text":"[\u274c]","color":"dark_red","clickEvent":{"action":"run_command","value":"/function 2mal3:2tw/menu/buttons/realistic_fire/true"},"hoverEvent":{"action":"show_text","contents":"*click*"}},{"text":" Realistic fire","color":"gold","hoverEvent":{"action":"show_text","contents":"Fire is more relaistic."}}]
 execute if score $realistic_fire 2tw.config matches 1 run tellraw @s [{"text":"[\u2714]","color":"dark_green","clickEvent":{"action":"run_command","value":"/function 2mal3:2tw/menu/buttons/realistic_fire/false"},"hoverEvent":{"action":"show_text","contents":"*click*"}},{"text":" Realistic fire","color":"gold","hoverEvent":{"action":"show_text","contents":"Fire is more relaistic."}}]
@@ -38,5 +42,5 @@ execute if score $wandering_trader_notifications 2tw.config matches 0 run tellra
 execute if score $wandering_trader_notifications 2tw.config matches 1 run tellraw @s [{"text":"[\u2714]","color":"dark_green","clickEvent":{"action":"run_command","value":"/function 2mal3:2tw/menu/buttons/wandering_trader_notifications/false"},"hoverEvent":{"action":"show_text","contents":"*click*"}},{"text":" Wandering Trader notifications","color":"gold","hoverEvent":{"action":"show_text","contents":"When a Wandering Trader appears a notification is sent to all players and gets a short glowing effect."}}]
 
 # End
-tellraw @s {"text":"\n\n\n\n\n\n\n\n\n"}
+tellraw @s {"text":"\n\n\n\n\n\n\n\n"}
 

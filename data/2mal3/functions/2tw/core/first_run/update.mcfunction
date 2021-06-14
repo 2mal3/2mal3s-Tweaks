@@ -10,11 +10,6 @@ tellraw @a[scores={2tw.debug_mode=3..}] [{"text":"[","color":"gray"},{"text":"2m
 scoreboard players set $version 2tw.data 010200
 
 # Add new scoreboards
-scoreboard objectives add 2tw.torches_time dummy
+#scoreboard objectives add 2tw.torches_time dummy
 # Add new configs
-scoreboard players set $armor_stand_arms 2tw.config 0
-scoreboard players set $bush_hiding 2tw.config 0
-scoreboard players set $projectile_block_damage 2tw.config 0
-scoreboard players set $block_damage 2tw.config 0
-scoreboard players set $realistic_torches 2tw.config 0
-scoreboard players set $realistic_torches_time 2tw.config 20
+scoreboard players set $glow_berries_glow 2tw.config 0

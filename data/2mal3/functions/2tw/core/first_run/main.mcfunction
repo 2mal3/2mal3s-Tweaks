@@ -46,6 +46,7 @@ scoreboard players set $projectile_block_damage 2tw.config 0
 scoreboard players set $block_damage 2tw.config 0
 scoreboard players set $realistic_torches 2tw.config 0
 scoreboard players set $realistic_torches_time 2tw.config 20
+scoreboard players set $glow_berries_glow 2tw.config 0
 
 
 # Sends Insatlations message after 4 sekonds

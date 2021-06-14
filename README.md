@@ -22,6 +22,7 @@ All modules can be turned on and off via the in-game menu, so you only have to u
 - **Damage infection**: Players who take damage have a certain probability to get infected and receive negative effects.
 - **Death coordinates**: In case of a death, the coordinates and the dimension of the dead point are displayed.
 - **Disabled ender eyes**: Ender eyes can no longer be used.
+- **Glow Berries glow**: Players who eat glow berries get a short glowing effect.
 - **Invisible see invisible**: Invisible can see each other.
 - **Nerfed elytra**: Nerfs Elytras by making them impossible to enchant or repair.
 - **No to expensive**: Place an unrepairable item in an item frame on an anvil to reset its repair cost.

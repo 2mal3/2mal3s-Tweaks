@@ -1,10 +1,10 @@
 # Description: Enables random_respawn
 # AS: player, AT: player
-# Called from function: 2mal3:2tw/menu/display/page_1
+# Called from function: 2mal3:2tw/menu/display/page_2
 # Datapack by 2mal3
 
 # Saves the setting
 scoreboard players set $random_respawn 2tw.config 1
 
 # Displays the updated config menu
-function 2mal3:2tw/menu/display/page_1
+function 2mal3:2tw/menu/display/page_2
