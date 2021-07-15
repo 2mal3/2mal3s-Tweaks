@@ -13,3 +13,4 @@ scoreboard players set $version 2tw.data 010200
 #scoreboard objectives add 2tw.torches_time dummy
 # Add new configs
 scoreboard players set $glow_berries_glow 2tw.config 0
+scoreboard players set $end_above_overworld 2tw.config 0

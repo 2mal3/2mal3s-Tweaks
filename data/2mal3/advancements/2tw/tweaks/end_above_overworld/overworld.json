@@ -1,0 +1,21 @@
+{
+    "criteria": {
+        "requirement": {
+            "trigger": "minecraft:location",
+            "conditions": {
+                "location": {
+                    "position": {
+                        "y": {
+                            "min": 1000,
+                            "max": 10000
+                        }
+                    },
+                    "dimension": "minecraft:overworld"
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "2mal3:2tw/tweaks/end_above_overworld/overworld/test"
+    }
+}

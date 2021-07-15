@@ -1,10 +1,10 @@
 # 2mal3s Tweaks
 ![GitHub release (latest by date)](https://img.shields.io/github/v/release/2mal3/2mal3s-Tweaks?style=flat-square) ![GitHub all releases](https://img.shields.io/github/downloads/2mal3/2mal3s-Tweaks/total?style=flat-square) ![GitHub](https://img.shields.io/github/license/2mal3/2mal3s-Tweaks?style=flat-square)
 
-This datapack adds over 18 small adjustable improvements and tweaks to the normal vanilla game and spice it up a bit. At the same time no big changes are made to the gameplay, so it still feels "vanilla".
+This datapack adds over 20 small adjustable improvements and tweaks to the normal vanilla game and spice it up a bit. At the same time no big changes are made to the gameplay, so it still feels "vanilla".
 
 ## 📖 Features:
-- Over 18 different improvements and tweaks
+- Over 20 different improvements and tweaks
 - Still feels "vanilla"
 - All modules can be easily switched on and off via the in-game menu
 - Good performace
@@ -22,6 +22,7 @@ All modules can be turned on and off via the in-game menu, so you only have to u
 - **Damage infection**: Players who take damage have a certain probability to get infected and receive negative effects.
 - **Death coordinates**: In case of a death, the coordinates and the dimension of the dead point are displayed.
 - **Disabled ender eyes**: Ender eyes can no longer be used.
+- **End above overworld**: The player can go the end by flying high up in the overworld, and back by falling into the void in the end.
 - **Glow Berries glow**: Players who eat glow berries get a short glowing effect.
 - **Invisible see invisible**: Invisible can see each other.
 - **Nerfed elytra**: Nerfs Elytras by making them impossible to enchant or repair.
