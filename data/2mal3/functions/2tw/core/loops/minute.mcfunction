@@ -8,6 +8,8 @@ execute if score $server_time 2tw.config matches 1 run function 2mal3:2tw/tweaks
 execute if score $wandering_trader_notifications 2tw.config matches 1 as @e[type=minecraft:wandering_trader,tag=!2tw.wandering_trader_notifications.processed,tag=!global.ignore] at @s run function 2mal3:2tw/tweaks/wandering_trader_notifications/main
 # Loop for the realistic torches module
 execute if score $realistic_torches 2tw.config matches 1 as @e[type=minecraft:marker,tag=2tw.realistic_torch] at @s run function 2mal3:2tw/tweaks/realistic_torches/main
+# Give all new players all recipes, if enabled
+execute if score $unlock_all_recipes 2tw.config matches 1 as @a[tag=!2tw.unlock_all_recipes.processed] run function 2mal3:2tw/tweaks/unlock_all_recipes
 
 # Calls the function in the next second
 schedule function 2mal3:2tw/core/loops/minute 60s replace

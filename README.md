@@ -35,6 +35,7 @@ All modules can be turned on and off via the in-game menu, so you only have to u
 - **Realistic torches**: Torches burn out over time.
 - **Server time**: As long as no player is on the server, the time is stopped.
 - **Speed paths**: You can run faster on path blocks.
+- **Unlock all recipes**: Automatically unlocks all recipes.
 - **Wandering Trader notifications**: When a Wandering Trader appears a notification is sent to all players and gets a short glowing effect.
 
 ***
