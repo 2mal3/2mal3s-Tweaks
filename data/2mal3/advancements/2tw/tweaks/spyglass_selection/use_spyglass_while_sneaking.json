@@ -1,0 +1,22 @@
+{
+    "criteria": {
+        "requirement": {
+            "trigger": "minecraft:using_item",
+            "conditions": {
+                "player": {
+                    "flags": {
+                        "is_sneaking": true
+                    }
+                },
+                "item": {
+                    "items": [
+                        "minecraft:spyglass"
+                    ]
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "2mal3:2tw/tweaks/spyglass_selection/using_spyglass"
+    }
+}

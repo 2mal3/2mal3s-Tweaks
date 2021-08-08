@@ -1,0 +1,11 @@
+{
+    "condition": "minecraft:entity_properties",
+    "entity": "this",
+    "predicate": {
+        "player": {
+            "looking_at": {
+                "nbt": "{Tags: [\"2tw.spyglass_selection.this\"]}"
+            }
+        }
+    }
+}

@@ -41,6 +41,10 @@ execute if score $server_time 2tw.config matches 1 run tellraw @s [{"text":"[\u2
 execute if score $speed_paths 2tw.config matches 0 run tellraw @s [{"text":"[\u274c]","color":"dark_red","clickEvent":{"action":"run_command","value":"/function 2mal3:2tw/menu/buttons/speed_paths/true"},"hoverEvent":{"action":"show_text","contents":"*click*"}},{"text":" Speed paths","color":"gold","hoverEvent":{"action":"show_text","contents":"You can run faster on path blocks."}}]
 execute if score $speed_paths 2tw.config matches 1 run tellraw @s [{"text":"[\u2714]","color":"dark_green","clickEvent":{"action":"run_command","value":"/function 2mal3:2tw/menu/buttons/speed_paths/false"},"hoverEvent":{"action":"show_text","contents":"*click*"}},{"text":" Speed paths","color":"gold","hoverEvent":{"action":"show_text","contents":"You can run faster on path blocks."}}]
 
+# spyglass_selection
+execute if score $spyglass_selection 2tw.config matches 0 run tellraw @s [{"text":"[\u274c]","color":"dark_red","clickEvent":{"action":"run_command","value":"/function 2mal3:2tw/menu/buttons/spyglass_selection/true"},"hoverEvent":{"action":"show_text","contents":"*click*"}},{"text":" Spyglass selection","color":"gold","hoverEvent":{"action":"show_text","contents":"Sneak while looking at an entity with a spyglass to highlight it for a short time."}}]
+execute if score $spyglass_selection 2tw.config matches 1 run tellraw @s [{"text":"[\u2714]","color":"dark_green","clickEvent":{"action":"run_command","value":"/function 2mal3:2tw/menu/buttons/spyglass_selection/false"},"hoverEvent":{"action":"show_text","contents":"*click*"}},{"text":" Spyglass selection","color":"gold","hoverEvent":{"action":"show_text","contents":"Sneak while looking at an entity with a spyglass to highlight it for a short time."}}]
+
 # unlock_all_recipes
 execute if score $unlock_all_recipes 2tw.config matches 0 run tellraw @s [{"text":"[\u274c]","color":"dark_red","clickEvent":{"action":"run_command","value":"/function 2mal3:2tw/menu/buttons/unlock_all_recipes/true"},"hoverEvent":{"action":"show_text","contents":"*click*"}},{"text":" Unlock all recipes","color":"gold","hoverEvent":{"action":"show_text","contents":"Automatically unlocks all recipes."}}]
 execute if score $unlock_all_recipes 2tw.config matches 1 run tellraw @s [{"text":"[\u2714]","color":"dark_green","clickEvent":{"action":"run_command","value":"/function 2mal3:2tw/menu/buttons/unlock_all_recipes/false"},"hoverEvent":{"action":"show_text","contents":"*click*"}},{"text":" Unlock all recipes","color":"gold","hoverEvent":{"action":"show_text","contents":"Automatically unlocks all recipes."}}]
@@ -50,5 +54,5 @@ execute if score $wandering_trader_notifications 2tw.config matches 0 run tellra
 execute if score $wandering_trader_notifications 2tw.config matches 1 run tellraw @s [{"text":"[\u2714]","color":"dark_green","clickEvent":{"action":"run_command","value":"/function 2mal3:2tw/menu/buttons/wandering_trader_notifications/false"},"hoverEvent":{"action":"show_text","contents":"*click*"}},{"text":" Wandering Trader notifications","color":"gold","hoverEvent":{"action":"show_text","contents":"When a Wandering Trader appears a notification is sent to all players and gets a short glowing effect."}}]
 
 # End
-tellraw @s {"text":"\n\n\n\n\n\n"}
+tellraw @s {"text":"\n\n\n\n\n"}
 
