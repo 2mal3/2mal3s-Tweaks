@@ -25,7 +25,7 @@ All modules can be turned on and off via the in-game menu, so you only have to u
 - **End above overworld**: The player can go the end by flying high up in the overworld, and back by falling into the void in the end.
 - **Glow Berries glow**: Players who eat glow berries get a short glowing effect.
 - **Invisible see invisible**: Invisible can see each other.
-- **Nerfed elytra**: Nerfs Elytras by making them impossible to enchant or repair.
+- **Nerfed elytra**: Nerfs Elytras by making them impossible to enchant with mending.
 - **No to expensive**: Place an unrepairable item in an item frame on an anvil to reset its repair cost.
 - **Old regeneration**: The old pre 1.9 regeneration.
 - **Path generator**: Slowly generates a path along much-used routes.
