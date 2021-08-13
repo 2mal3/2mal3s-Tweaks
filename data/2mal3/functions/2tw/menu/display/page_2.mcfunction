@@ -37,6 +37,10 @@ tellraw @s [{"text":"[\u270e]","color":"gray","clickEvent":{"action":"suggest_co
 execute if score $server_time 2tw.config matches 0 run tellraw @s [{"text":"[\u274c]","color":"dark_red","clickEvent":{"action":"run_command","value":"/function 2mal3:2tw/menu/buttons/server_time/true"},"hoverEvent":{"action":"show_text","contents":"*click*"}},{"text":" Server time","color":"gold","hoverEvent":{"action":"show_text","contents":"As long as no player is on the server, the time is stopped."}}]
 execute if score $server_time 2tw.config matches 1 run tellraw @s [{"text":"[\u2714]","color":"dark_green","clickEvent":{"action":"run_command","value":"/function 2mal3:2tw/menu/buttons/server_time/false"},"hoverEvent":{"action":"show_text","contents":"*click*"}},{"text":" Server time","color":"gold","hoverEvent":{"action":"show_text","contents":"As long as no player is on the server, the time is stopped."}}]
 
+# spectator_sense
+execute if score $spectator_sense 2tw.config matches 0 run tellraw @s [{"text":"[\u274c]","color":"dark_red","clickEvent":{"action":"run_command","value":"/function 2mal3:2tw/menu/buttons/spectator_sense/true"},"hoverEvent":{"action":"show_text","contents":"*click*"}},{"text":" Spectator sense","color":"gold","hoverEvent":{"action":"show_text","contents":"Players in spectator mode are displayed with individual particles."}}]
+execute if score $spectator_sense 2tw.config matches 1 run tellraw @s [{"text":"[\u2714]","color":"dark_green","clickEvent":{"action":"run_command","value":"/function 2mal3:2tw/menu/buttons/spectator_sense/false"},"hoverEvent":{"action":"show_text","contents":"*click*"}},{"text":" Spectator sense","color":"gold","hoverEvent":{"action":"show_text","contents":"Players in spectator mode are displayed with individual particles."}}]
+
 # speed_paths
 execute if score $speed_paths 2tw.config matches 0 run tellraw @s [{"text":"[\u274c]","color":"dark_red","clickEvent":{"action":"run_command","value":"/function 2mal3:2tw/menu/buttons/speed_paths/true"},"hoverEvent":{"action":"show_text","contents":"*click*"}},{"text":" Speed paths","color":"gold","hoverEvent":{"action":"show_text","contents":"You can run faster on path blocks."}}]
 execute if score $speed_paths 2tw.config matches 1 run tellraw @s [{"text":"[\u2714]","color":"dark_green","clickEvent":{"action":"run_command","value":"/function 2mal3:2tw/menu/buttons/speed_paths/false"},"hoverEvent":{"action":"show_text","contents":"*click*"}},{"text":" Speed paths","color":"gold","hoverEvent":{"action":"show_text","contents":"You can run faster on path blocks."}}]
@@ -54,5 +58,5 @@ execute if score $wandering_trader_notifications 2tw.config matches 0 run tellra
 execute if score $wandering_trader_notifications 2tw.config matches 1 run tellraw @s [{"text":"[\u2714]","color":"dark_green","clickEvent":{"action":"run_command","value":"/function 2mal3:2tw/menu/buttons/wandering_trader_notifications/false"},"hoverEvent":{"action":"show_text","contents":"*click*"}},{"text":" Wandering Trader notifications","color":"gold","hoverEvent":{"action":"show_text","contents":"When a Wandering Trader appears a notification is sent to all players and gets a short glowing effect."}}]
 
 # End
-tellraw @s {"text":"\n\n\n\n\n"}
+tellraw @s {"text":"\n\n\n\n"}
 

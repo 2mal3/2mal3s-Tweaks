@@ -19,11 +19,14 @@ scoreboard objectives add 2tw.health health
 scoreboard objectives add 2tw.food food
 scoreboard objectives add 2tw.regeneration dummy
 scoreboard objectives add 2tw.torches_time dummy
+scoreboard objectives add 2tw.spectator_id dummy
 # Add teams
 team add 2tw.invisible
 
 # Set the version in format: xx.xx.xx
 scoreboard players set $version 2tw.data 010200
+# Set variables
+scoreboard players set $16 2tw.data 16
 # Set the start config
 scoreboard players set $invisible_see_invisible 2tw.config 0
 scoreboard players set $speed_paths 2tw.config 0
@@ -50,6 +53,7 @@ scoreboard players set $glow_berries_glow 2tw.config 0
 scoreboard players set $end_above_overworld 2tw.config 0
 scoreboard players set $unlock_all_recipes 2tw.config 0
 scoreboard players set $spyglass_selection 2tw.config 0
+scoreboard players set $spectator_sense 2tw.config 0
 
 
 # Sends Insatlations message after 4 sekonds

@@ -10,9 +10,12 @@ tellraw @a[scores={2tw.debug_mode=3..}] [{"text":"[","color":"gray"},{"text":"2m
 scoreboard players set $version 2tw.data 010200
 
 # Add new scoreboards
-#scoreboard objectives add 2tw.torches_time dummy
+scoreboard objectives add 2tw.spectator_id dummy
 # Add new configs
 scoreboard players set $glow_berries_glow 2tw.config 0
 scoreboard players set $end_above_overworld 2tw.config 0
 scoreboard players set $unlock_all_recipes 2tw.config 0
 scoreboard players set $spyglass_selection 2tw.config 0
+scoreboard players set $spectator_sense 2tw.config 0
+# Add new variables
+scoreboard players set $16 2tw.data 16

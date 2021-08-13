@@ -23,6 +23,7 @@ scoreboard objectives remove 2tw.damage
 scoreboard objectives remove 2tw.food
 scoreboard objectives remove 2tw.health
 scoreboard objectives remove 2tw.regeneration
+scoreboard objectives remove 2tw.spectator_id
 # Remove teams
 team remove 2tw.invisible
 

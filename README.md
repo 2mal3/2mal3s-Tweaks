@@ -1,10 +1,10 @@
 # 2mal3s Tweaks
 ![GitHub release (latest by date)](https://img.shields.io/github/v/release/2mal3/2mal3s-Tweaks?style=flat-square) ![GitHub all releases](https://img.shields.io/github/downloads/2mal3/2mal3s-Tweaks/total?style=flat-square) ![GitHub](https://img.shields.io/github/license/2mal3/2mal3s-Tweaks?style=flat-square)
 
-This datapack adds over 23 small adjustable improvements and tweaks to the normal vanilla game and spice it up a bit. At the same time no big changes are made to the gameplay, so it still feels "vanilla".
+This datapack adds over 24 small adjustable improvements and tweaks to the normal vanilla game and spice it up a bit. At the same time no big changes are made to the gameplay, so it still feels "vanilla".
 
 ## 📖 Features:
-- Over 23 different improvements and tweaks
+- Over 24 different improvements and tweaks
 - Still feels "vanilla"
 - All modules can be easily switched on and off via the in-game menu
 - Good performace
@@ -34,6 +34,7 @@ All modules can be turned on and off via the in-game menu, so you only have to u
 - **Realistic fire**: Fire is more relaistic.
 - **Realistic torches**: Torches burn out over time.
 - **Server time**: As long as no player is on the server, the time is stopped.
+- **Spectator sense**: Players in spectator mode are displayed with individual particles.
 - **Speed paths**: You can run faster on path blocks.
 - **Spyglass selection**: Sneak while looking at an entity with a spyglass to highlight it for a short time.
 - **Unlock all recipes**: Automatically unlocks all recipes.
