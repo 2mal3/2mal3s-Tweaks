@@ -17,5 +17,6 @@ scoreboard players set $end_above_overworld 2tw.config 0
 scoreboard players set $unlock_all_recipes 2tw.config 0
 scoreboard players set $spyglass_selection 2tw.config 0
 scoreboard players set $spectator_sense 2tw.config 0
+scoreboard players set $death_chest 2tw.config 0
 # Add new variables
 scoreboard players set $16 2tw.data 16
