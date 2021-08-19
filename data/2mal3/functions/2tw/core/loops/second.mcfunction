@@ -23,6 +23,8 @@ execute if score $random_respawn 2tw.config matches 1 as @a[scores={2tw.death=1.
 execute if score $old_regeneration 2tw.config matches 1 as @a run function 2mal3:2tw/tweaks/old_regeneration/main
 # Gives all armor stands arms
 execute if score $armor_stand_arms 2tw.config matches 1 as @e[type=minecraft:armor_stand,tag=!2tw.armor_stand_arms.processed,tag=!global.ignore] run function 2mal3:2tw/tweaks/armor_stand_arms
+# Spawns a death chest at died players
+execute if score $death_chest 2tw.config matches 1 as @a[scores={2tw.death=1..}] at @s run function 2mal3:2tw/tweaks/death_chest/find_pos
 
 # Reset scooreboard triggers
 scoreboard players reset @a[scores={2tw.death=1..}] 2tw.death

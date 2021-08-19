@@ -16,6 +16,10 @@ tellraw @s {"text":" \u0020 \u0020 \u00202mal3's Tweaks Config","bold":true,"col
 tellraw @s [{"text":"<","color":"gold","clickEvent":{"action":"run_command","value":"/function 2mal3:2tw/menu/display/page_1"}},{"text":" ------------ ","color":"yellow","clickEvent":{"action":"run_command","value":""}},{"text":"2/2","color":"gold","clickEvent":{"action":"run_command","value":""}},{"text":" ------------ >","color":"yellow","clickEvent":{"action":"run_command","value":""}}]
 tellraw @s {"text":""}
 
+# path_generator
+execute if score $path_generator 2tw.config matches 0 run tellraw @s [{"text":"[\u274c]","color":"dark_red","clickEvent":{"action":"run_command","value":"/function 2mal3:2tw/menu/buttons/path_generator/true"},"hoverEvent":{"action":"show_text","contents":"*click*"}},{"text":" Path generator","color":"gold","hoverEvent":{"action":"show_text","contents":"Slowly generates a path along much-used routes."}}]
+execute if score $path_generator 2tw.config matches 1 run tellraw @s [{"text":"[\u2714]","color":"dark_green","clickEvent":{"action":"run_command","value":"/function 2mal3:2tw/menu/buttons/path_generator/false"},"hoverEvent":{"action":"show_text","contents":"*click*"}},{"text":" Path generator","color":"gold","hoverEvent":{"action":"show_text","contents":"Slowly generates a path along much-used routes."}}]
+
 # projectile_block_damage
 execute if score $projectile_block_damage 2tw.config matches 0 run tellraw @s [{"text":"[\u274c]","color":"dark_red","clickEvent":{"action":"run_command","value":"/function 2mal3:2tw/menu/buttons/projectile_block_damage/true"},"hoverEvent":{"action":"show_text","contents":"*click*"}},{"text":" Projectile block damage","color":"gold","hoverEvent":{"action":"show_text","contents":"Some projectiles can break glass panes."}}]
 execute if score $projectile_block_damage 2tw.config matches 1 run tellraw @s [{"text":"[\u2714]","color":"dark_green","clickEvent":{"action":"run_command","value":"/function 2mal3:2tw/menu/buttons/projectile_block_damage/false"},"hoverEvent":{"action":"show_text","contents":"*click*"}},{"text":" Projectile block damage","color":"gold","hoverEvent":{"action":"show_text","contents":"Some projectiles can break glass panes."}}]
@@ -58,5 +62,5 @@ execute if score $wandering_trader_notifications 2tw.config matches 0 run tellra
 execute if score $wandering_trader_notifications 2tw.config matches 1 run tellraw @s [{"text":"[\u2714]","color":"dark_green","clickEvent":{"action":"run_command","value":"/function 2mal3:2tw/menu/buttons/wandering_trader_notifications/false"},"hoverEvent":{"action":"show_text","contents":"*click*"}},{"text":" Wandering Trader notifications","color":"gold","hoverEvent":{"action":"show_text","contents":"When a Wandering Trader appears a notification is sent to all players and gets a short glowing effect."}}]
 
 # End
-tellraw @s {"text":"\n\n\n\n"}
+tellraw @s {"text":"\n\n\n"}
 
