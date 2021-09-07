@@ -7,7 +7,10 @@ tellraw @a[scores={2tw.debug_mode=3..}] [{"text":"[","color":"gray"},{"text":"2m
 
 
 # Set version variable in format xx.xx.xx
-scoreboard players set $version 2tw.data 010200
+scoreboard players set $version 2tw.data 010300
+
+# Reset advancement
+advancement revoke @s only 2mal3:2tw/first_join
 
 # Add new scoreboards
 scoreboard objectives add 2tw.spectator_id dummy

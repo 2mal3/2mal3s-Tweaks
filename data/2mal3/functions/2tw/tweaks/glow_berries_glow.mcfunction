@@ -9,4 +9,4 @@ tellraw @a[scores={2tw.debug_mode=4..}] [{"text":"[","color":"gray"},{"text":"2m
 advancement revoke @s only 2mal3:2tw/tweaks/glow_berries_glow/eat_glow_berries
 
 # Give glowing effect if enabled
-execute if score $glow_berries_glow 2tw.config matches 1 run effect give @s minecraft:glowing 30 0 false
+execute if score $glow_berries_glow 2tw.config matches 1 if entity @s[tag=global.ignore] run effect give @s minecraft:glowing 30 0 false

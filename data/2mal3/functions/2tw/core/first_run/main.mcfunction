@@ -24,7 +24,7 @@ scoreboard objectives add 2tw.spectator_id dummy
 team add 2tw.invisible
 
 # Set the version in format: xx.xx.xx
-scoreboard players set $version 2tw.data 010200
+scoreboard players set $version 2tw.data 010300
 # Set variables
 scoreboard players set $16 2tw.data 16
 # Set the start config

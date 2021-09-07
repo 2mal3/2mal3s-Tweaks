@@ -66,14 +66,16 @@ The performance of the datapack depends strongly on the activated modules, all m
 But normally there should be no noticeable lags on small or medium sized survival worlds.
 
 ## ✅ Compatibility with other datapacks:
-The datapack is incompatible with datapacks that:
+The datapack can be incompatible with datapacks that:
+- Use creeper for explosions (conflict with anti_creeper_grief module)
+- Modify the player death (conflict with death_chest module and may with death coordinates module)
+- Use flying ender eyes (conflict with disabled_ender_eyes module)
+- Where the player needs to go verry deep or hight in the world (conflict with end_above_overworld module)
 - Assign players to other teams (conflict with invisible_see_invisible module)
 - Change the game rules doDaylightCycle, doWeatherCycle, doFireTick and randomTickSpeed (conflict with server_time module)
 - Provide Elytras via ways other than End Ships (conflict with nerfed_elytra module)
 - Reset enchantment cost of items (conflict with nerfed_elytra module)
-- Use creeper for explosions (conflict with anti_creeper_grief module)
 - Using wandering traders who are not supposed to be seen (conflict with wandering_trader_notifications module)
-- Use flying ender eyes (conflict with disabled_ender_eyes module)
 
 However, the datapack should be compatible with other datapacks that follow the [datapack conventions](https://mc-datapacks.github.io/en/).
 
