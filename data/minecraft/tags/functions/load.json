@@ -1,5 +1,1 @@
-{
-    "values": [
-        "#load:_private/load"
-    ]
-}
+{"replace":false,"values":["2tw:core/load","2tw:tweaks/anti_creeper_grief/loop","2tw:tweaks/better_end_crystals/loop","2tw:tweaks/bush_hiding/loop","2tw:tweaks/creative_one_punch/loop","2tw:tweaks/damage_infection/loop","2tw:tweaks/death_chest/loop","2tw:tweaks/death_coordinates/loop","2tw:tweaks/harder_powder_snow/loop","2tw:tweaks/longer_entity_death/loop","2tw:tweaks/nerfed_elytra/loop","2tw:tweaks/old_regeneration/loop","2tw:tweaks/only_ruined_portals/loop","2tw:tweaks/path_generator/loop","2tw:tweaks/projectile_block_damage/loop","2tw:tweaks/random_respawn/loop","2tw:tweaks/realistic_fire/loop_4tick","2tw:tweaks/realistic_fire/loop_second","2tw:tweaks/realistic_torches/loop","2tw:tweaks/server_time/loop","2tw:tweaks/spectator_sense/loop","2tw:tweaks/speed_paths/loop","2tw:tweaks/unlock_all_recipes/loop","2tw:tweaks/visible_marker/loop","2tw:tweaks/wandering_trader_notifications/loop","2tw:tweaks/dynamic_light/loop","2tw:tweaks/block_damage/loop"]}
