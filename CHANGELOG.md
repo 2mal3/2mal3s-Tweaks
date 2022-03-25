@@ -2,36 +2,36 @@
 ## Update v2.0.0 (24.3.2022)
 
 ### Added:
- - creative one punch module
- - creatvive insta tame module
- - higher bell range module
- - longer entity death module
- - squit ink blindness moule
- - TNT auto prime module
- - visible marker module
- - harder powder snow module
- - dynamic light mdoule
- - only ruined portals module
+  - creative one punch moduled
+  - creative insta tame module
+  - higher bell range module
+  - longer entity death module
+  - squit ink blindness module
+  - TNT auto prime module
+  - visible marker module
+  - harder powder snow module
+  - dynamic light module
+  - only ruined portals module
 
 ### Changed:
- - support for the 1.18
- - better config menu
- - more optimized
- - to reset the repair cost of an item with the no to expenisve module the player now only have to right click with ite item on an anvil
- - increased the time of the glowing effect from the spyglass selection module
- - with the end above overworld module the player now has to go higher up in the overworld an deeper in the end to change dimensions
- - decreased the length of the effects from the damage infection module 
- - slightly increased chance of generating a path with the path generator module when sprinting
- - players now regenerate at the same time when using the old regeneration module
- - [Internal] complete rewrite with [mc-build](https://github.com/mc-build/mc-build)
+  - support for the 1.18
+  - better config menu
+  - more optimized
+  - to reset the repair cost of an item with the no to expensive module, the player now only have to right-click with ite item on an anvil
+  - increased the time of the glowing effect from the spyglass selection module
+  - with the end above overworld module, the player now has to go higher up in the overworld an deeper in the end to change dimensions
+  - decreased the length of the effects from the damage infection module 
+  - slightly increased chance of generating a path with the path generator module when sprinting
+  - players now regenerate at the same time when using the old regeneration module
+  - [Internal] complete rewrite with [mc-build](https://github.com/mc-build/mc-build)
 
 ### Bugs fixed:
- - a ton but I have forgotten whitch
- - death chest module didn't work
+  - a ton, but I have forgotten which
+  - death chest module didn't work
 
 ### Removed:
- - realistic torches module (temporary)
- - [Internal] Lantern Load library
+  - realistic torches module (temporary)
+  - [Internal] Lantern Load librar
 
 ***
 

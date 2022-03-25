@@ -52,7 +52,7 @@ All modules can be turned on and off via the in-game menu, so you only have to u
 
 ## Notes:
 - Tested for Fabric and Vanilla in 1.18
-- Not tested with Forge, Bukkti, Spigot and PaperSpigot but probably don't work
+- Not tested with Forge, Bukktit, Spigot and PaperSpigot but probably don't work
 - To uninstall run the command `/function #2tw:uninstall`
 - The performance of the datapack depends strongly on the activated modules, all modules have a different influence. As long as none is activated, the datapack consumes almost no resources. But normally there should be no noticeable lags on small or medium sized survival worlds.
 - The datapack was created with [mc-build](https://github.com/mc-build/mc-build).
