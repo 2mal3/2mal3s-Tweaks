@@ -11,6 +11,7 @@ blocks replaceable {
   minecraft:seagrass
   minecraft:tall_seagrass
   minecraft:sea_pickle
+  minecraft:snow
 }
 
 
