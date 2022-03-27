@@ -33,6 +33,7 @@ All modules can be turned on and off via the in-game menu, so you only have to u
 - **Invisible see Invisible**: Invisible can see each other.
 - **Longer Entity Death**: The death animation of entities is longer.
 - **Nerfed Elytra**: Nerfs Elytras by making them impossible to enchant with mending.
+- **No Thunderstorm Sleep**: Prevents sleeping during thunderstorms.
 - **No to expensive**: Place an unrepairable item in an item frame on an anvil to reset its repair cost.
 - **Old Regeneration**: The old pre 1.9 regeneration.
 - **Only Ruined Portals**: Travelling between dimensions is only possible with Ruined Portals.

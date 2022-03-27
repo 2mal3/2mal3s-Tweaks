@@ -172,6 +172,13 @@ tellraw @s {"text":""}
       tellraw @s [{"text":"[✔]","color":"dark_green","clickEvent":{"action":"run_command","value":"/function 2tw:menu/buttons/nerfed_elytra/off"},"hoverEvent":{"action":"show_text","contents":"*click*"}},{"text":" Nerfed Elytra","color":"gold","hoverEvent":{"action":"show_text","contents":"Nerfs Elytras by making them impossible to enchant with mending."}}]
     }
 
+    execute if data storage 2tw:data gamerules{noThunderstormSleep: 0b} run {
+      tellraw @s [{"text":"[❌]","color":"dark_red","clickEvent":{"action":"run_command","value":"/function 2tw:menu/buttons/no_thunderstorm_sleep/on"},"hoverEvent":{"action":"show_text","contents":"*click*"}},{"text":" No Thunderstorm Sleep","color":"gold","hoverEvent":{"action":"show_text","contents":"Prevents sleeping during thunderstorms."}}]
+    }
+    execute if data storage 2tw:data gamerules{noThunderstormSleep: 1b} run {
+      tellraw @s [{"text":"[✔]","color":"dark_green","clickEvent":{"action":"run_command","value":"/function 2tw:menu/buttons/no_thunderstorm_sleep/off"},"hoverEvent":{"action":"show_text","contents":"*click*"}},{"text":" No Thunderstorm Sleep","color":"gold","hoverEvent":{"action":"show_text","contents":"Prevents sleeping during thunderstorms."}}]
+    }
+
     execute if data storage 2tw:data gamerules{noToExpensive: 0b} run {
       tellraw @s [{"text":"[❌]","color":"dark_red","clickEvent":{"action":"run_command","value":"/function 2tw:menu/buttons/no_to_expensive/on"},"hoverEvent":{"action":"show_text","contents":"*click*"}},{"text":" No to expensive","color":"gold","hoverEvent":{"action":"show_text","contents":"Place an unrepairable item in an item frame on an anvil to reset its repair cost."}}]
     }
@@ -248,12 +255,6 @@ tellraw @s {"text":""}
     execute if data storage 2tw:data gamerules{speedPaths: 1b} run {
       tellraw @s [{"text":"[✔]","color":"dark_green","clickEvent":{"action":"run_command","value":"/function 2tw:menu/buttons/speed_paths/off"},"hoverEvent":{"action":"show_text","contents":"*click*"}},{"text":" Speed Paths","color":"gold","hoverEvent":{"action":"show_text","contents":"You can run faster on path blocks."}}]
     }
-    execute if data storage 2tw:data gamerules{spyglassSelection: 0b} run {
-      tellraw @s [{"text":"[❌]","color":"dark_red","clickEvent":{"action":"run_command","value":"/function 2tw:menu/buttons/spyglass_selection/on"},"hoverEvent":{"action":"show_text","contents":"*click*"}},{"text":" Spyglass Selection","color":"gold","hoverEvent":{"action":"show_text","contents":"Sneak while looking at an entity with a spyglass to highlight it for a short time."}}]
-    }
-    execute if data storage 2tw:data gamerules{spyglassSelection: 1b} run {
-      tellraw @s [{"text":"[✔]","color":"dark_green","clickEvent":{"action":"run_command","value":"/function 2tw:menu/buttons/spyglass_selection/off"},"hoverEvent":{"action":"show_text","contents":"*click*"}},{"text":" Spyglass Selection","color":"gold","hoverEvent":{"action":"show_text","contents":"Sneak while looking at an entity with a spyglass to highlight it for a short time."}}]
-    }
 
     tellraw @s {"text":""}
   }
@@ -266,6 +267,13 @@ tellraw @s {"text":""}
     
     scoreboard players set %page 2tw.data 3
     function 2tw:menu/click
+
+    execute if data storage 2tw:data gamerules{spyglassSelection: 0b} run {
+      tellraw @s [{"text":"[❌]","color":"dark_red","clickEvent":{"action":"run_command","value":"/function 2tw:menu/buttons/spyglass_selection/on"},"hoverEvent":{"action":"show_text","contents":"*click*"}},{"text":" Spyglass Selection","color":"gold","hoverEvent":{"action":"show_text","contents":"Sneak while looking at an entity with a spyglass to highlight it for a short time."}}]
+    }
+    execute if data storage 2tw:data gamerules{spyglassSelection: 1b} run {
+      tellraw @s [{"text":"[✔]","color":"dark_green","clickEvent":{"action":"run_command","value":"/function 2tw:menu/buttons/spyglass_selection/off"},"hoverEvent":{"action":"show_text","contents":"*click*"}},{"text":" Spyglass Selection","color":"gold","hoverEvent":{"action":"show_text","contents":"Sneak while looking at an entity with a spyglass to highlight it for a short time."}}]
+    }
 
     execute if data storage 2tw:data gamerules{squidInkBlindness: 0b} run {
       tellraw @s [{"text":"[❌]","color":"dark_red","clickEvent":{"action":"run_command","value":"/function 2tw:menu/buttons/squid_ink_blindness/on"},"hoverEvent":{"action":"show_text","contents":"*click*"}},{"text":" Squid Ink Blindness","color":"gold","hoverEvent":{"action":"show_text","contents":"The ink from squids gives a blindness effect."}}]
@@ -301,7 +309,7 @@ tellraw @s {"text":""}
     execute if data storage 2tw:data gamerules{wanderingTraderNotifications: 1b} run {
       tellraw @s [{"text":"[✔]","color":"dark_green","clickEvent":{"action":"run_command","value":"/function 2tw:menu/buttons/wandering_trader_notifications/off"},"hoverEvent":{"action":"show_text","contents":"*click*"}},{"text":" Wandering Trader Notifications","color":"gold","hoverEvent":{"action":"show_text","contents":"When a Wandering Trader appears a notification is sent to all players and gets a short glowing effect."}}]
     }
-    tellraw @s {"text":"\n\n\n\n\n\n\n\n\n\n"}
+    tellraw @s {"text":"\n\n\n\n\n\n\n\n\n"}
   }
 
 }
@@ -534,6 +542,18 @@ dir buttons {
     function off {
       function 2tw:menu/click
       data modify storage 2tw:data gamerules.nerfedElytra set value 0b
+      function 2tw:menu/page
+    }
+  }
+
+  dir no_thunderstorm_sleep {
+    function on {
+      data modify storage 2tw:data gamerules.noThunderstormSleep set value 1b
+      function 2tw:menu/page
+    }
+    function off {
+      function 2tw:menu/click
+      data modify storage 2tw:data gamerules.noThunderstormSleep set value 0b
       function 2tw:menu/page
     }
   }
