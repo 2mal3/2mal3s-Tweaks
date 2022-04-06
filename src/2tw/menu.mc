@@ -112,6 +112,13 @@ dir menu {
       tellraw @s [{"text":"[✔]","color":"dark_green","clickEvent":{"action":"run_command","value":"/function 2tw:menu/buttons/dynamic_light/off"},"hoverEvent":{"action":"show_text","contents":"*click*"}},{"text":" Dynamic Light","color":"gold","hoverEvent":{"action":"show_text","contents":"Torches and other light sources emit actual light."}}]
     }
 
+    execute if data storage 2tw:data gamerules{elytraClosing: 0b} run {
+      tellraw @s [{"text":"[❌]","color":"dark_red","clickEvent":{"action":"run_command","value":"/function 2tw:menu/buttons/elytra_closing/on"},"hoverEvent":{"action":"show_text","contents":"*click*"}},{"text":" Elytra Closing","color":"gold","hoverEvent":{"action":"show_text","contents":"Sneak while flying with the Elytra to close it."}}]
+    }
+    execute if data storage 2tw:data gamerules{elytraClosing: 1b} run {
+      tellraw @s [{"text":"[✔]","color":"dark_green","clickEvent":{"action":"run_command","value":"/function 2tw:menu/buttons/elytra_closing/off"},"hoverEvent":{"action":"show_text","contents":"*click*"}},{"text":" Elytra Closing","color":"gold","hoverEvent":{"action":"show_text","contents":"Sneak while flying with the Elytra to close it."}}]
+    }
+
     execute if data storage 2tw:data gamerules{endAboveOverworld: 0b} run {
       tellraw @s [{"text":"[❌]","color":"dark_red","clickEvent":{"action":"run_command","value":"/function 2tw:menu/buttons/end_above_overworld/on"},"hoverEvent":{"action":"show_text","contents":"*click*"}},{"text":" End above Overworld","color":"gold","hoverEvent":{"action":"show_text","contents":"The player can go the end by flying high up in the overworld, and back by falling into the void in the end."}}]
     }
@@ -125,13 +132,6 @@ dir menu {
     execute if data storage 2tw:data gamerules{glowBerriesGlow: 1b} run {
       tellraw @s [{"text":"[✔]","color":"dark_green","clickEvent":{"action":"run_command","value":"/function 2tw:menu/buttons/glow_berries_glow/off"},"hoverEvent":{"action":"show_text","contents":"*click*"}},{"text":" Glow Berries glow","color":"gold","hoverEvent":{"action":"show_text","contents":"Players who eat glow berries get a short glowing effect."}}]
     }
-
-    execute if data storage 2tw:data gamerules{harderPowderSnow: 0b} run {
-      tellraw @s [{"text":"[❌]","color":"dark_red","clickEvent":{"action":"run_command","value":"/function 2tw:menu/buttons/harder_powder_snow/on"},"hoverEvent":{"action":"show_text","contents":"*click*"}},{"text":" Harder Powder Snow","color":"gold","hoverEvent":{"action":"show_text","contents":"Powdery snow gives mining fatigue when sinking."}}]
-    }
-    execute if data storage 2tw:data gamerules{harderPowderSnow: 1b} run {
-      tellraw @s [{"text":"[✔]","color":"dark_green","clickEvent":{"action":"run_command","value":"/function 2tw:menu/buttons/harder_powder_snow/off"},"hoverEvent":{"action":"show_text","contents":"*click*"}},{"text":" Harder Powder Snow","color":"gold","hoverEvent":{"action":"show_text","contents":"Powdery snow gives mining fatigue when sinking."}}]
-    }
 tellraw @s {"text":""}
   }
 
@@ -143,6 +143,13 @@ tellraw @s {"text":""}
     
     scoreboard players set %page 2tw.data 2
     function 2tw:menu/click
+
+    execute if data storage 2tw:data gamerules{harderPowderSnow: 0b} run {
+      tellraw @s [{"text":"[❌]","color":"dark_red","clickEvent":{"action":"run_command","value":"/function 2tw:menu/buttons/harder_powder_snow/on"},"hoverEvent":{"action":"show_text","contents":"*click*"}},{"text":" Harder Powder Snow","color":"gold","hoverEvent":{"action":"show_text","contents":"Powdery snow gives mining fatigue when sinking."}}]
+    }
+    execute if data storage 2tw:data gamerules{harderPowderSnow: 1b} run {
+      tellraw @s [{"text":"[✔]","color":"dark_green","clickEvent":{"action":"run_command","value":"/function 2tw:menu/buttons/harder_powder_snow/off"},"hoverEvent":{"action":"show_text","contents":"*click*"}},{"text":" Harder Powder Snow","color":"gold","hoverEvent":{"action":"show_text","contents":"Powdery snow gives mining fatigue when sinking."}}]
+    }
 
     execute if data storage 2tw:data gamerules{higherBellRange: 0b} run {
       tellraw @s [{"text":"[❌]","color":"dark_red","clickEvent":{"action":"run_command","value":"/function 2tw:menu/buttons/higher_bell_range/on"},"hoverEvent":{"action":"show_text","contents":"*click*"}},{"text":" Higher Bell Range","color":"gold","hoverEvent":{"action":"show_text","contents":"Bells reveal more distant Pillagers."}}]
@@ -249,13 +256,6 @@ tellraw @s {"text":""}
       tellraw @s [{"text":"[✔]","color":"dark_green","clickEvent":{"action":"run_command","value":"/function 2tw:menu/buttons/spectator_sense/off"},"hoverEvent":{"action":"show_text","contents":"*click*"}},{"text":" Spectator Sense","color":"gold","hoverEvent":{"action":"show_text","contents":"Players in spectator mode are displayed with individual particles."}}]
     }
 
-    execute if data storage 2tw:data gamerules{speedPaths: 0b} run {
-      tellraw @s [{"text":"[❌]","color":"dark_red","clickEvent":{"action":"run_command","value":"/function 2tw:menu/buttons/speed_paths/on"},"hoverEvent":{"action":"show_text","contents":"*click*"}},{"text":" Speed Paths","color":"gold","hoverEvent":{"action":"show_text","contents":"You can run faster on path blocks."}}]
-    }
-    execute if data storage 2tw:data gamerules{speedPaths: 1b} run {
-      tellraw @s [{"text":"[✔]","color":"dark_green","clickEvent":{"action":"run_command","value":"/function 2tw:menu/buttons/speed_paths/off"},"hoverEvent":{"action":"show_text","contents":"*click*"}},{"text":" Speed Paths","color":"gold","hoverEvent":{"action":"show_text","contents":"You can run faster on path blocks."}}]
-    }
-
     tellraw @s {"text":""}
   }
 
@@ -267,6 +267,13 @@ tellraw @s {"text":""}
     
     scoreboard players set %page 2tw.data 3
     function 2tw:menu/click
+
+    execute if data storage 2tw:data gamerules{speedPaths: 0b} run {
+      tellraw @s [{"text":"[❌]","color":"dark_red","clickEvent":{"action":"run_command","value":"/function 2tw:menu/buttons/speed_paths/on"},"hoverEvent":{"action":"show_text","contents":"*click*"}},{"text":" Speed Paths","color":"gold","hoverEvent":{"action":"show_text","contents":"You can run faster on path blocks."}}]
+    }
+    execute if data storage 2tw:data gamerules{speedPaths: 1b} run {
+      tellraw @s [{"text":"[✔]","color":"dark_green","clickEvent":{"action":"run_command","value":"/function 2tw:menu/buttons/speed_paths/off"},"hoverEvent":{"action":"show_text","contents":"*click*"}},{"text":" Speed Paths","color":"gold","hoverEvent":{"action":"show_text","contents":"You can run faster on path blocks."}}]
+    }
 
     execute if data storage 2tw:data gamerules{spyglassSelection: 0b} run {
       tellraw @s [{"text":"[❌]","color":"dark_red","clickEvent":{"action":"run_command","value":"/function 2tw:menu/buttons/spyglass_selection/on"},"hoverEvent":{"action":"show_text","contents":"*click*"}},{"text":" Spyglass Selection","color":"gold","hoverEvent":{"action":"show_text","contents":"Sneak while looking at an entity with a spyglass to highlight it for a short time."}}]
@@ -309,13 +316,25 @@ tellraw @s {"text":""}
     execute if data storage 2tw:data gamerules{wanderingTraderNotifications: 1b} run {
       tellraw @s [{"text":"[✔]","color":"dark_green","clickEvent":{"action":"run_command","value":"/function 2tw:menu/buttons/wandering_trader_notifications/off"},"hoverEvent":{"action":"show_text","contents":"*click*"}},{"text":" Wandering Trader Notifications","color":"gold","hoverEvent":{"action":"show_text","contents":"When a Wandering Trader appears a notification is sent to all players and gets a short glowing effect."}}]
     }
-    tellraw @s {"text":"\n\n\n\n\n\n\n\n\n"}
+    tellraw @s {"text":"\n\n\n\n\n\n\n\n"}
   }
 
 }
 
 
 dir buttons {
+  dir elytra_closing {
+    function on {
+      data modify storage 2tw:data gamerules.elytraClosing set value 1b
+      function 2tw:menu/page
+    }
+    function off {
+      function 2tw:menu/click
+      data modify storage 2tw:data gamerules.elytraClosing set value 0b
+      function 2tw:menu/page
+    }
+  }
+
   dir anti_creeper_grief {
     function on {
       data modify storage 2tw:data gamerules.antiCreeperGrief set value 1b

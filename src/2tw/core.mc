@@ -7,7 +7,7 @@ function load {
 
   scoreboard objectives add 2tw.data dummy
 
-  # scoreboard players set %installed 2tw.data 0
+  scoreboard players set %installed 2tw.data 0
   # Initializes the datapack at the first startup or new version
   execute unless score %installed 2tw.data matches 1 run {
     log 2TW info server <Datapack installed>
@@ -27,6 +27,9 @@ function load {
     scoreboard objectives add 2tw.walk minecraft.custom:minecraft.walk_one_cm
     scoreboard objectives add 2tw.sprint minecraft.custom:minecraft.sprint_one_cm
     scoreboard objectives add 2tw.realisticTorchesTime dummy
+    scoreboard objectives add 2tw.useElytra minecraft.custom:minecraft.aviate_one_cm
+    scoreboard objectives add 2tw.sneaking minecraft.custom:minecraft.sneak_time
+    scoreboard objectives add 2tw.schedule dummy
     scoreboard players set $16 2tw.data 16
     # Set the version in format: xx.xx.xx
     scoreboard players set $version 2tw.data 020000
@@ -35,7 +38,7 @@ function load {
     team modify 2tw.invisible seeFriendlyInvisibles true
 
     # Set gamerulese
-    data merge storage 2tw:data {gamerules: {randomRespawn: 0b, unlockAllRecipes: 0b, spectatorSense: 0b, nerfedElytra: 0b, glowBerriesGlow: 0b, disabledEnderEyes: 0b, deathCoordinates: 0b, damageInfection: 0b, blockDamage: 0b, betterEndCrystals: 0b, armorStandArms: 0b, antiCreeperGrief: 0b, wanderingTraderNotifications: 0b, spyglassS2election: 0b, serverTime: 0b, tntAutoPrime: 0b, creativeOnePunch: 0b, visibleMarker: 0b, bushHiding: 0b, higherBellRange: 0b, dynamicLight: 0b, invisibleSeeInvisible: 0b, oldRegeneration: 0b, squidInkBlindness: 0b, endAboveOverworld: 0b, pathGenerator: 0b, longerEntityDeath: 0b, realisticTorches: 0b, realisticFire: 0b, noToExpensive: 0b, deathChest: 0b, harderPowderSnow: 0b, onlyRuinedPortals: 0b, creativeInstaTame: 0b, speedPaths: 0b, projectileBlockDamage: 0b, noThunderstormSleep: 0b}}
+    data merge storage 2tw:data {gamerules: {randomRespawn: 0b, unlockAllRecipes: 0b, spectatorSense: 0b, nerfedElytra: 0b, glowBerriesGlow: 0b, disabledEnderEyes: 0b, deathCoordinates: 0b, damageInfection: 0b, blockDamage: 0b, betterEndCrystals: 0b, armorStandArms: 0b, antiCreeperGrief: 0b, wanderingTraderNotifications: 0b, spyglassS2election: 0b, serverTime: 0b, tntAutoPrime: 0b, creativeOnePunch: 0b, visibleMarker: 0b, bushHiding: 0b, higherBellRange: 0b, dynamicLight: 0b, invisibleSeeInvisible: 0b, oldRegeneration: 0b, squidInkBlindness: 0b, endAboveOverworld: 0b, pathGenerator: 0b, longerEntityDeath: 0b, realisticTorches: 0b, realisticFire: 0b, noToExpensive: 0b, deathChest: 0b, harderPowderSnow: 0b, onlyRuinedPortals: 0b, creativeInstaTame: 0b, speedPaths: 0b, projectileBlockDamage: 0b, noThunderstormSleep: 0b, elytraClosing: 1b}}
     scoreboard players set $maxTime 2tw.realisticTorchesTime 20
 
 
@@ -124,6 +127,9 @@ function uninstall {
   scoreboard objectives remove 2tw.sprint
   scoreboard objectives remove 2tw.walk
   scoreboard objectives remove 2tw.realisticTorchesTime
+  scoreboard objectives remove 2tw.useElytra
+  scoreboard objectives remove 2tw.sneaking
+  scoreboard objectives remove 2tw.schedule
   # Remove teams
   team remove 2tw.invisible
 

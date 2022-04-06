@@ -26,6 +26,7 @@ All modules can be turned on and off via the in-game menu, so you only have to u
 - **Death Coordinates**: In case of a death, the coordinates and the dimension of the dead point are displayed.
 - **Disabled Ender Eyes**: Ender eyes can no longer be used.
 - **Dynamic Light**: Torches and other light sources emit actual light.
+- **Elytra Closing**: Sneak while flying with the Elytra to close it.
 - **End above Overworld**: The player can go the end by flying high up in the overworld, and back by falling into the void in the end.
 - **Glow Berries glow**: Players who eat glow berries get a short glowing effect.
 - **Harder Powder Snow**: Powder Snow gives mining fatigue when sinking.
