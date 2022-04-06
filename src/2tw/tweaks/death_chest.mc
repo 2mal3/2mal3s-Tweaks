@@ -12,6 +12,9 @@ blocks replaceable {
   minecraft:tall_seagrass
   minecraft:sea_pickle
   minecraft:snow
+  \#minecraft:flowers
+  \#minecraft:carpets
+  \#minecraft:cave_vines
 }
 
 
