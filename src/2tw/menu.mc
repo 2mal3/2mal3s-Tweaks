@@ -242,18 +242,18 @@ tellraw @s {"text":""}
     #  tellraw @s [{"text":"[✔]","color":"dark_green","clickEvent":{"action":"run_command","value":"/function 2tw:menu/buttons/realistic_torches/off"},"hoverEvent":{"action":"show_text","contents":"*click*"}},{"text":" Realistic Torches","color":"gold","hoverEvent":{"action":"show_text","contents":"Torches burn out over time."}}]
     #}
 
+    execute if data storage 2tw:data gamerules{ropeLadder: 0b} run {
+      tellraw @s [{"text":"[❌]","color":"dark_red","clickEvent":{"action":"run_command","value":"/function 2tw:menu/buttons/rope_ladder/on"},"hoverEvent":{"action":"show_text","contents":"*click*"}},{"text":" Rope Ladder","color":"gold","hoverEvent":{"action":"show_text","contents":"Place and destroy roppe ladders with SHIFT."}}]
+    }
+    execute if data storage 2tw:data gamerules{ropeLadder: 1b} run {
+      tellraw @s [{"text":"[✔]","color":"dark_green","clickEvent":{"action":"run_command","value":"/function 2tw:menu/buttons/rope_ladder/off"},"hoverEvent":{"action":"show_text","contents":"*click*"}},{"text":" Rope Ladder","color":"gold","hoverEvent":{"action":"show_text","contents":"Place and destroy roppe ladders with SHIFT."}}]
+    }
+
     execute if data storage 2tw:data gamerules{serverTime: 0b} run {
       tellraw @s [{"text":"[❌]","color":"dark_red","clickEvent":{"action":"run_command","value":"/function 2tw:menu/buttons/server_time/on"},"hoverEvent":{"action":"show_text","contents":"*click*"}},{"text":" Server Time","color":"gold","hoverEvent":{"action":"show_text","contents":"As long as no player is on the server, the time is stopped."}}]
     }
     execute if data storage 2tw:data gamerules{serverTime: 1b} run {
       tellraw @s [{"text":"[✔]","color":"dark_green","clickEvent":{"action":"run_command","value":"/function 2tw:menu/buttons/server_time/off"},"hoverEvent":{"action":"show_text","contents":"*click*"}},{"text":" Server Time","color":"gold","hoverEvent":{"action":"show_text","contents":"As long as no player is on the server, the time is stopped."}}]
-    }
-
-    execute if data storage 2tw:data gamerules{spectatorSense: 0b} run {
-      tellraw @s [{"text":"[❌]","color":"dark_red","clickEvent":{"action":"run_command","value":"/function 2tw:menu/buttons/spectator_sense/on"},"hoverEvent":{"action":"show_text","contents":"*click*"}},{"text":" Spectator Sense","color":"gold","hoverEvent":{"action":"show_text","contents":"Players in spectator mode are displayed with individual particles."}}]
-    }
-    execute if data storage 2tw:data gamerules{spectatorSense: 1b} run {
-      tellraw @s [{"text":"[✔]","color":"dark_green","clickEvent":{"action":"run_command","value":"/function 2tw:menu/buttons/spectator_sense/off"},"hoverEvent":{"action":"show_text","contents":"*click*"}},{"text":" Spectator Sense","color":"gold","hoverEvent":{"action":"show_text","contents":"Players in spectator mode are displayed with individual particles."}}]
     }
 
     tellraw @s {"text":""}
@@ -267,6 +267,13 @@ tellraw @s {"text":""}
     
     scoreboard players set %page 2tw.data 3
     function 2tw:menu/click
+
+    execute if data storage 2tw:data gamerules{spectatorSense: 0b} run {
+      tellraw @s [{"text":"[❌]","color":"dark_red","clickEvent":{"action":"run_command","value":"/function 2tw:menu/buttons/spectator_sense/on"},"hoverEvent":{"action":"show_text","contents":"*click*"}},{"text":" Spectator Sense","color":"gold","hoverEvent":{"action":"show_text","contents":"Players in spectator mode are displayed with individual particles."}}]
+    }
+    execute if data storage 2tw:data gamerules{spectatorSense: 1b} run {
+      tellraw @s [{"text":"[✔]","color":"dark_green","clickEvent":{"action":"run_command","value":"/function 2tw:menu/buttons/spectator_sense/off"},"hoverEvent":{"action":"show_text","contents":"*click*"}},{"text":" Spectator Sense","color":"gold","hoverEvent":{"action":"show_text","contents":"Players in spectator mode are displayed with individual particles."}}]
+    }
 
     execute if data storage 2tw:data gamerules{speedPaths: 0b} run {
       tellraw @s [{"text":"[❌]","color":"dark_red","clickEvent":{"action":"run_command","value":"/function 2tw:menu/buttons/speed_paths/on"},"hoverEvent":{"action":"show_text","contents":"*click*"}},{"text":" Speed Paths","color":"gold","hoverEvent":{"action":"show_text","contents":"You can run faster on path blocks."}}]
@@ -316,13 +323,25 @@ tellraw @s {"text":""}
     execute if data storage 2tw:data gamerules{wanderingTraderNotifications: 1b} run {
       tellraw @s [{"text":"[✔]","color":"dark_green","clickEvent":{"action":"run_command","value":"/function 2tw:menu/buttons/wandering_trader_notifications/off"},"hoverEvent":{"action":"show_text","contents":"*click*"}},{"text":" Wandering Trader Notifications","color":"gold","hoverEvent":{"action":"show_text","contents":"When a Wandering Trader appears a notification is sent to all players and gets a short glowing effect."}}]
     }
-    tellraw @s {"text":"\n\n\n\n\n\n\n\n"}
+    tellraw @s {"text":"\n\n\n\n\n\n\n"}
   }
 
 }
 
 
 dir buttons {
+  dir rope_ladder {
+    function on {
+      data modify storage 2tw:data gamerules.ropeLadder set value 1b
+      function 2tw:menu/page
+    }
+    function off {
+      function 2tw:menu/click
+      data modify storage 2tw:data gamerules.ropeLadder set value 0b
+      function 2tw:menu/page
+    }
+  }
+
   dir elytra_closing {
     function on {
       data modify storage 2tw:data gamerules.elytraClosing set value 1b
