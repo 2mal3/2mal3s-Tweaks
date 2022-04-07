@@ -1,10 +1,8 @@
 import ../../../macros/log.mcm
 
 
-clock 1s {
-  name loop
-
-  execute if data storage 2tw:data gamerules{nerfedElytra: 1b} as @a[predicate=2tw:tweaks/nerfed_elytra/mending] run {
+function loop {
+  execute as @a[predicate=2tw:tweaks/nerfed_elytra/mending] run {
     log 2TW debug entity <Removed mending from elytra>
     item modify entity @s armor.chest 2tw:tweaks/nerfed_elytra/remove_mending
     # Give some xp in compensation

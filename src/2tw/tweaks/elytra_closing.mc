@@ -2,24 +2,22 @@ import ../../../macros/log.mcm
 import ../../../macros/wait.mcm
 
 
-clock 1t {
-  name loop
-
-  execute if data storage 2tw:data gamerules{elytraClosing: 1b} as @a[scores={2tw.useElytra=1..,2tw.sneaking=1..},predicate=2tw:tweaks/elytra_closing/have_elytra] run {
+function loop {
+  execute as @a[scores={2tw.useElytra=1..,2tw.sneaking=1..},predicate=2tw:tweaks/elytra_closing/have_elytra] run {
     log 2TW debug entity <Closed Elytra>
 
+    # Store the current durability of the elytra
     item modify entity @s armor.chest 2tw:tweaks/elytra_closing/store
+    # Set the durability so low that the elytra breaks
     item modify entity @s armor.chest 2tw:tweaks/elytra_closing/close
     
     title @s actionbar [{"text":"Press ","color":"white"},{"keybind":"key.jump","color":"white"},{"text":" to reopen elytra","color":"white"}]
 
     wait as @a in 2tw.schedule for 2t {
+      # Reset the durability from the store value
       item modify entity @s armor.chest 2tw:tweaks/elytra_closing/open
     }
   }
-
-  scoreboard players reset @a[scores={2tw.useElytra=1..}] 2tw.useElytra
-  scoreboard players reset @a[scores={2tw.sneaking=1..}] 2tw.sneaking
 }
 
 modifier store {

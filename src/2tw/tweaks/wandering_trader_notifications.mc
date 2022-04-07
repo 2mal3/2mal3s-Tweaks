@@ -1,10 +1,8 @@
 import ../../../macros/log.mcm
 
 
-clock 60s {
-  name loop
-
-  execute if data storage 2tw:data gamerules{wanderingTraderNotifications: 1b} as @e[type=minecraft:wandering_trader,tag=!2tw.wanderingTraderNotifications.processed,tag=!global.ignore] run {
+function loop {
+  execute as @e[type=minecraft:wandering_trader,tag=!2tw.wanderingTraderNotifications.processed,tag=!global.ignore] run {
     log 2TW debug entity <Spawned>
     tag @s add 2tw.wanderingTraderNotifications.processed
 

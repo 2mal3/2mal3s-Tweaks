@@ -1,10 +1,8 @@
 import ../../../macros/log.mcm
 
 
-clock 10s {
-  name loop
-
-  execute if data storage 2tw:data gamerules{longerEntityDeath: 1b} as @e[tag=!2tw.longerEntityDeath.processed,tag=!global.ignore,type=!#2tw:tweaks/longer_entity_death/ignore,team=!thisTeamDoesNotExist] run {
+function loop {
+  execute as @e[tag=!2tw.longerEntityDeath.processed,tag=!global.ignore,type=!#2tw:tweaks/longer_entity_death/ignore,team=!thisTeamDoesNotExist] run {
     log 2TW debug entity Processed
     tag @s add 2tw.longerEntityDeath.processed
 

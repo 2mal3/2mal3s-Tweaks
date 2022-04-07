@@ -1,10 +1,8 @@
 import ../../../macros/log.mcm
 
 
-clock 4t {
-  name loop
-
-  execute if data storage 2tw:data gamerules{bushHiding: 1b} as @a at @s run {
+function loop {
+  execute as @a at @s run {
       execute if entity @s[predicate=2tw:tweaks/bush_hiding/is_sneaking] if block ~ ~ ~ #2tw:tweaks/bush_hiding/tall_plants run {
         effect give @s minecraft:invisibility 1 0 true
         tag @s add 2tw.bushHiding.hiding

@@ -1,10 +1,8 @@
 import ../../../macros/log.mcm
 
 
-clock 4t {
-  name loop
-
-  execute if data storage 2tw:data gamerules{spectatorSense: 1b} as @a[gamemode=spectator] at @s run {
+function loop {
+  execute as @a[gamemode=spectator] at @s run {
     execute if score @s 2tw.spectatorId matches 0 run particle minecraft:dust 0.667 0.000 0.000 1 ~ ~1 ~ 0.3 0.5 0.3 0 1 normal
     execute if score @s 2tw.spectatorId matches 1 run particle minecraft:dust 1.000 0.333 0.333 1 ~ ~1 ~ 0.3 0.5 0.3 0 1 normal
     execute if score @s 2tw.spectatorId matches 2 run particle minecraft:dust 1.000 0.667 0.000 1 ~ ~1 ~ 0.3 0.5 0.3 0 1 normal

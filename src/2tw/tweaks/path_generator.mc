@@ -1,8 +1,6 @@
 
-clock 1s {
-  name loop
-
-  execute if data storage 2tw:data gamerules{pathGenerator: 1b} as @a[gamemode=!spectator,tag=!global.ignore] at @s positioned ~ ~-1 ~ run {
+function loop {
+  execute as @a[gamemode=!spectator,tag=!global.ignore] at @s positioned ~ ~-1 ~ run {
     # Generates path blocks with a certain chanche for running or sprinting players 
     execute if entity @s[scores={2tw.walk=200..}] if predicate 2tw:tweaks/path_generator/walk_random run {
       # Path blocks in the overworld

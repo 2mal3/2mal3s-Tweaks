@@ -112,14 +112,9 @@ function find_facing {
 }
 
 
-clock 1s {
-  name loop
+function loop {
 
-  execute if entity @a[scores={2tw.death=1..}] run schedule 2t replace {
-    scoreboard players reset @a[scores={2tw.death=1..}] 2tw.death
-  }
-
-  execute if data storage 2tw:data gamerules{deathChest: 1b} as @a[scores={2tw.death=1..}] at @s run {
+  execute as @a[scores={2tw.death=1..}] at @s run {
     scoreboard players set .temp0 2tw.data 0
     # Search
     execute if score .temp0 2tw.data matches 0 positioned ~-4 ~-4 ~-4 if block ~ ~ ~ #2tw:tweaks/death_chest/replaceable run function 2tw:tweaks/death_chest/find_facing

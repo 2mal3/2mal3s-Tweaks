@@ -1,8 +1,6 @@
 
-clock 4t {
-  name loop
-
-  execute if data storage 2tw:data gamerules{projectileBlockDamage: 1b} as @e[type=#2tw:tweaks/projectile_block_damage/do_block_damage,predicate=2tw:tweaks/projectile_block_damage/in_ground] at @s if block ~ ~ ~ #2tw:tweaks/projectile_block_damage/glass_panes run setblock ~ ~ ~ minecraft:air destroy
+function loop {
+  execute as @e[type=#2tw:tweaks/projectile_block_damage/do_block_damage,predicate=2tw:tweaks/projectile_block_damage/in_ground] at @s if block ~ ~ ~ #2tw:tweaks/projectile_block_damage/glass_panes run setblock ~ ~ ~ minecraft:air destroy
 }
 
 entities do_block_damage {

@@ -2,10 +2,8 @@ import ../../../macros/log.mcm
 
 
 # Torch burns out
-clock 60s {
-  name loop
-
-  execute if data storage 2tw:data gamerules{realisticTorches: 1b} as @e[type=minecraft:marker,tag=2tw.torch] at @s run {
+function loop {
+  execute as @e[type=minecraft:marker,tag=2tw.torch] at @s run {
     scoreboard players add @s 2tw.realisticTorchesTime 1
     execute if score @s 2tw.realisticTorchesTime > $maxTime 2tw.realisticTorchesTime align xyz run {
       playsound minecraft:block.fire.extinguish block @a[distance=..8] ~ ~ ~ 0.5 2

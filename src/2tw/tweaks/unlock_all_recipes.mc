@@ -1,10 +1,8 @@
 import ../../../macros/log.mcm
 
 
-clock 60s {
-  name loop
-
-  execute if data storage 2tw:data gamerules{unlockAllRecipes: 1b} as @a[tag=!2tw.unlockAllRecipes.processed] run {
+function loop {
+  execute as @a[tag=!2tw.unlockAllRecipes.processed] run {
     log 2TW debug entity <Unlocked all recipes>
     tag @s add 2tw.unlockAllRecipes.processed
 
