@@ -5,7 +5,7 @@ import ../../../macros/wait.mcm
 clock 1t {
   name loop
 
-  execute if data storage 2tw:data gamerules{elytraClosing: 1b} as @a[scores={2st.useElytra=1..,2st.sneaking=1..},predicate=2tw:tweaks/elytra_closing/have_elytra] run {
+  execute if data storage 2tw:data gamerules{elytraClosing: 1b} as @a[scores={2tw.useElytra=1..,2tw.sneaking=1..},predicate=2tw:tweaks/elytra_closing/have_elytra] run {
     log 2TW debug entity <Closed Elytra>
 
     item modify entity @s armor.chest 2tw:tweaks/elytra_closing/store
@@ -18,8 +18,8 @@ clock 1t {
     }
   }
 
-  scoreboard players reset @a[scores={2st.useElytra=1..}] 2st.useElytra
-  scoreboard players reset @a[scores={2st.sneaking=1..}] 2st.sneaking
+  scoreboard players reset @a[scores={2tw.useElytra=1..}] 2tw.useElytra
+  scoreboard players reset @a[scores={2tw.sneaking=1..}] 2tw.sneaking
 }
 
 modifier store {
