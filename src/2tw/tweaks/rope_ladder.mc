@@ -5,14 +5,14 @@ function place {
 
   execute if data storage 2tw:data gamerules{ropeLadder: 1b} anchored eyes run {
     # Finds the placed ladder
-    execute unless block ~ ~ ~ minecraft:ladder if block ~ ~ ~ #2tw:tweaks/rope_ladder/air positioned ^ ^ ^0.1 run function $block
+    execute unless block ~ ~ ~ minecraft:ladder if block ~ ~ ~ #2tw:utilities/air positioned ^ ^ ^0.1 run function $block
     execute if block ~ ~ ~ minecraft:ladder positioned ~ ~-1 ~ run function 2tw:tweaks/rope_ladder/set_blocks
   }
 }
 
 # Place the rope ladder
 function set_blocks {
-  execute if block ~ ~ ~ #2tw:tweaks/rope_ladder/air run {
+  execute if block ~ ~ ~ #2tw:utilities/air run {
     # Checks if the player have still ladders in the inventory and than clears one
     scoreboard players set .temp0 2tw.data 0
     execute store success score .temp0 2tw.data run clear @s minecraft:ladder 1
@@ -41,16 +41,6 @@ advancement place {
   "rewards": {
     "function": "2tw:tweaks/rope_ladder/place"
   }
-}
-
-blocks air {
-  minecraft:air
-  minecraft:cave_air
-  minecraft:water
-  minecraft:grass
-  minecraft:tall_grass
-  minecraft:fern
-  minecraft:large_fern
 }
 
 

@@ -13,7 +13,7 @@ function repair {
       playsound minecraft:block.anvil.use block @a ~ ~ ~ 8 1
       # Damages the anvil with a 12% chance
       execute if predicate 2tw:tweaks/no_to_expensive/damage_anvil_chance anchored eyes run {
-        execute if block ~ ~ ~ #2tw:tweaks/no_to_expensive/air positioned ^ ^ ^0.1 run function $block
+        execute if block ~ ~ ~ #2tw:utilities/air positioned ^ ^ ^0.1 run function $block
         execute if block ~ ~ ~ #minecraft:anvil run {
           execute if block ~ ~ ~ minecraft:damaged_anvil run setblock ~ ~ ~ minecraft:air
           execute if block ~ ~ ~ minecraft:chipped_anvil run setblock ~ ~ ~ minecraft:damaged_anvil
@@ -33,11 +33,6 @@ modifier reset_repair_cost {
 predicate damage_anvil_chance {
   "condition": "minecraft:random_chance",
   "chance": 0.12
-}
-
-blocks air {
-  minecraft:air
-  minecraft:cave_air
 }
 
 advancement used_item_on_anvil {

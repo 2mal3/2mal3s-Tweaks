@@ -19,3 +19,9 @@ function random {
   # Remove the marker
   kill @e[type=minecraft:marker,tag=2mal3.random]
 }
+
+
+blocks air {
+  minecraft:air
+  minecraft:cave_air
+}

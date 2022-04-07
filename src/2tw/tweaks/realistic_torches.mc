@@ -24,7 +24,7 @@ function place_torch {
 
   execute if data storage 2tw:data gamerules{realisticTorches: 1b} run {
     execute anchored eyes run {
-      execute if block ~ ~ ~ #2tw:tweaks/realistic_torches/air positioned ^ ^ ^0.1 run function $block
+      execute if block ~ ~ ~ #2tw:utilities/air positioned ^ ^ ^0.1 run function $block
       execute if block ~ ~ ~ minecraft:torch run summon minecraft:marker ~ ~ ~ {Tags: ["global.ignore", "2tw.torch"]}
     }
   }
@@ -42,9 +42,4 @@ advancement place_torch {
   "rewards": {
     "function": "2tw:tweaks/realistic_torches/place_torch"
   }
-}
-
-blocks air {
-  minecraft:air
-  minecraft:cave_air
 }
