@@ -77,6 +77,13 @@ dir menu {
       tellraw @s [{"text":"[✔]","color":"dark_green","clickEvent":{"action":"run_command","value":"/function 2tw:menu/buttons/creative_one_punch/off"},"hoverEvent":{"action":"show_text","contents":"*click*"}},{"text":" Creative One Punch","color":"gold","hoverEvent":{"action":"show_text","contents":"Kills all entities in creative mode instantly."}}]
     }
 
+    execute if data storage 2tw:data gamerules{colouredDimensionNames: 0b} run {
+      tellraw @s [{"text":"[❌]","color":"dark_red","clickEvent":{"action":"run_command","value":"/function 2tw:menu/buttons/coloured_dimension_names/on"},"hoverEvent":{"action":"show_text","contents":"*click*"}},{"text":" Coloured Dimension Names","color":"gold","hoverEvent":{"action":"show_text","contents":"Colours the player name according to the current dimension."}}]
+    }
+    execute if data storage 2tw:data gamerules{colouredDimensionNames: 1b} run {
+      tellraw @s [{"text":"[✔]","color":"dark_green","clickEvent":{"action":"run_command","value":"/function 2tw:menu/buttons/coloured_dimension_names/off"},"hoverEvent":{"action":"show_text","contents":"*click*"}},{"text":" Coloured Dimension Names","color":"gold","hoverEvent":{"action":"show_text","contents":"Colours the player name according to the current dimension."}}]
+    }
+
     execute if data storage 2tw:data gamerules{damageInfection: 0b} run {
       tellraw @s [{"text":"[❌]","color":"dark_red","clickEvent":{"action":"run_command","value":"/function 2tw:menu/buttons/damage_infection/on"},"hoverEvent":{"action":"show_text","contents":"*click*"}},{"text":" Damage Infection","color":"gold","hoverEvent":{"action":"show_text","contents":"Players who take damage have a certain probability to get infected and receive negative effects."}}]
     }
@@ -126,13 +133,7 @@ dir menu {
       tellraw @s [{"text":"[✔]","color":"dark_green","clickEvent":{"action":"run_command","value":"/function 2tw:menu/buttons/end_above_overworld/off"},"hoverEvent":{"action":"show_text","contents":"*click*"}},{"text":" End above Overworld","color":"gold","hoverEvent":{"action":"show_text","contents":"The player can go the end by flying high up in the overworld, and back by falling into the void in the end."}}]
     }
 
-    execute if data storage 2tw:data gamerules{glowBerriesGlow: 0b} run {
-      tellraw @s [{"text":"[❌]","color":"dark_red","clickEvent":{"action":"run_command","value":"/function 2tw:menu/buttons/glow_berries_glow/on"},"hoverEvent":{"action":"show_text","contents":"*click*"}},{"text":" Glow Berries glow","color":"gold","hoverEvent":{"action":"show_text","contents":"Players who eat glow berries get a short glowing effect."}}]
-    }
-    execute if data storage 2tw:data gamerules{glowBerriesGlow: 1b} run {
-      tellraw @s [{"text":"[✔]","color":"dark_green","clickEvent":{"action":"run_command","value":"/function 2tw:menu/buttons/glow_berries_glow/off"},"hoverEvent":{"action":"show_text","contents":"*click*"}},{"text":" Glow Berries glow","color":"gold","hoverEvent":{"action":"show_text","contents":"Players who eat glow berries get a short glowing effect."}}]
-    }
-tellraw @s {"text":""}
+    tellraw @s {"text":""}
   }
 
   function page_1 {
@@ -143,6 +144,13 @@ tellraw @s {"text":""}
     
     scoreboard players set %page 2tw.data 2
     function 2tw:menu/click
+
+    execute if data storage 2tw:data gamerules{glowBerriesGlow: 0b} run {
+      tellraw @s [{"text":"[❌]","color":"dark_red","clickEvent":{"action":"run_command","value":"/function 2tw:menu/buttons/glow_berries_glow/on"},"hoverEvent":{"action":"show_text","contents":"*click*"}},{"text":" Glow Berries glow","color":"gold","hoverEvent":{"action":"show_text","contents":"Players who eat glow berries get a short glowing effect."}}]
+    }
+    execute if data storage 2tw:data gamerules{glowBerriesGlow: 1b} run {
+      tellraw @s [{"text":"[✔]","color":"dark_green","clickEvent":{"action":"run_command","value":"/function 2tw:menu/buttons/glow_berries_glow/off"},"hoverEvent":{"action":"show_text","contents":"*click*"}},{"text":" Glow Berries glow","color":"gold","hoverEvent":{"action":"show_text","contents":"Players who eat glow berries get a short glowing effect."}}]
+    }
 
     execute if data storage 2tw:data gamerules{harderPowderSnow: 0b} run {
       tellraw @s [{"text":"[❌]","color":"dark_red","clickEvent":{"action":"run_command","value":"/function 2tw:menu/buttons/harder_powder_snow/on"},"hoverEvent":{"action":"show_text","contents":"*click*"}},{"text":" Harder Powder Snow","color":"gold","hoverEvent":{"action":"show_text","contents":"Powdery snow gives mining fatigue when sinking."}}]
@@ -249,13 +257,6 @@ tellraw @s {"text":""}
       tellraw @s [{"text":"[✔]","color":"dark_green","clickEvent":{"action":"run_command","value":"/function 2tw:menu/buttons/rope_ladder/off"},"hoverEvent":{"action":"show_text","contents":"*click*"}},{"text":" Rope Ladder","color":"gold","hoverEvent":{"action":"show_text","contents":"Place and destroy roppe ladders with SHIFT."}}]
     }
 
-    execute if data storage 2tw:data gamerules{serverTime: 0b} run {
-      tellraw @s [{"text":"[❌]","color":"dark_red","clickEvent":{"action":"run_command","value":"/function 2tw:menu/buttons/server_time/on"},"hoverEvent":{"action":"show_text","contents":"*click*"}},{"text":" Server Time","color":"gold","hoverEvent":{"action":"show_text","contents":"As long as no player is on the server, the time is stopped."}}]
-    }
-    execute if data storage 2tw:data gamerules{serverTime: 1b} run {
-      tellraw @s [{"text":"[✔]","color":"dark_green","clickEvent":{"action":"run_command","value":"/function 2tw:menu/buttons/server_time/off"},"hoverEvent":{"action":"show_text","contents":"*click*"}},{"text":" Server Time","color":"gold","hoverEvent":{"action":"show_text","contents":"As long as no player is on the server, the time is stopped."}}]
-    }
-
     tellraw @s {"text":""}
   }
 
@@ -267,6 +268,13 @@ tellraw @s {"text":""}
     
     scoreboard players set %page 2tw.data 3
     function 2tw:menu/click
+
+    execute if data storage 2tw:data gamerules{serverTime: 0b} run {
+      tellraw @s [{"text":"[❌]","color":"dark_red","clickEvent":{"action":"run_command","value":"/function 2tw:menu/buttons/server_time/on"},"hoverEvent":{"action":"show_text","contents":"*click*"}},{"text":" Server Time","color":"gold","hoverEvent":{"action":"show_text","contents":"As long as no player is on the server, the time is stopped."}}]
+    }
+    execute if data storage 2tw:data gamerules{serverTime: 1b} run {
+      tellraw @s [{"text":"[✔]","color":"dark_green","clickEvent":{"action":"run_command","value":"/function 2tw:menu/buttons/server_time/off"},"hoverEvent":{"action":"show_text","contents":"*click*"}},{"text":" Server Time","color":"gold","hoverEvent":{"action":"show_text","contents":"As long as no player is on the server, the time is stopped."}}]
+    }
 
     execute if data storage 2tw:data gamerules{spectatorSense: 0b} run {
       tellraw @s [{"text":"[❌]","color":"dark_red","clickEvent":{"action":"run_command","value":"/function 2tw:menu/buttons/spectator_sense/on"},"hoverEvent":{"action":"show_text","contents":"*click*"}},{"text":" Spectator Sense","color":"gold","hoverEvent":{"action":"show_text","contents":"Players in spectator mode are displayed with individual particles."}}]
@@ -323,7 +331,7 @@ tellraw @s {"text":""}
     execute if data storage 2tw:data gamerules{wanderingTraderNotifications: 1b} run {
       tellraw @s [{"text":"[✔]","color":"dark_green","clickEvent":{"action":"run_command","value":"/function 2tw:menu/buttons/wandering_trader_notifications/off"},"hoverEvent":{"action":"show_text","contents":"*click*"}},{"text":" Wandering Trader Notifications","color":"gold","hoverEvent":{"action":"show_text","contents":"When a Wandering Trader appears a notification is sent to all players and gets a short glowing effect."}}]
     }
-    tellraw @s {"text":"\n\n\n\n\n\n\n"}
+    tellraw @s {"text":"\n\n\n\n\n\n"}
   }
 
 }
@@ -435,6 +443,26 @@ dir buttons {
       function 2tw:menu/click
       data modify storage 2tw:data gamerules.creativeOnePunch set value 0b
       function 2tw:menu/page
+    }
+  }
+
+  dir coloured_dimension_names {
+    function on {
+      data modify storage 2tw:data gamerules.colouredDimensionNames set value 1b
+      function 2tw:menu/page
+      # Reset all specific advancements so that each player can be immediately assigned to a dimension
+      advancement revoke @a only 2tw:tweaks/coloured_dimension_names/overworld
+      advancement revoke @a only 2tw:tweaks/coloured_dimension_names/nether
+      advancement revoke @a only 2tw:tweaks/coloured_dimension_names/end
+    }
+    function off {
+      function 2tw:menu/click
+      data modify storage 2tw:data gamerules.colouredDimensionNames set value 0b
+      function 2tw:menu/page
+      # Removes every player from the teams
+      team leave @a[team=2tw.overworld]
+      team leave @a[team=2tw.nether]
+      team leave @a[team=2tw.end]
     }
   }
 

@@ -21,6 +21,7 @@ All modules can be turned on and off via the in-game menu, so you only have to u
 - **Bush hiding**: Players who sneak in high plants become invisible.
 - **Creative insta tame**: Horses are tamed immediately in creative mode.
 - **Creative One Punch**: One-hit all entities in creative mode
+- **Coloured Dimension Names**: Colours the player name according to the current dimension.
 - **Damage Infection**: Players who take damage have a certain probability to get infected and receive negative effects.
 - **Death Chest**: Spawns a death chest at died players with their items.
 - **Death Coordinates**: In case of a death, the coordinates and the dimension of the dead point are displayed.
