@@ -145,6 +145,13 @@ dir menu {
     scoreboard players set %page 2tw.data 2
     function 2tw:menu/click
 
+    execute if data storage 2tw:data gamerules{fishTraps: 0b} run {
+      tellraw @s [{"text":"[❌]","color":"dark_red","clickEvent":{"action":"run_command","value":"/function 2tw:menu/buttons/fish_traps/on"},"hoverEvent":{"action":"show_text","contents":"*click*"}},{"text":" Fish Traps","color":"gold","hoverEvent":{"action":"show_text","contents":"Place a barrel in water to catch fish over time."}}]
+    }
+    execute if data storage 2tw:data gamerules{fishTraps: 1b} run {
+      tellraw @s [{"text":"[✔]","color":"dark_green","clickEvent":{"action":"run_command","value":"/function 2tw:menu/buttons/fish_traps/off"},"hoverEvent":{"action":"show_text","contents":"*click*"}},{"text":" Fish Traps","color":"gold","hoverEvent":{"action":"show_text","contents":"Place a barrel in water to catch fish over time."}}]
+    }
+
     execute if data storage 2tw:data gamerules{glowBerriesGlow: 0b} run {
       tellraw @s [{"text":"[❌]","color":"dark_red","clickEvent":{"action":"run_command","value":"/function 2tw:menu/buttons/glow_berries_glow/on"},"hoverEvent":{"action":"show_text","contents":"*click*"}},{"text":" Glow Berries glow","color":"gold","hoverEvent":{"action":"show_text","contents":"Players who eat glow berries get a short glowing effect."}}]
     }
@@ -250,13 +257,6 @@ dir menu {
     #  tellraw @s [{"text":"[✔]","color":"dark_green","clickEvent":{"action":"run_command","value":"/function 2tw:menu/buttons/realistic_torches/off"},"hoverEvent":{"action":"show_text","contents":"*click*"}},{"text":" Realistic Torches","color":"gold","hoverEvent":{"action":"show_text","contents":"Torches burn out over time."}}]
     #}
 
-    execute if data storage 2tw:data gamerules{ropeLadder: 0b} run {
-      tellraw @s [{"text":"[❌]","color":"dark_red","clickEvent":{"action":"run_command","value":"/function 2tw:menu/buttons/rope_ladder/on"},"hoverEvent":{"action":"show_text","contents":"*click*"}},{"text":" Rope Ladder","color":"gold","hoverEvent":{"action":"show_text","contents":"Place and destroy roppe ladders with SHIFT."}}]
-    }
-    execute if data storage 2tw:data gamerules{ropeLadder: 1b} run {
-      tellraw @s [{"text":"[✔]","color":"dark_green","clickEvent":{"action":"run_command","value":"/function 2tw:menu/buttons/rope_ladder/off"},"hoverEvent":{"action":"show_text","contents":"*click*"}},{"text":" Rope Ladder","color":"gold","hoverEvent":{"action":"show_text","contents":"Place and destroy roppe ladders with SHIFT."}}]
-    }
-
     tellraw @s {"text":""}
   }
 
@@ -268,6 +268,13 @@ dir menu {
     
     scoreboard players set %page 2tw.data 3
     function 2tw:menu/click
+
+    execute if data storage 2tw:data gamerules{ropeLadder: 0b} run {
+      tellraw @s [{"text":"[❌]","color":"dark_red","clickEvent":{"action":"run_command","value":"/function 2tw:menu/buttons/rope_ladder/on"},"hoverEvent":{"action":"show_text","contents":"*click*"}},{"text":" Rope Ladder","color":"gold","hoverEvent":{"action":"show_text","contents":"Place and destroy roppe ladders with SHIFT."}}]
+    }
+    execute if data storage 2tw:data gamerules{ropeLadder: 1b} run {
+      tellraw @s [{"text":"[✔]","color":"dark_green","clickEvent":{"action":"run_command","value":"/function 2tw:menu/buttons/rope_ladder/off"},"hoverEvent":{"action":"show_text","contents":"*click*"}},{"text":" Rope Ladder","color":"gold","hoverEvent":{"action":"show_text","contents":"Place and destroy roppe ladders with SHIFT."}}]
+    }
 
     execute if data storage 2tw:data gamerules{serverTime: 0b} run {
       tellraw @s [{"text":"[❌]","color":"dark_red","clickEvent":{"action":"run_command","value":"/function 2tw:menu/buttons/server_time/on"},"hoverEvent":{"action":"show_text","contents":"*click*"}},{"text":" Server Time","color":"gold","hoverEvent":{"action":"show_text","contents":"As long as no player is on the server, the time is stopped."}}]
@@ -331,7 +338,7 @@ dir menu {
     execute if data storage 2tw:data gamerules{wanderingTraderNotifications: 1b} run {
       tellraw @s [{"text":"[✔]","color":"dark_green","clickEvent":{"action":"run_command","value":"/function 2tw:menu/buttons/wandering_trader_notifications/off"},"hoverEvent":{"action":"show_text","contents":"*click*"}},{"text":" Wandering Trader Notifications","color":"gold","hoverEvent":{"action":"show_text","contents":"When a Wandering Trader appears a notification is sent to all players and gets a short glowing effect."}}]
     }
-    tellraw @s {"text":"\n\n\n\n\n\n"}
+    tellraw @s {"text":"\n\n\n\n\n"}
   }
 
 }
@@ -536,6 +543,18 @@ dir buttons {
     function off {
       function 2tw:menu/click
       data modify storage 2tw:data gamerules.endAboveOverworld set value 0b
+      function 2tw:menu/page
+    }
+  }
+
+  dir fish_traps {
+    function on {
+      data modify storage 2tw:data gamerules.fishTraps set value 1b
+      function 2tw:menu/page
+    }
+    function off {
+      function 2tw:menu/click
+      data modify storage 2tw:data gamerules.fishTraps set value 0b
       function 2tw:menu/page
     }
   }

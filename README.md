@@ -1,16 +1,16 @@
 # 2mal3's Tweaks
 ![GitHub release (latest by date)](https://img.shields.io/github/v/release/2mal3/2mal3s-Tweaks?style=flat-square) ![GitHub all releases](https://img.shields.io/github/downloads/2mal3/2mal3s-Tweaks/total?style=flat-square) ![Minecraft](https://img.shields.io/badge/Minecraft-1.18-orange?style=flat-square)
 
-This datapack adds over 30 small adjustable improvements and tweaks to the normal vanilla game and spice it up a bit. At the same time no big changes are made to the gameplay, so it still feels "vanilla".
+This datapack adds over 40 small adjustable improvements and tweaks to the normal vanilla game and spice it up a bit. At the same time no big changes are made to the gameplay, so it still feels "vanilla".
 
 ## 📖 Features:
-- Over 30 different improvements and tweaks
+- Over 40 different improvements and tweaks
 - No drastic changes to the gameplay -> still feels "vanilla"
 - All modules can be easily switched on and off via the in-game menu
 - Good performace
 - Multiplayer compatible
 
-All modules can be turned on and off via the in-game menu, so you only have to use the ones you want. The menu can be opened with the command `/function #2tw/menu`.                                                                     
+All modules can be turned on and off via the in-game menu, so you only have to use the ones you want. The menu can be opened with the command `/function #2tw:menu`.                                                                     
 **At the beginning all modules are switched off.**
 
 ## 📝 Tweaks:
@@ -29,6 +29,7 @@ All modules can be turned on and off via the in-game menu, so you only have to u
 - **Dynamic Light**: Torches and other light sources emit actual light.
 - **Elytra Closing**: Sneak while flying with the Elytra to close it.
 - **End above Overworld**: The player can go the end by flying high up in the overworld, and back by falling into the void in the end.
+- **Fish Traps**: Place a barrel in water to catch fish over time.
 - **Glow Berries glow**: Players who eat glow berries get a short glowing effect.
 - **Harder Powder Snow**: Powder Snow gives mining fatigue when sinking.
 - **Higher Bell Range**: Bells reveal more distant Pillagers.
