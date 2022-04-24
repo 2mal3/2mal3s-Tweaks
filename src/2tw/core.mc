@@ -113,7 +113,7 @@ function load {
     scoreboard objectives add 2tw.minedLadder minecraft.mined:minecraft.ladder
     scoreboard players set $16 2tw.data 16
     # Set the version in format: xx.xx.xx
-    scoreboard players set $version 2tw.data 020000
+    scoreboard players set $version 2tw.data 020010
 
     # Add teams
     team add 2tw.invisible
@@ -131,12 +131,40 @@ function load {
 
 
     schedule 4s replace {
-      tellraw @a {"text":"2mal3's Tweaks v2.0.0 by 2mal3 was installed!","color":"green"}
+      tellraw @a {"text":"2mal3's Tweaks v2.1.0 by 2mal3 was installed!","color":"green"}
     }
   }
-  execute if score %installed 2tw.data matches 1 unless score $version 2tw.data matches 020000 run {
-    log 2TW info server <Updated datapack>
-    scoreboard players set $version 2tw.data 020000
+
+  # Update datapack
+  execute if score %installed 2tw.data matches 1 unless score $version 2tw.data matches 020100 run {
+    log 2TW info server <Update datapack ...>
+
+    # v2.1.0
+    execute if score $version 2tw.data matches 020000 run {
+      log 2TW info server <Updated from v2.0.0 to v2.1.0>
+      scoreboard players set $version 2tw.data 020100
+
+      # Init new modules in the settings
+      data modify storage 2tw:data gamerules.noThunderstormSleep set value 0b
+      data modify storage 2tw:data gamerules.elytraClosing set value 0b
+      data modify storage 2tw:data gamerules.ropeLadder set value 0b
+      data modify storage 2tw:data gamerules.colouredDimensionNames set value 0b
+      data modify storage 2tw:data gamerules.fishTraps set value 0b
+
+      # Add new scoreboards
+      scoreboard objectives add 2tw.useElytra minecraft.custom:minecraft.aviate_one_cm
+      scoreboard objectives add 2tw.sneaking minecraft.custom:minecraft.sneak_time
+      scoreboard objectives add 2tw.schedule dummy
+      scoreboard objectives add 2tw.minedLadder minecraft.mined:minecraft.ladder
+      # Add new teams
+      team modify 2tw.invisible seeFriendlyInvisibles true
+      team add 2tw.overworld
+      team modify 2tw.overworld color green
+      team add 2tw.nether
+      team modify 2tw.nether color red
+      team add 2tw.end
+      team modify 2tw.end color yellow
+    }
   }
 }
 
@@ -181,7 +209,7 @@ advancement first_join {
 ## Datapack advancement
 advancement 2tw {
   "display": {
-    "title": "2mal3s Tweaks v2.0.0",
+    "title": "2mal3s Tweaks v2.1.0",
     "description": "Adds many small improvements to the game.",
     "icon": {
       "item": "minecraft:redstone_torch"
@@ -235,10 +263,10 @@ function uninstall {
   schedule clear 2tw:core/clocks/4_tick
 
   # Sends an uninstallation message to all players
-  tellraw @a {"text":"2mal3's Tweaks v2.0.0 by 2mal3 was successfully uninstalled.","color": "green"}
+  tellraw @a {"text":"2mal3's Tweaks v2.1.0 by 2mal3 was successfully uninstalled.","color": "green"}
 
   # Disables the datapack
   datapack disable "file/2mal3s-Tweaks"
-  datapack disable "file/2mal3s-Tweaks-v2.0.0"
-  datapack disable "file/2mal3s-Tweaks-v2.0.0.zip"
+  datapack disable "file/2mal3s-Tweaks-v2.1.0"
+  datapack disable "file/2mal3s-Tweaks-v2.1.0.zip"
 }

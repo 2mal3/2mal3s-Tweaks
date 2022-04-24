@@ -1,4 +1,26 @@
 
+## Update v2.1.0 (24.4.2022)
+
+### Added:
+ - No thunderstorm sleep module
+ - Elytra closing module
+ - Rope Ladder module
+ - Coloured Dimension Names module
+ - Fish Traps module
+
+### Changed:
+ - [Internal] Datapack clocks merged together
+
+### Fixed:
+ - Death chests module could not replace snow and some blocks
+ - Block damage module tries to damage creative and spectator
+
+### Removed:
+ - [Internal] Random number generator
+ - [Internal] Some unused files
+
+***
+
 ## Update v2.0.0 (24.3.2022)
 
 ### Added:
