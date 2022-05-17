@@ -113,7 +113,7 @@ function load {
     scoreboard objectives add 2tw.minedLadder minecraft.mined:minecraft.ladder
     scoreboard players set $16 2tw.data 16
     # Set the version in format: xx.xx.xx
-    scoreboard players set $version 2tw.data 020010
+    scoreboard players set $version 2tw.data 020100
 
     # Add teams
     team add 2tw.invisible
