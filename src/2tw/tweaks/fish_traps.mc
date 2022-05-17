@@ -19,7 +19,7 @@ function loop {
 function place {
   advancement revoke @s only 2tw:tweaks/fish_traps/place
 
-  execute anchored eyes run {
+  execute if predicate 2tw:tweaks/fish_traps/in_water_biome anchored eyes run {
     execute if block ~ ~ ~ #2tw:tweaks/fish_traps/air positioned ^ ^ ^0.1 run function $block
     execute if block ~ ~ ~ minecraft:barrel if block ~1 ~ ~ #2tw:tweaks/fish_traps/water if block ~-1 ~ ~ #2tw:tweaks/fish_traps/water if block ~ ~ ~1 #2tw:tweaks/fish_traps/water if block ~ ~ ~-1 #2tw:tweaks/fish_traps/water if block ~1 ~ ~1 #2tw:tweaks/fish_traps/water if block ~1 ~ ~-1 #2tw:tweaks/fish_traps/water if block ~-1 ~ ~1 #2tw:tweaks/fish_traps/water if block ~-1 ~ ~-1 #2tw:tweaks/fish_traps/water run {
       log 2TW debug entity <Placed Fish Trap>
@@ -55,4 +55,82 @@ advancement place {
   "rewards": {
     "function": "2tw:tweaks/fish_traps/place"
   }
+}
+
+predicate in_water_biome {
+  "condition": "minecraft:alternative",
+  "terms": [
+    {
+      "condition": "minecraft:location_check",
+      "predicate": {
+        "biome": "minecraft:swamp"
+      }
+    },
+    {
+      "condition": "minecraft:location_check",
+      "predicate": {
+        "biome": "minecraft:river"
+      }
+    },
+    {
+      "condition": "minecraft:location_check",
+      "predicate": {
+        "biome": "minecraft:frozen_river"
+      }
+    },
+    {
+      "condition": "minecraft:location_check",
+      "predicate": {
+        "biome": "minecraft:warm_ocean"
+      }
+    },
+    {
+      "condition": "minecraft:location_check",
+      "predicate": {
+        "biome": "minecraft:ocean"
+      }
+    },
+    {
+      "condition": "minecraft:location_check",
+      "predicate": {
+        "biome": "minecraft:lukewarm_ocean"
+      }
+    },
+    {
+      "condition": "minecraft:location_check",
+      "predicate": {
+        "biome": "minecraft:frozen_ocean"
+      }
+    },
+    {
+      "condition": "minecraft:location_check",
+      "predicate": {
+        "biome": "minecraft:deep_ocean"
+      }
+    },
+    {
+      "condition": "minecraft:location_check",
+      "predicate": {
+        "biome": "minecraft:deep_lukewarm_ocean"
+      }
+    },
+    {
+      "condition": "minecraft:location_check",
+      "predicate": {
+        "biome": "minecraft:deep_frozen_ocean"
+      }
+    },
+    {
+      "condition": "minecraft:location_check",
+      "predicate": {
+        "biome": "minecraft:deep_cold_ocean"
+      }
+    },
+    {
+      "condition": "minecraft:location_check",
+      "predicate": {
+        "biome": "minecraft:cold_ocean"
+      }
+    }
+  ]
 }
