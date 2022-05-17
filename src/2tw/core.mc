@@ -86,7 +86,7 @@ function load {
 
   scoreboard objectives add 2tw.data dummy
 
-  scoreboard players set %installed 2tw.data 0
+  # scoreboard players set %installed 2tw.data 0
   # Initializes the datapack at the first startup or new version
   execute unless score %installed 2tw.data matches 1 run {
     log 2TW info server <Datapack installed>
