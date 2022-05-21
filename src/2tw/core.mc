@@ -87,7 +87,7 @@ function load {
 
   scoreboard objectives add 2tw.data dummy
 
-  # scoreboard players set %installed 2tw.data 0
+  scoreboard players set %installed 2tw.data 0
   # Initializes the datapack at the first startup or new version
   execute unless score %installed 2tw.data matches 1 run {
     log 2TW info server <Datapack installed>
@@ -95,8 +95,8 @@ function load {
 
     # Add scoreboards
     scoreboard objectives add 2tw.data dummy
+    scoreboard objectives add 2tw.schedule dummy
     scoreboard objectives add 2mal3.debugMode dummy
-    scoreboard objectives add 2mal3.data dummy
     scoreboard objectives add 2tw.uuid dummy
     scoreboard objectives add 2tw.death deathCount
     scoreboard objectives add 2tw.spectatorId dummy
@@ -110,7 +110,6 @@ function load {
     scoreboard objectives add 2tw.realisticTorchesTime dummy
     scoreboard objectives add 2tw.useElytra minecraft.custom:minecraft.aviate_one_cm
     scoreboard objectives add 2tw.sneaking minecraft.custom:minecraft.sneak_time
-    scoreboard objectives add 2tw.schedule dummy
     scoreboard objectives add 2tw.minedLadder minecraft.mined:minecraft.ladder
     scoreboard players set $16 2tw.data 16
     # Set the version in format: xx.xx.xx
@@ -171,7 +170,8 @@ function load {
           ropeLadder: 0b, 
           colouredDimensionNames: 0b, 
           fishTraps: 0b, 
-          selfPlantingSaplings: 0b
+          selfPlantingSaplings: 0b,
+          invisibleItemFrames: 0b
         }
       }
     )

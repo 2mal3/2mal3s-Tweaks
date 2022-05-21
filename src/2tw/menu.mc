@@ -180,6 +180,13 @@ dir menu {
       tellraw @s [{"text":"[✔]","color":"dark_green","clickEvent":{"action":"run_command","value":"/function 2tw:menu/buttons/invisible_see_invisible/off"},"hoverEvent":{"action":"show_text","contents":"*click*"}},{"text":" Invisible see Invisible","color":"gold","hoverEvent":{"action":"show_text","contents":"Invisible can see each other."}}]
     }
 
+    execute if data storage 2tw:data gamerules{invisibleItemFrames: 0b} run {
+      tellraw @s [{"text":"[❌]","color":"dark_red","clickEvent":{"action":"run_command","value":"/function 2tw:menu/buttons/invisible_item_frames/on"},"hoverEvent":{"action":"show_text","contents":"*click*"}},{"text":" Invisible Item Frames","color":"gold","hoverEvent":{"action":"show_text","contents":"Surround an Item Frame in the crafting table with Glass Panes to get an Invisible Item Frame."}}]
+    }
+    execute if data storage 2tw:data gamerules{invisibleItemFrames: 1b} run {
+      tellraw @s [{"text":"[✔]","color":"dark_green","clickEvent":{"action":"run_command","value":"/function 2tw:menu/buttons/invisible_item_frames/off"},"hoverEvent":{"action":"show_text","contents":"*click*"}},{"text":" Invisible Item Frames","color":"gold","hoverEvent":{"action":"show_text","contents":"Surround an Item Frame in the crafting table with Glass Panes to get an Invisible Item Frame."}}]
+    }
+
     execute if data storage 2tw:data gamerules{longerEntityDeath: 0b} run {
       tellraw @s [{"text":"[❌]","color":"dark_red","clickEvent":{"action":"run_command","value":"/function 2tw:menu/buttons/longer_entity_death/on"},"hoverEvent":{"action":"show_text","contents":"*click*"}},{"text":" Longer Entity Death","color":"gold","hoverEvent":{"action":"show_text","contents":"The death animation of entities is longer."}}]
     }
@@ -243,6 +250,18 @@ dir menu {
       tellraw @s [{"text":"[✔]","color":"dark_green","clickEvent":{"action":"run_command","value":"/function 2tw:menu/buttons/random_respawn/off"},"hoverEvent":{"action":"show_text","contents":"*click*"}},{"text":" Random Respawn","color":"gold","hoverEvent":{"action":"show_text","contents":"When you die, you respawn at a random location within a radius of 2000 blocks around the spawn."}}]
     }
 
+    tellraw @s {"text":""}
+  }
+
+  function page_2 {
+    tellraw @s {"text":"\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"}
+    tellraw @s {"text":"       2mal3's Tweaks Config","bold":true,"color":"gold"}
+    tellraw @s [{"text":"<<","color":"gold","clickEvent":{"action":"run_command","value":"/function 2tw:menu/menu/page_1"}},{"text":" ------------ ","color":"yellow"},{"text":"3/3","color":"gold"},{"text":" ------------ ","color":"yellow"},{"text":">>","color":"yellow"}]
+    tellraw @s {"text":""}
+    
+    scoreboard players set %page 2tw.data 3
+    function 2tw:menu/click
+
     execute if data storage 2tw:data gamerules{realisticFire: 0b} run {
       tellraw @s [{"text":"[❌]","color":"dark_red","clickEvent":{"action":"run_command","value":"/function 2tw:menu/buttons/realistic_fire/on"},"hoverEvent":{"action":"show_text","contents":"*click*"}},{"text":" Realistic Fire","color":"gold","hoverEvent":{"action":"show_text","contents":"Fire is more realistic."}}]
     }
@@ -256,18 +275,6 @@ dir menu {
     #execute if data storage 2tw:data gamerules{realisticTorches: 1b} run {
     #  tellraw @s [{"text":"[✔]","color":"dark_green","clickEvent":{"action":"run_command","value":"/function 2tw:menu/buttons/realistic_torches/off"},"hoverEvent":{"action":"show_text","contents":"*click*"}},{"text":" Realistic Torches","color":"gold","hoverEvent":{"action":"show_text","contents":"Torches burn out over time."}}]
     #}
-
-    tellraw @s {"text":""}
-  }
-
-  function page_2 {
-    tellraw @s {"text":"\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"}
-    tellraw @s {"text":"       2mal3's Tweaks Config","bold":true,"color":"gold"}
-    tellraw @s [{"text":"<<","color":"gold","clickEvent":{"action":"run_command","value":"/function 2tw:menu/menu/page_1"}},{"text":" ------------ ","color":"yellow"},{"text":"3/3","color":"gold"},{"text":" ------------ ","color":"yellow"},{"text":">>","color":"yellow"}]
-    tellraw @s {"text":""}
-    
-    scoreboard players set %page 2tw.data 3
-    function 2tw:menu/click
 
     execute if data storage 2tw:data gamerules{ropeLadder: 0b} run {
       tellraw @s [{"text":"[❌]","color":"dark_red","clickEvent":{"action":"run_command","value":"/function 2tw:menu/buttons/rope_ladder/on"},"hoverEvent":{"action":"show_text","contents":"*click*"}},{"text":" Rope Ladder","color":"gold","hoverEvent":{"action":"show_text","contents":"Place and destroy rope ladders with SHIFT."}}]
@@ -346,13 +353,25 @@ dir menu {
       tellraw @s [{"text":"[✔]","color":"dark_green","clickEvent":{"action":"run_command","value":"/function 2tw:menu/buttons/wandering_trader_notifications/off"},"hoverEvent":{"action":"show_text","contents":"*click*"}},{"text":" Wandering Trader Notifications","color":"gold","hoverEvent":{"action":"show_text","contents":"When a Wandering Trader appears a notification is sent to all players and gets a short glowing effect."}}]
     }
 
-    tellraw @s {"text":"\n\n\n\n"}
+    tellraw @s {"text":"\n\n\n"}
   }
 
 }
 
 
 dir buttons {
+  dir invisible_item_frames {
+    function on {
+      data modify storage 2tw:data gamerules.invisibleItemFrames set value 1b
+      function 2tw:menu/page
+    }
+    function off {
+      function 2tw:menu/click
+      data modify storage 2tw:data gamerules.invisibleItemFrames set value 0b
+      function 2tw:menu/page
+    }
+  }
+
   dir self_planting_saplings {
     function on {
       data modify storage 2tw:data gamerules.selfPlantingSaplings set value 1b
