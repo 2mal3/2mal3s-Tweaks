@@ -78,10 +78,10 @@ dir menu {
     }
 
     execute if data storage 2tw:data gamerules{colouredDimensionNames: 0b} run {
-      tellraw @s [{"text":"[❌]","color":"dark_red","clickEvent":{"action":"run_command","value":"/function 2tw:menu/buttons/coloured_dimension_names/on"},"hoverEvent":{"action":"show_text","contents":"*click*"}},{"text":" Coloured Dimension Names","color":"gold","hoverEvent":{"action":"show_text","contents":"Colours the player name according to the current dimension."}}]
+      tellraw @s [{"text":"[❌]","color":"dark_red","clickEvent":{"action":"run_command","value":"/function 2tw:menu/buttons/coloured_dimension_names/on"},"hoverEvent":{"action":"show_text","contents":"*click*"}},{"text":" Coloured Dimension Names","color":"gold","hoverEvent":{"action":"show_text","contents":"Colors the player name according to the current dimension."}}]
     }
     execute if data storage 2tw:data gamerules{colouredDimensionNames: 1b} run {
-      tellraw @s [{"text":"[✔]","color":"dark_green","clickEvent":{"action":"run_command","value":"/function 2tw:menu/buttons/coloured_dimension_names/off"},"hoverEvent":{"action":"show_text","contents":"*click*"}},{"text":" Coloured Dimension Names","color":"gold","hoverEvent":{"action":"show_text","contents":"Colours the player name according to the current dimension."}}]
+      tellraw @s [{"text":"[✔]","color":"dark_green","clickEvent":{"action":"run_command","value":"/function 2tw:menu/buttons/coloured_dimension_names/off"},"hoverEvent":{"action":"show_text","contents":"*click*"}},{"text":" Coloured Dimension Names","color":"gold","hoverEvent":{"action":"show_text","contents":"Colors the player name according to the current dimension."}}]
     }
 
     execute if data storage 2tw:data gamerules{damageInfection: 0b} run {
@@ -216,10 +216,10 @@ dir menu {
     }
 
     execute if data storage 2tw:data gamerules{onlyRuinedPortals: 0b} run {
-      tellraw @s [{"text":"[❌]","color":"dark_red","clickEvent":{"action":"run_command","value":"/function 2tw:menu/buttons/only_ruined_portals/on"},"hoverEvent":{"action":"show_text","contents":"*click*"}},{"text":" Only Ruined Portals","color":"gold","hoverEvent":{"action":"show_text","contents":"Travelling between dimensions is only possible with Ruined Portals."}}]
+      tellraw @s [{"text":"[❌]","color":"dark_red","clickEvent":{"action":"run_command","value":"/function 2tw:menu/buttons/only_ruined_portals/on"},"hoverEvent":{"action":"show_text","contents":"*click*"}},{"text":" Only Ruined Portals","color":"gold","hoverEvent":{"action":"show_text","contents":"Traveling between dimensions is only possible with Ruined Portals."}}]
     }
     execute if data storage 2tw:data gamerules{onlyRuinedPortals: 1b} run {
-      tellraw @s [{"text":"[✔]","color":"dark_green","clickEvent":{"action":"run_command","value":"/function 2tw:menu/buttons/only_ruined_portals/off"},"hoverEvent":{"action":"show_text","contents":"*click*"}},{"text":" Only Ruined Portals","color":"gold","hoverEvent":{"action":"show_text","contents":"Travelling between dimensions is only possible with Ruined Portals."}}]
+      tellraw @s [{"text":"[✔]","color":"dark_green","clickEvent":{"action":"run_command","value":"/function 2tw:menu/buttons/only_ruined_portals/off"},"hoverEvent":{"action":"show_text","contents":"*click*"}},{"text":" Only Ruined Portals","color":"gold","hoverEvent":{"action":"show_text","contents":"Traveling between dimensions is only possible with Ruined Portals."}}]
     }
 
     execute if data storage 2tw:data gamerules{pathGenerator: 0b} run {
@@ -244,10 +244,10 @@ dir menu {
     }
 
     execute if data storage 2tw:data gamerules{realisticFire: 0b} run {
-      tellraw @s [{"text":"[❌]","color":"dark_red","clickEvent":{"action":"run_command","value":"/function 2tw:menu/buttons/realistic_fire/on"},"hoverEvent":{"action":"show_text","contents":"*click*"}},{"text":" Realistic Fire","color":"gold","hoverEvent":{"action":"show_text","contents":"Fire is more relaistic."}}]
+      tellraw @s [{"text":"[❌]","color":"dark_red","clickEvent":{"action":"run_command","value":"/function 2tw:menu/buttons/realistic_fire/on"},"hoverEvent":{"action":"show_text","contents":"*click*"}},{"text":" Realistic Fire","color":"gold","hoverEvent":{"action":"show_text","contents":"Fire is more realistic."}}]
     }
     execute if data storage 2tw:data gamerules{realisticFire: 1b} run {
-      tellraw @s [{"text":"[✔]","color":"dark_green","clickEvent":{"action":"run_command","value":"/function 2tw:menu/buttons/realistic_fire/off"},"hoverEvent":{"action":"show_text","contents":"*click*"}},{"text":" Realistic Fire","color":"gold","hoverEvent":{"action":"show_text","contents":"Fire is more relaistic."}}]
+      tellraw @s [{"text":"[✔]","color":"dark_green","clickEvent":{"action":"run_command","value":"/function 2tw:menu/buttons/realistic_fire/off"},"hoverEvent":{"action":"show_text","contents":"*click*"}},{"text":" Realistic Fire","color":"gold","hoverEvent":{"action":"show_text","contents":"Fire is more realistic."}}]
     }
 
     #execute if data storage 2tw:data gamerules{realisticTorches: 0b} run {
@@ -270,10 +270,10 @@ dir menu {
     function 2tw:menu/click
 
     execute if data storage 2tw:data gamerules{ropeLadder: 0b} run {
-      tellraw @s [{"text":"[❌]","color":"dark_red","clickEvent":{"action":"run_command","value":"/function 2tw:menu/buttons/rope_ladder/on"},"hoverEvent":{"action":"show_text","contents":"*click*"}},{"text":" Rope Ladder","color":"gold","hoverEvent":{"action":"show_text","contents":"Place and destroy roppe ladders with SHIFT."}}]
+      tellraw @s [{"text":"[❌]","color":"dark_red","clickEvent":{"action":"run_command","value":"/function 2tw:menu/buttons/rope_ladder/on"},"hoverEvent":{"action":"show_text","contents":"*click*"}},{"text":" Rope Ladder","color":"gold","hoverEvent":{"action":"show_text","contents":"Place and destroy rope ladders with SHIFT."}}]
     }
     execute if data storage 2tw:data gamerules{ropeLadder: 1b} run {
-      tellraw @s [{"text":"[✔]","color":"dark_green","clickEvent":{"action":"run_command","value":"/function 2tw:menu/buttons/rope_ladder/off"},"hoverEvent":{"action":"show_text","contents":"*click*"}},{"text":" Rope Ladder","color":"gold","hoverEvent":{"action":"show_text","contents":"Place and destroy roppe ladders with SHIFT."}}]
+      tellraw @s [{"text":"[✔]","color":"dark_green","clickEvent":{"action":"run_command","value":"/function 2tw:menu/buttons/rope_ladder/off"},"hoverEvent":{"action":"show_text","contents":"*click*"}},{"text":" Rope Ladder","color":"gold","hoverEvent":{"action":"show_text","contents":"Place and destroy rope ladders with SHIFT."}}]
     }
 
     execute if data storage 2tw:data gamerules{serverTime: 0b} run {

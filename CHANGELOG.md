@@ -24,7 +24,7 @@
 ## Update v2.0.0 (24.3.2022)
 
 ### Added:
-  - creative one punch moduled
+  - creative one punch modules
   - creative insta tame module
   - higher bell range module
   - longer entity death module
@@ -53,14 +53,14 @@
 
 ### Removed:
   - realistic torches module (temporary)
-  - [Internal] Lantern Load librar
+  - [Internal] Lantern Load library
 
 ***
 
 ## Update v1.3.0 (7.9.2021)
 
 Here finally a sign of life from me. My motivation is currently focused on other things, which is why updates will come a bit less often. But I'm still working on the datapacks. So, now to the update.
-With this update 6 new modules are added, most of them based on new 1.17 mechanics and items like the glow berries and the spyglass. I also changed the nerfed elytra module so that you can now enchant the elytra with unbreaking. The old version was too annoying. 
+With this update 6 new modules are added, most of them based on new 1.17 mechanics and items like the glow berries and the spyglass. I also changed the nerfed Elytra module so that you can now enchant the Elytra with unbreaking. The old version was too annoying. 
 
 ### Added:
 - Glow berries glow module

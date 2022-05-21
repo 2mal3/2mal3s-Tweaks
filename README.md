@@ -21,7 +21,7 @@ All modules can be turned on and off via the in-game menu, so you only have to u
 - **Bush hiding**: Players who sneak in high plants become invisible.
 - **Creative insta tame**: Horses are tamed immediately in creative mode.
 - **Creative One Punch**: One-hit all entities in creative mode
-- **Coloured Dimension Names**: Colours the player name according to the current dimension.
+- **Coloured Dimension Names**: Colors the player name according to the current dimension.
 - **Damage Infection**: Players who take damage have a certain probability to get infected and receive negative effects.
 - **Death Chest**: Spawns a death chest at died players with their items.
 - **Death Coordinates**: In case of a death, the coordinates and the dimension of the dead point are displayed.
@@ -39,12 +39,12 @@ All modules can be turned on and off via the in-game menu, so you only have to u
 - **No Thunderstorm Sleep**: Prevents sleeping during thunderstorms.
 - **No to expensive**: Place an unrepairable item in an item frame on an anvil to reset its repair cost.
 - **Old Regeneration**: The old pre 1.9 regeneration.
-- **Only Ruined Portals**: Travelling between dimensions is only possible with Ruined Portals.
+- **Only Ruined Portals**: Traveling between dimensions is only possible with Ruined Portals.
 - **Path Generator**: Slowly generates a path along much-used routes.
 - **Projectile Block Damage**: Some projectiles can break glass panes.
 - **Random Respawn**: When you die, you respawn at a random location within a radius of 2000 blocks around the spawn.
-- **Realistic Fire**: Fire is more relaistic.
-- **Rope Ladder**: Place and destroy roppe ladders with SHIFT.
+- **Realistic Fire**: Fire is more realistic.
+- **Rope Ladder**: Place and destroy rope ladders with SHIFT.
 - **Server Time**: As long as no player is on the server, the time is stopped.
 - **Spectator Sense**: Players in spectator mode are displayed with individual particles.
 - **Speed Paths**: You can run faster on path blocks.
