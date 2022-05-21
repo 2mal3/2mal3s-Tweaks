@@ -45,6 +45,7 @@ All modules can be turned on and off via the in-game menu, so you only have to u
 - **Random Respawn**: When you die, you respawn at a random location within a radius of 2000 blocks around the spawn.
 - **Realistic Fire**: Fire is more realistic.
 - **Rope Ladder**: Place and destroy rope ladders with SHIFT.
+- **Self planting Saplings**: Tree saplings lying on the ground can plant themselves with a certain probability.
 - **Server Time**: As long as no player is on the server, the time is stopped.
 - **Spectator Sense**: Players in spectator mode are displayed with individual particles.
 - **Speed Paths**: You can run faster on path blocks.

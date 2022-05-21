@@ -25,4 +25,9 @@ dir random {
     "condition": "minecraft:random_chance",
     "chance": 0.5
   }
+
+  predicate 80 {
+    "condition": "minecraft:random_chance",
+    "chance": 0.8
+  }
 }

@@ -276,6 +276,13 @@ dir menu {
       tellraw @s [{"text":"[✔]","color":"dark_green","clickEvent":{"action":"run_command","value":"/function 2tw:menu/buttons/rope_ladder/off"},"hoverEvent":{"action":"show_text","contents":"*click*"}},{"text":" Rope Ladder","color":"gold","hoverEvent":{"action":"show_text","contents":"Place and destroy rope ladders with SHIFT."}}]
     }
 
+    execute if data storage 2tw:data gamerules{selfPlantingSaplings: 0b} run {
+      tellraw @s [{"text":"[❌]","color":"dark_red","clickEvent":{"action":"run_command","value":"/function 2tw:menu/buttons/self_planting_saplings/on"},"hoverEvent":{"action":"show_text","contents":"*click*"}},{"text":" Self planting Saplings","color":"gold","hoverEvent":{"action":"show_text","contents":"Tree saplings lying on the ground can plant themselves with a certain probability."}}]
+    }
+    execute if data storage 2tw:data gamerules{selfPlantingSaplings: 1b} run {
+      tellraw @s [{"text":"[✔]","color":"dark_green","clickEvent":{"action":"run_command","value":"/function 2tw:menu/buttons/self_planting_saplings/off"},"hoverEvent":{"action":"show_text","contents":"*click*"}},{"text":" Self planting Saplings","color":"gold","hoverEvent":{"action":"show_text","contents":"Tree saplings lying on the ground can plant themselves with a certain probability."}}]
+    }
+
     execute if data storage 2tw:data gamerules{serverTime: 0b} run {
       tellraw @s [{"text":"[❌]","color":"dark_red","clickEvent":{"action":"run_command","value":"/function 2tw:menu/buttons/server_time/on"},"hoverEvent":{"action":"show_text","contents":"*click*"}},{"text":" Server Time","color":"gold","hoverEvent":{"action":"show_text","contents":"As long as no player is on the server, the time is stopped."}}]
     }
@@ -338,13 +345,26 @@ dir menu {
     execute if data storage 2tw:data gamerules{wanderingTraderNotifications: 1b} run {
       tellraw @s [{"text":"[✔]","color":"dark_green","clickEvent":{"action":"run_command","value":"/function 2tw:menu/buttons/wandering_trader_notifications/off"},"hoverEvent":{"action":"show_text","contents":"*click*"}},{"text":" Wandering Trader Notifications","color":"gold","hoverEvent":{"action":"show_text","contents":"When a Wandering Trader appears a notification is sent to all players and gets a short glowing effect."}}]
     }
-    tellraw @s {"text":"\n\n\n\n\n"}
+
+    tellraw @s {"text":"\n\n\n\n"}
   }
 
 }
 
 
 dir buttons {
+  dir self_planting_saplings {
+    function on {
+      data modify storage 2tw:data gamerules.selfPlantingSaplings set value 1b
+      function 2tw:menu/page
+    }
+    function off {
+      function 2tw:menu/click
+      data modify storage 2tw:data gamerules.selfPlantingSaplings set value 0b
+      function 2tw:menu/page
+    }
+  }
+
   dir rope_ladder {
     function on {
       data modify storage 2tw:data gamerules.ropeLadder set value 1b

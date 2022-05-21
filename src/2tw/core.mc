@@ -10,6 +10,7 @@ dir clocks {
     execute if data storage 2tw:data gamerules{unlockAllRecipes: 1b} run function 2tw:tweaks/unlock_all_recipes/loop
     execute if data storage 2tw:data gamerules{wanderingTraderNotifications: 1b} run function 2tw:tweaks/wandering_trader_notifications/loop
     execute if data storage 2tw:data gamerules{fishTraps: 1b} run function 2tw:tweaks/fish_traps/loop
+    execute if data storage 2tw:data gamerules{selfPlantingSaplings: 1b} run function 2tw:tweaks/self_planting_saplings/loop
   }
 
   clock 10s {
@@ -170,6 +171,7 @@ function load {
           ropeLadder: 0b, 
           colouredDimensionNames: 0b, 
           fishTraps: 0b, 
+          selfPlantingSaplings: 0b
         }
       }
     )
