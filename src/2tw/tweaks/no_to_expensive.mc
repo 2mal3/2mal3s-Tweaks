@@ -12,7 +12,7 @@ function repair {
       item modify entity @s weapon.mainhand 2tw:tweaks/no_to_expensive/reset_repair_cost
       playsound minecraft:block.anvil.use block @a ~ ~ ~ 8 1
       # Damages the anvil with a 12% chance
-      execute if predicate 2tw:tweaks/no_to_expensive/damage_anvil_chance anchored eyes run {
+      execute if predicate 2tw:utilities/random/12 anchored eyes run {
         execute if block ~ ~ ~ #2tw:utilities/air positioned ^ ^ ^0.1 run function $block
         execute if block ~ ~ ~ #minecraft:anvil run {
           execute if block ~ ~ ~ minecraft:damaged_anvil run setblock ~ ~ ~ minecraft:air
@@ -28,11 +28,6 @@ function repair {
 modifier reset_repair_cost {
   "function": "minecraft:set_nbt",
   "tag": "{RepairCost:10}"
-}
-
-predicate damage_anvil_chance {
-  "condition": "minecraft:random_chance",
-  "chance": 0.12
 }
 
 advancement used_item_on_anvil {
