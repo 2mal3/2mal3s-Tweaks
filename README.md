@@ -7,7 +7,7 @@ This datapack adds over 42 small adjustable improvements and tweaks to the norma
 - Over 42 different improvements and tweaks
 - No drastic changes to the gameplay -> still feels "vanilla"
 - All modules can be easily switched on and off via the in-game menu
-- Good performace
+- Good performance
 - Multiplayer compatible
 
 All modules can be turned on and off via the in-game menu, so you only have to use the ones you want. The menu can be opened with the command `/function #2tw:menu`.                                                                     

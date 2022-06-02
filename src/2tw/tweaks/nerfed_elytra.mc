@@ -5,7 +5,7 @@ function loop {
   execute as @a[predicate=2tw:tweaks/nerfed_elytra/mending] run {
     log 2TW debug entity <Removed mending from elytra>
 
-    # Remove Mendig from the corresponding slot
+    # Remove Mending from the corresponding slot
     execute if predicate 2tw:tweaks/nerfed_elytra/mainhand run item modify entity @s weapon.mainhand 2tw:tweaks/nerfed_elytra/remove_mending
     execute if predicate 2tw:tweaks/nerfed_elytra/offhand run item modify entity @s weapon.offhand 2tw:tweaks/nerfed_elytra/remove_mending
     execute if predicate 2tw:tweaks/nerfed_elytra/chest run item modify entity @s armor.chest 2tw:tweaks/nerfed_elytra/remove_mending
