@@ -87,7 +87,7 @@ function load {
 
   scoreboard objectives add 2tw.data dummy
 
-  scoreboard players set %installed 2tw.data 0
+  # scoreboard players set %installed 2tw.data 0
   # Initializes the datapack at the first startup or new version
   execute unless score %installed 2tw.data matches 1 run {
     log 2TW info server <Datapack installed>
@@ -113,7 +113,7 @@ function load {
     scoreboard objectives add 2tw.minedLadder minecraft.mined:minecraft.ladder
     scoreboard players set $16 2tw.data 16
     # Set the version in format: xx.xx.xx
-    scoreboard players set $version 2tw.data 020100
+    scoreboard players set $version 2tw.data 020200
 
     # Add teams
     team add 2tw.invisible
@@ -179,18 +179,18 @@ function load {
 
 
     schedule 4s replace {
-      tellraw @a {"text":"2mal3's Tweaks v2.1.0 by 2mal3 was installed!","color":"green"}
+      tellraw @a {"text":"2mal3's Tweaks v2.2.0 by 2mal3 was installed!","color":"green"}
     }
   }
 
   # Update datapack
-  execute if score %installed 2tw.data matches 1 unless score $version 2tw.data matches 020100 run {
+  execute if score %installed 2tw.data matches 1 unless score $version 2tw.data matches 020200 run {
     log 2TW info server <Update datapack ...>
 
     # v2.1.0
     execute if score $version 2tw.data matches 020000 run {
       log 2TW info server <Updated from v2.0.0 to v2.1.0>
-      scoreboard players set $version 2tw.data 020100
+      scoreboard players set $version 2tw.data 020010
 
       # Init new modules in the settings
       data modify storage 2tw:data gamerules.noThunderstormSleep set value 0b
@@ -212,6 +212,19 @@ function load {
       team modify 2tw.nether color red
       team add 2tw.end
       team modify 2tw.end color yellow
+    }
+
+    # v2.2.0
+    execute if score $version 2tw.data matches 020010 run {
+      log 2TW info server <Updated from v2.1.0 to v2.2.0>
+      scoreboard players set $version 2tw.data 020200
+
+      # Init new modules in the settings
+      data modify storage 2tw:data gamerules.selfPlantingSaplings set value 0b
+      data modify storage 2tw:data gamerules.invisibleItemFrames set value 0b
+
+      # Add new scoreboards
+      scoreboard objectives add 2tw.schedule dummy
     }
   }
 }
@@ -257,7 +270,7 @@ advancement first_join {
 ## Datapack advancement
 advancement 2tw {
   "display": {
-    "title": "2mal3s Tweaks v2.1.0",
+    "title": "2mal3s Tweaks v2.2.0",
     "description": "Adds many small improvements to the game.",
     "icon": {
       "item": "minecraft:redstone_torch"
@@ -311,10 +324,10 @@ function uninstall {
   schedule clear 2tw:core/clocks/4_tick
 
   # Sends an uninstallation message to all players
-  tellraw @a {"text":"2mal3's Tweaks v2.1.0 by 2mal3 was successfully uninstalled.","color": "green"}
+  tellraw @a {"text":"2mal3's Tweaks v2.2.0 by 2mal3 was successfully uninstalled.","color": "green"}
 
   # Disables the datapack
   datapack disable "file/2mal3s-Tweaks"
-  datapack disable "file/2mal3s-Tweaks-v2.1.0"
-  datapack disable "file/2mal3s-Tweaks-v2.1.0.zip"
+  datapack disable "file/2mal3s-Tweaks-v2.2.0"
+  datapack disable "file/2mal3s-Tweaks-v2.2.0.zip"
 }

@@ -1,4 +1,26 @@
 
+## Update v2.2.0 (2.6.2022)
+
+### Added:
+ - self planting saplings module
+ - invisible item frames module
+ - nether portal destroy sound
+ - Elytra closing sound
+
+### Changed:
+ - fish traps can only be placed in oceans, rivers or swamps
+ - [Internal] random generators of single modules merged together
+ - [Internal] clearer code
+
+### Fixed:
+ - elytra nerfing could be bypassed
+ - random respawn module not working
+ - datapack reinstalls itself at every reload
+ - typos
+ - [Internal] incorrect datapack version
+
+***
+
 ## Update v2.1.0 (24.4.2022)
 
 ### Added:
