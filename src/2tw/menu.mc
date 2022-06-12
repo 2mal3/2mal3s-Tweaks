@@ -716,11 +716,13 @@ dir buttons {
   dir old_regeneration {
     function on {
       data modify storage 2tw:data gamerules.oldRegeneration set value 1b
+      gamerule naturalRegeneration false
       function 2tw:menu/page
     }
     function off {
       function 2tw:menu/click
       data modify storage 2tw:data gamerules.oldRegeneration set value 0b
+      gamerule naturalRegeneration true
       function 2tw:menu/page
     }
   }
