@@ -1,5 +1,5 @@
 # 2mal3's Tweaks
-![GitHub release (latest by date)](https://img.shields.io/github/v/release/2mal3/2mal3s-Tweaks?style=flat-square) ![GitHub all releases](https://img.shields.io/github/downloads/2mal3/2mal3s-Tweaks/total?style=flat-square) ![Minecraft](https://img.shields.io/badge/Minecraft-1.18-orange?style=flat-square)
+![GitHub release (latest by date)](https://img.shields.io/github/v/release/2mal3/2mal3s-Tweaks?style=flat-square) ![GitHub all releases](https://img.shields.io/github/downloads/2mal3/2mal3s-Tweaks/total?style=flat-square) ![Minecraft](https://img.shields.io/badge/Minecraft-1.19-orange?style=flat-square)
 
 This datapack adds over 43 small adjustable improvements and tweaks to the normal vanilla game and spice it up a bit. At the same time no big changes are made to the gameplay, so it still feels "vanilla".
 
@@ -59,7 +59,7 @@ All modules can be turned on and off via the in-game menu, so you only have to u
 - **Wandering Trader Notifications**: When a Wandering Trader appears a notification is sent to all players and gets a short glowing effect.
 
 ## Notes:
-- Tested for Fabric and Vanilla in 1.18
+- Tested for Fabric and Vanilla in 1.19
 - Not tested with Forge, Bukktit, Spigot and PaperSpigot but probably don't work
 - To uninstall run the command `/function #2tw:uninstall`
 - The performance of the datapack depends strongly on the activated modules, all modules have a different influence. As long as none is activated, the datapack consumes almost no resources. But normally there should be no noticeable lags on small or medium sized survival worlds.
