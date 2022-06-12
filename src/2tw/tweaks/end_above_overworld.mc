@@ -20,13 +20,15 @@ dir overworld {
       "requirement": {
         "trigger": "minecraft:location",
         "conditions": {
-          "location": {
-            "position": {
-              "y": {
-                "min": 1064
-              }
-            },
-            "dimension": "minecraft:overworld"
+          "player": {
+            "location": {
+              "position": {
+                "y": {
+                  "min": 1064
+                }
+              },
+              "dimension": "minecraft:overworld"
+            }
           }
         }
       }
@@ -57,13 +59,15 @@ dir end {
       "requirement": {
         "trigger": "minecraft:location",
         "conditions": {
-          "location": {
-            "position": {
-              "y": {
-                "max": -64
-              }
-            },
-            "dimension": "minecraft:the_end"
+          "player": {
+            "location": {
+              "position": {
+                "y": {
+                  "max": -42
+                }
+              },
+              "dimension": "minecraft:the_end"
+            }
           }
         }
       }
