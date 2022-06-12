@@ -1,10 +1,10 @@
 # 2mal3's Tweaks
 ![GitHub release (latest by date)](https://img.shields.io/github/v/release/2mal3/2mal3s-Tweaks?style=flat-square) ![GitHub all releases](https://img.shields.io/github/downloads/2mal3/2mal3s-Tweaks/total?style=flat-square) ![Minecraft](https://img.shields.io/badge/Minecraft-1.18-orange?style=flat-square)
 
-This datapack adds over 42 small adjustable improvements and tweaks to the normal vanilla game and spice it up a bit. At the same time no big changes are made to the gameplay, so it still feels "vanilla".
+This datapack adds over 43 small adjustable improvements and tweaks to the normal vanilla game and spice it up a bit. At the same time no big changes are made to the gameplay, so it still feels "vanilla".
 
 ## 📖 Features:
-- Over 42 different improvements and tweaks
+- Over 43 different improvements and tweaks
 - No drastic changes to the gameplay -> still feels "vanilla"
 - All modules can be easily switched on and off via the in-game menu
 - Good performance
@@ -35,8 +35,9 @@ All modules can be turned on and off via the in-game menu, so you only have to u
 - **Higher Bell Range**: Bells reveal more distant Pillagers.
 - **Invisible Item Frames**: Surround an Item Frame in the crafting table with Glass Panes to get an Invisible Item Frame.
 - **Invisible see Invisible**: Invisible can see each other.
+- **Item Sign**: Allow you to sign items with the command `/trigger sign`.
 - **Longer Entity Death**: The death animation of entities is longer.
-- **Nerfed Elytra**: Nerfs Elytras by making them impossible to enchant with mending.
+- **Nerfed Elytra**: Nerfs Elytras by making them impossible tok enchant with mending.
 - **No Thunderstorm Sleep**: Prevents sleeping during thunderstorms.
 - **No to expensive**: Place an unrepairable item in an item frame on an anvil to reset its repair cost.
 - **Old Regeneration**: The old pre 1.9 regeneration.

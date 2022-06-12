@@ -41,6 +41,7 @@ dir clocks {
     execute if data storage 2tw:data gamerules{randomRespawn: 1b} run function 2tw:tweaks/random_respawn/loop
     execute if data storage 2tw:data gamerules{realisticFire: 1b} run function 2tw:tweaks/realistic_fire/loop_second
     execute if data storage 2tw:data gamerules{visibleMarker: 1b} run function 2tw:tweaks/visible_marker/loop
+    execute if data storage 2tw:data gamerules{itemSign: 1b} run function 2tw:tweaks/item_sign/loop
 
     # Reset scoreboard triggers
     execute as @a run {
@@ -111,6 +112,7 @@ function load {
     scoreboard objectives add 2tw.useElytra minecraft.custom:minecraft.aviate_one_cm
     scoreboard objectives add 2tw.sneaking minecraft.custom:minecraft.sneak_time
     scoreboard objectives add 2tw.minedLadder minecraft.mined:minecraft.ladder
+    scoreboard objectives add sign trigger
     scoreboard players set $16 2tw.data 16
     # Set the version in format: xx.xx.xx
     scoreboard players set $version 2tw.data 020200
@@ -171,7 +173,8 @@ function load {
           colouredDimensionNames: 0b, 
           fishTraps: 0b, 
           selfPlantingSaplings: 0b,
-          invisibleItemFrames: 0b
+          invisibleItemFrames: 0b,
+          itemSign: 0b
         }
       }
     )
