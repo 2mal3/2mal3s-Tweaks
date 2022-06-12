@@ -13,7 +13,7 @@ blocks replaceable {
   minecraft:sea_pickle
   minecraft:snow
   \#minecraft:flowers
-  \#minecraft:carpets
+  \#minecraft:wool_carpets
   \#minecraft:cave_vines
 }
 
