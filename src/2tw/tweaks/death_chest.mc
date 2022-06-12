@@ -113,8 +113,9 @@ function find_facing {
 
 
 function loop {
-
   execute as @a[scores={2tw.death=1..}] at @s run {
+    name find_pos
+
     scoreboard players set .temp0 2tw.data 0
     # Search
     execute if score .temp0 2tw.data matches 0 positioned ~-4 ~-4 ~-4 if block ~ ~ ~ #2tw:tweaks/death_chest/replaceable run function 2tw:tweaks/death_chest/find_facing
@@ -630,7 +631,7 @@ function loop {
     execute if score .temp0 2tw.data matches 0 positioned ~3 ~3 ~2 if block ~ ~ ~ #2tw:tweaks/death_chest/replaceable run function 2tw:tweaks/death_chest/find_facing
     execute if score .temp0 2tw.data matches 0 positioned ~3 ~3 ~3 if block ~ ~ ~ #2tw:tweaks/death_chest/replaceable run function 2tw:tweaks/death_chest/find_facing
     # If the player falls in the void
-    execute if score .temp0 2tw.data matches 0 positioned ~ 0 ~ run function 2mal3:2tw/tweaks/death_chest/find_pos
+    execute if score .temp0 2tw.data matches 0 positioned ~ 0 ~ run function 2tw:tweaks/death_chest/find_pos
   
     # Clear inventory and xp
     clear @s
