@@ -80,13 +80,13 @@ function find_facing {
     setblock ~ ~ ~1 minecraft:chest[type=left,facing=west]
     # Fill the chest
     function 2tw:tweaks/death_chest/fill/one
-    execute positioned ~1 ~ ~ run function 2tw:tweaks/death_chest/fill/two
+    execute positioned ~ ~ ~1 run function 2tw:tweaks/death_chest/fill/two
   }
 
   execute if score .temp0 2tw.data matches 0 if block ~1 ~ ~ #2tw:tweaks/death_chest/replaceable run {
     scoreboard players set .temp0 2tw.data 1
     setblock ~ ~ ~ minecraft:chest[type=right,facing=north]
-    setblock ~-1 ~ ~ minecraft:chest[type=left,facing=north]
+    setblock ~1 ~ ~ minecraft:chest[type=left,facing=north]
     # Fill the chest
     function 2tw:tweaks/death_chest/fill/one
     execute positioned ~1 ~ ~ run function 2tw:tweaks/death_chest/fill/two
@@ -98,16 +98,16 @@ function find_facing {
     setblock ~ ~ ~-1 minecraft:chest[type=left,facing=east]
     # Fill the chest
     function 2tw:tweaks/death_chest/fill/one
-    execute positioned ~1 ~ ~ run function 2tw:tweaks/death_chest/fill/two
+    execute positioned ~ ~ ~-1 run function 2tw:tweaks/death_chest/fill/two
   }
 
   execute if score .temp0 2tw.data matches 0 if block ~-1 ~ ~ #2tw:tweaks/death_chest/replaceable run {
     scoreboard players set .temp0 2tw.data 1
     setblock ~ ~ ~ minecraft:chest[type=left,facing=north]
-    setblock ~1 ~ ~ minecraft:chest[type=right,facing=north]
+    setblock ~-1 ~ ~ minecraft:chest[type=right,facing=north]
     # Fill the chest
     function 2tw:tweaks/death_chest/fill/one
-    execute positioned ~1 ~ ~ run function 2tw:tweaks/death_chest/fill/two
+    execute positioned ~-1 ~ ~ run function 2tw:tweaks/death_chest/fill/two
   }
 }
 
