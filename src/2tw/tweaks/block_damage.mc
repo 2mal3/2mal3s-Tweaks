@@ -1,7 +1,7 @@
 
 function loop {
-  execute as @e[predicate=2tw:tweaks/block_damage/stand_on_damage_block,team=!thisTeamDoesNotExist,tag=!global.ignore,tag=!global.ignore.kill,gamemode=!creative,gamemode=!spectator] run {
-      # Deal 1 heart damage
+  execute as @e[predicate=2tw:tweaks/block_damage/stand_on_damage_block,team=!thisTeamDoesNotExist,tag=!global.ignore,tag=!global.ignore.kill] run {
+    # Deal 1 heart damage
     effect give @s minecraft:resistance 1 3 true
     effect give @s minecraft:instant_damage 1 0 true
   }
