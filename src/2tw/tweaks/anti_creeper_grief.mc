@@ -6,7 +6,7 @@ function loop {
     log 2TW debug entity <Disabled block damage>
     tag @s add 2tw.antiCreeperGrief.processed
 
-    data modify entity @s ExplosionRadius set value 0
+    data modify entity @s ExplosionRadius set value -2
   }
 }
 
