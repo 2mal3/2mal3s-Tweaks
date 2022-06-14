@@ -2,7 +2,7 @@
 function loop {
   execute as @a[gamemode=!spectator,tag=!global.ignore] at @s positioned ~ ~-1 ~ run {
     # Generates path blocks with a certain chance for running or sprinting players 
-    execute if entity @s[scores={2tw.walk=200..}] if predicate 2tw:utilities/random/20 run {
+    execute if entity @s[scores={2tw.walk=200..}] if predicate 2tw:utilities/random/30 run {
       # Path blocks in the overworld
       execute if block ~ ~ ~ minecraft:coarse_dirt run setblock ~ ~ ~ minecraft:dirt_path
       execute if block ~ ~ ~ minecraft:dirt run setblock ~ ~ ~ minecraft:coarse_dirt
