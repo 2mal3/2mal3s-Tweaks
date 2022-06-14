@@ -17,8 +17,49 @@ function loop {
 }
 
 predicate in_ruined_portal {
-	"condition": "location_check",
-	"predicate": {
-		"feature": "minecraft:ruined_portal"
-	}
+  "condition": "minecraft:alternative",
+  "terms": [
+    {
+      "condition": "minecraft:location_check",
+      "predicate": {
+        "structure": "minecraft:ruined_portal_swamp"
+      }
+    },
+    {
+      "condition": "minecraft:location_check",
+      "predicate": {
+        "structure": "minecraft:ruined_portal_ocean"
+      }
+    },
+    {
+      "condition": "minecraft:location_check",
+      "predicate": {
+        "structure": "minecraft:ruined_portal_nether"
+      }
+    },
+    {
+      "condition": "minecraft:location_check",
+      "predicate": {
+        "structure": "minecraft:ruined_portal_mountain"
+      }
+    },
+    {
+      "condition": "minecraft:location_check",
+      "predicate": {
+        "structure": "minecraft:ruined_portal_jungle"
+      }
+    },
+    {
+      "condition": "minecraft:location_check",
+      "predicate": {
+        "structure": "minecraft:ruined_portal_desert"
+      }
+    },
+    {
+      "condition": "minecraft:location_check",
+      "predicate": {
+        "structure": "minecraft:ruined_portal"
+      }
+    }
+  ]
 }
