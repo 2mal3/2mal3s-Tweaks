@@ -64,7 +64,6 @@ dir clocks {
     execute if data storage 2tw:data gamerules{elytraClosing: 1b} run function 2tw:tweaks/elytra_closing/loop
     execute if data storage 2tw:data gamerules{projectileBlockDamage: 1b} run function 2tw:tweaks/projectile_block_damage/loop
     execute if data storage 2tw:data gamerules{realisticFire: 1b} run function 2tw:tweaks/realistic_fire/loop_4_tick
-    execute if data storage 2tw:data gamerules{ropeLadder: 1b} run function 2tw:tweaks/rope_ladder/loop
     execute if data storage 2tw:data gamerules{spectatorSense: 1b} run function 2tw:tweaks/spectator_sense/loop
 
     # Reset scoreboard triggers
@@ -78,6 +77,12 @@ dir clocks {
     name 4_tick
 
     execute if data storage 2tw:data gamerules{speedPaths: 1b} run function 2tw:tweaks/speed_paths/loop
+  }
+
+  clock 1t {
+    name tick
+
+    execute if data storage 2tw:data gamerules{ropeLadder: 1b} run function 2tw:tweaks/rope_ladder/loop
   }
 }
 
