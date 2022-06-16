@@ -17,7 +17,8 @@ predicate looking_at_filter {
   "condition": "minecraft:entity_properties",
   "entity": "this",
   "predicate": {
-    "player": {
+    "type_specific": {
+      "type": "player",
       "looking_at": {
         "nbt": "{Tags: [\"2tw.spyglassSelection.this1\"]}"
       }
