@@ -347,10 +347,10 @@ dir menu {
     }
 
     execute if data storage 2tw:data gamerules{visibleMarker: 0b} run {
-      tellraw @s [{"text":"[❌]","color":"dark_red","clickEvent":{"action":"run_command","value":"/function 2tw:menu/buttons/visible_marker/on"},"hoverEvent":{"action":"show_text","contents":"*click*"}},{"text":" Visible Marker","color":"gold","hoverEvent":{"action":"show_text","contents":""}}]
+      tellraw @s [{"text":"[❌]","color":"dark_red","clickEvent":{"action":"run_command","value":"/function 2tw:menu/buttons/visible_marker/on"},"hoverEvent":{"action":"show_text","contents":"*click*"}},{"text":" Visible Marker","color":"gold","hoverEvent":{"action":"show_text","contents":"Makes marker entities visible.\n§7Only useful for datapack programmers"}}]
     }
     execute if data storage 2tw:data gamerules{visibleMarker: 1b} run {
-      tellraw @s [{"text":"[✔]","color":"dark_green","clickEvent":{"action":"run_command","value":"/function 2tw:menu/buttons/visible_marker/off"},"hoverEvent":{"action":"show_text","contents":"*click*"}},{"text":" Visible Marker","color":"gold","hoverEvent":{"action":"show_text","contents":""}}]
+      tellraw @s [{"text":"[✔]","color":"dark_green","clickEvent":{"action":"run_command","value":"/function 2tw:menu/buttons/visible_marker/off"},"hoverEvent":{"action":"show_text","contents":"*click*"}},{"text":" Visible Marker","color":"gold","hoverEvent":{"action":"show_text","contents":"Makes marker entities visible.\n§7Only useful for datapack programmers"}}]
     }
 
     execute if data storage 2tw:data gamerules{wanderingTraderNotifications: 0b} run {
