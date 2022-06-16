@@ -3,7 +3,7 @@ function loop {
   execute as @e[type=minecraft:item,predicate=2tw:tweaks/self_planting_saplings/is_sapling,tag=!2tw.selfPlantingSaplings.processed] at @s unless block ~ ~-1 ~ #2tw:utilities/air run {
     tag @s add 2tw.selfPlantingSaplings.processed
 
-    execute if block ~ ~ ~ #2tw:utilities/air if block ~ ~-1 ~ #minecraft:dirt if predicate 2tw:utilities/random/80 at @s run {
+    execute if block ~ ~ ~ #2tw:utilities/air if block ~ ~-1 ~ #minecraft:dirt if predicate 2tw:utilities/random/60 at @s run {
       kill @s
 
       # Place new sapling
