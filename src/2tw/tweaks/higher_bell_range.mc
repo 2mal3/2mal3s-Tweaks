@@ -1,5 +1,6 @@
 import ../../../macros/log.mcm
 
+
 function ring {
   execute if data storage 2tw:data gamerules{higherBellRange: 1b} run {
       log 2TW debug entity <Ring bell>

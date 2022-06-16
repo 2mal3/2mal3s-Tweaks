@@ -46,7 +46,7 @@ advancement place {
 
 ## Breaking the ladder
 function loop {
-  execute as @a[scores={2tw.minedLadder=1..,2tw.sneaking=1..}] at @s at @e[type=item, nbt={Item: {id: "minecraft:ladder", Count: 1b}, Age: 0s}, limit=1, sort=nearest] run {
+  execute as @a[scores={2tw.minedLadder=1..,2tw.sneaking=1..}] at @s at @e[type=minecraft:item, nbt={Item: {id: "minecraft:ladder", Count: 1b}, Age: 0s}, limit=1, sort=nearest] run {
     kill @e[type=item, nbt={Item: {id: "minecraft:ladder", Count: 1b}, Age: 0s}, limit=1, sort=nearest]
 
     execute at @s run summon minecraft:item ~ ~ ~ {PickupDelay:0,Item:{id:"minecraft:ladder",Count:1b}}

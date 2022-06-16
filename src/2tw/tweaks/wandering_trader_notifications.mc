@@ -3,7 +3,7 @@ import ../../../macros/log.mcm
 
 function loop {
   execute as @e[type=minecraft:wandering_trader,tag=!2tw.wanderingTraderNotifications.processed,tag=!global.ignore] run {
-    log 2TW debug entity <Spawned>
+    log 2TW debug entity Spawned
     tag @s add 2tw.wanderingTraderNotifications.processed
 
     effect give @s minecraft:glowing 180 0 true
