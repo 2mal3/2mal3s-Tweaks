@@ -22,7 +22,7 @@ dir menu {
   function page_0 {
     tellraw @s {"text":"\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"}
     tellraw @s {"text":"       2mal3's Tweaks Config","bold":true,"color":"gold"}
-    tellraw @s [{"text":"<<","color":"yellow"},{"text":" ------------ ","color":"yellow"},{"text":"1/3","color":"gold"},{"text":" ------------ ","color":"yellow"},{"text":">>","color":"gold","clickEvent":{"action":"run_command","value":"/function 2tw:menu/menu/page_1"}}]
+    tellraw @s [{"text":"<< ","color":"yellow"},{"text":"                  ","color":"yellow","strikethrough": true},{"text":" 1/3 ","color":"gold"},{"text":"                  ","color":"yellow","strikethrough": true},{"text":" >>","color":"gold","clickEvent":{"action":"run_command","value":"/function 2tw:menu/menu/page_1"}}]
     tellraw @s {"text":""}
     
     scoreboard players set %page 2tw.data 1
@@ -139,7 +139,7 @@ dir menu {
   function page_1 {
     tellraw @s {"text":"\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"}
     tellraw @s {"text":"       2mal3's Tweaks Config","bold":true,"color":"gold"}
-    tellraw @s [{"text":"<<","color":"gold","clickEvent":{"action":"run_command","value":"/function 2tw:menu/menu/page_0"}},{"text":" ------------ ","color":"yellow"},{"text":"2/3","color":"gold"},{"text":" ------------ ","color":"yellow"},{"text":">>","color":"gold","clickEvent":{"action":"run_command","value":"/function 2tw:menu/menu/page_2"}}]
+    tellraw @s [{"text":"<< ","color":"gold","clickEvent":{"action":"run_command","value":"/function 2tw:menu/menu/page_0"}},{"text":"                  ","color":"yellow","strikethrough": true},{"text":" 2/3 ","color":"gold"},{"text":"                  ","color":"yellow","strikethrough": true},{"text":" >>","color":"gold","clickEvent":{"action":"run_command","value":"/function 2tw:menu/menu/page_2"}}]
     tellraw @s {"text":""}
     
     scoreboard players set %page 2tw.data 2
@@ -256,7 +256,7 @@ dir menu {
   function page_2 {
     tellraw @s {"text":"\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"}
     tellraw @s {"text":"       2mal3's Tweaks Config","bold":true,"color":"gold"}
-    tellraw @s [{"text":"<<","color":"gold","clickEvent":{"action":"run_command","value":"/function 2tw:menu/menu/page_1"}},{"text":" ------------ ","color":"yellow"},{"text":"3/3","color":"gold"},{"text":" ------------ ","color":"yellow"},{"text":">>","color":"yellow"}]
+    tellraw @s [{"text":"<< ","color":"gold","clickEvent":{"action":"run_command","value":"/function 2tw:menu/menu/page_1"}},{"text":"                  ","color":"yellow","strikethrough": true},{"text":" 3/3 ","color":"gold"},{"text":"                  ","color":"yellow","strikethrough": true},{"text":" >>","color":"yellow"}]
     tellraw @s {"text":""}
     
     scoreboard players set %page 2tw.data 3
