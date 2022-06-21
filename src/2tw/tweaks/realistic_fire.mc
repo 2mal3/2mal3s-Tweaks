@@ -1,7 +1,7 @@
 
 function loop_4_tick {
-  # Burning  entity draw a line of fire behind them
-  execute as @a[gamemode=!spectator,tag=!global.ignore] at @s as @e[distance=..42,team=!thisTeamDoesNotExist,predicate=2tw:tweaks/realistic_fire/on_fire,type=!minecraft:arrow,team=!thisTeamDoesNotExist] at @s unless entity @e[type=minecraft:marker,tag=2tw.fire,distance=..1] run summon minecraft:marker ~ ~ ~ {Tags: ["2tw.fire", "global.ignore"]}
+  # Burning entity draw a line of fire behind them
+  execute as @e[distance=..42,team=!thisTeamDoesNotExist,predicate=2tw:tweaks/realistic_fire/on_fire,type=!minecraft:arrow,team=!thisTeamDoesNotExist] at @s if entity @p[distance=..42,gamemode=!spectator] unless entity @e[type=minecraft:marker,tag=2tw.fire,distance=..1] run summon minecraft:marker ~ ~ ~ {Tags: ["2tw.fire", "global.ignore"]}
 
   execute as @e[type=minecraft:marker,tag=2tw.fire] at @s unless entity @e[distance=..1,type=!minecraft:marker] run {
     setblock ~ ~ ~ minecraft:fire
