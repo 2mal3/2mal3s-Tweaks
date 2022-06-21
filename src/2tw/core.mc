@@ -336,6 +336,5 @@ function uninstall {
 
   # Disables the datapack
   datapack disable "file/2mal3s-Tweaks"
-  datapack disable "file/2mal3s-Tweaks-v2.2.0"
-  datapack disable "file/2mal3s-Tweaks-v2.2.0.zip"
+  datapack disable "file/2mal3s-Tweaks.zip"
 }
