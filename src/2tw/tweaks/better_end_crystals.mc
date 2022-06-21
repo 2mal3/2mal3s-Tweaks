@@ -6,7 +6,7 @@ function loop {
       log 2TW debug entity <Protected end crystals>
     tag @s add 2tw.betterEndCrystals.processed
 
-    execute as @e[type=minecraft:end_crystal,predicate=2tw:tweaks/better_end_crystals/in_end,predicate=2tw:tweaks/better_end_crystals/original] at @s if block ~2 ~ ~ minecraft:iron_bars run fill ~-2 ~-2 ~-2 ~2 ~-2 ~2 minecraft:obsidian
+    execute as @e[type=minecraft:end_crystal,predicate=2tw:tweaks/better_end_crystals/in_end,predicate=2tw:tweaks/better_end_crystals/original,tag=!global.ignore,tag=!smithed.strict] at @s if block ~2 ~ ~ minecraft:iron_bars run fill ~-2 ~-2 ~-2 ~2 ~-2 ~2 minecraft:obsidian
   }
 }
 

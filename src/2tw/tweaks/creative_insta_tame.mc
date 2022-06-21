@@ -2,7 +2,7 @@
 function started_riding {
   advancement revoke @s only 2tw:tweaks/creative_insta_tame/started_riding
   
-  execute if data storage 2tw:data gamerules{creativeInstaTame: 1b} run data merge entity @e[predicate=2tw:tweaks/creative_insta_tame/pet,limit=1,sort=nearest] {Temper:100}
+  execute if data storage 2tw:data gamerules{creativeInstaTame: 1b} run data merge entity @e[predicate=2tw:tweaks/creative_insta_tame/pet,limit=1,sort=nearest,tag=!global.ignore,tag=!smithed.entity] {Temper:100}
 }
 
 advancement started_riding {

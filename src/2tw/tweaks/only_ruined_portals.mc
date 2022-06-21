@@ -2,7 +2,7 @@ import ../../../macros/log.mcm
 
 
 function loop {
-  execute as @a[gamemode=!spectator,gamemode=!creative,tag=!global.ignore,predicate=!2tw:tweaks/only_ruined_portals/in_ruined_portal] at @s if block ~ ~ ~ minecraft:nether_portal run {
+  execute as @a[gamemode=!spectator,gamemode=!creative,predicate=!2tw:tweaks/only_ruined_portals/in_ruined_portal] at @s if block ~ ~ ~ minecraft:nether_portal run {
     log 2TW debug entity <Destroyed Portal>
 
     # Fancy effects

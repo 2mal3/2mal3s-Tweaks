@@ -5,7 +5,7 @@ function main {
   advancement revoke @s only 2tw:tweaks/spyglass_selection/use_spyglass_while_sneaking
 
   tag @s add 2tw.spyglassSelection.player
-  execute if data storage 2tw:data gamerules{spyglassSelection: 1b} as @e[team=!thisTeamDoesNotExist,distance=1..] run {
+  execute if data storage 2tw:data gamerules{spyglassSelection: 1b} as @e[team=!thisTeamDoesNotExist,distance=1..,tag=!global.ignore,tag=!global.ignore.gui,tag=!smithed.block] run {
     tag @s add 2tw.spyglassSelection.entity
     execute as @p if predicate 2tw:tweaks/spyglass_selection/looking_at_filter as @e[tag=2tw.spyglassSelection.entity] run effect give @s minecraft:glowing 15 0 true
     tag @s remove 2tw.spyglassSelection.entity

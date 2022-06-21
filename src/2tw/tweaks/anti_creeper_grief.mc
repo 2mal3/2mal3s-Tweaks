@@ -2,7 +2,7 @@ import ../../../macros/log.mcm
 
 
 function loop {
-  execute as @e[type=minecraft:creeper,tag=!2tw.antiCreeperGrief.processed,tag=!global.ignore] run {
+  execute as @e[type=minecraft:creeper,tag=!2tw.antiCreeperGrief.processed,tag=!global.ignore,tag=!smithed.entity] run {
     log 2TW debug entity <Disabled block damage>
     tag @s add 2tw.antiCreeperGrief.processed
 

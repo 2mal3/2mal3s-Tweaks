@@ -2,7 +2,7 @@ import ../../../macros/log.mcm
 
 
 function loop {
-  execute as @e[type=minecraft:wandering_trader,tag=!2tw.wanderingTraderNotifications.processed,tag=!global.ignore] run {
+  execute as @e[type=minecraft:wandering_trader,tag=!2tw.wanderingTraderNotifications.processed,tag=!global.ignore,tag=!smithed.entity] run {
     log 2TW debug entity Spawned
     tag @s add 2tw.wanderingTraderNotifications.processed
 

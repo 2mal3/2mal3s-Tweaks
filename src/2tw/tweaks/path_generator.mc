@@ -1,6 +1,6 @@
 
 function loop {
-  execute as @a[gamemode=!spectator,tag=!global.ignore] at @s positioned ~ ~-1 ~ run {
+  execute as @a[gamemode=!spectator] at @s positioned ~ ~-1 ~ run {
     # Generates path blocks with a certain chance for running or sprinting players 
     execute if entity @s[scores={2tw.walk=200..}] if predicate 2tw:utilities/random/30 run {
       # Path blocks in the overworld
