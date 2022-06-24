@@ -120,7 +120,7 @@ function load {
     scoreboard objectives add sign trigger
     scoreboard players set $16 2tw.data 16
     # Set the version in format: xx.xx.xx
-    scoreboard players set $version 2tw.data 020200
+    scoreboard players set $version 2tw.data 020300
 
     # Add teams
     team add 2tw.invisible
@@ -187,12 +187,12 @@ function load {
 
 
     schedule 4s replace {
-      tellraw @a {"text":"2mal3's Tweaks v2.2.0 by 2mal3 was installed!","color":"green"}
+      tellraw @a {"text":"2mal3's Tweaks v2.3.0 by 2mal3 was installed!","color":"green"}
     }
   }
 
   # Update datapack
-  execute if score %installed 2tw.data matches 1 unless score $version 2tw.data matches 020200 run {
+  execute if score %installed 2tw.data matches 1 unless score $version 2tw.data matches 020300 run {
     log 2TW info server <Update datapack ...>
 
     # v2.1.0
@@ -233,6 +233,15 @@ function load {
 
       # Add new scoreboards
       scoreboard objectives add 2tw.schedule dummy
+    }
+
+    # v2.3.0
+    execute if score $version 2tw.data matches 020200 run {
+      log 2TW info server <Updated from v2.2.0 to v2.3.0>
+      scoreboard players set $version 2tw.data 020300
+
+      # Init new modules in the settings
+      data modify storage 2tw:data gamerules.itemSign set value 0b
     }
   }
 }
@@ -278,7 +287,7 @@ advancement first_join {
 ## Datapack advancement
 advancement 2tw {
   "display": {
-    "title": "2mal3s Tweaks v2.2.0",
+    "title": "2mal3s Tweaks v2.3.0",
     "description": "Adds many small improvements to the game.",
     "icon": {
       "item": "minecraft:redstone_torch"
@@ -332,7 +341,7 @@ function uninstall {
   schedule clear 2tw:core/clocks/4_tick
 
   # Sends an uninstallation message to all players
-  tellraw @a {"text":"2mal3's Tweaks v2.2.0 by 2mal3 was successfully uninstalled.","color": "green"}
+  tellraw @a {"text":"2mal3's Tweaks v2.3.0 by 2mal3 was successfully uninstalled.","color": "green"}
 
   # Disables the datapack
   datapack disable "file/2mal3s-Tweaks"

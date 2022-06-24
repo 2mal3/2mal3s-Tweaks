@@ -1,4 +1,34 @@
 
+## Update v2.3.0 (24.6.2022)
+
+### Added:
+ - item sign module
+ - description for the visible makers module in the config menu
+
+### Changed:
+ - **update to 1.19**
+ - improved performance
+ - config menu embellished
+ - compatibility with other datapacks improved
+ - [Damage Infection] longer blindness effect
+ - [Higher Bell Range] longer glow effect duration
+ - [Path Generator] higher probability that a path is created when walking
+ - [Self Planting Saplings] lower chance of a sapling implanting itself
+ - [Squid Ink Blindness] lower ink range
+ - [Visible Marker] higher view range
+ - [Internal] nicer and clearer code
+
+### Fixed:
+ - [No Creeper Grief] creeper don't cause knockback
+ - [Armor Stand Arms] sometimes no arms were added
+ - [Block Damage] damage was inflicted only on players and not on other entities
+ - [Death Chest] did not work when you fell into the void
+ - [Death Chest] only half the inventory was saved
+ - [Old Regeneration] normal regeneration has not been deactivated
+ - [Rope Ladder] could only sometimes be collected
+
+***
+
 ## Update v2.2.0 (2.6.2022)
 
 ### Added:
@@ -64,7 +94,7 @@
   - to reset the repair cost of an item with the no to expensive module, the player now only have to right-click with ite item on an anvil
   - increased the time of the glowing effect from the spyglass selection module
   - with the end above overworld module, the player now has to go higher up in the overworld an deeper in the end to change dimensions
-  - decreased the length of the effects from the damage infection module 
+  - decreased the length of the effects from the damage infection module
   - slightly increased chance of generating a path with the path generator module when sprinting
   - players now regenerate at the same time when using the old regeneration module
   - [Internal] complete rewrite with [mc-build](https://github.com/mc-build/mc-build)
@@ -82,7 +112,7 @@
 ## Update v1.3.0 (7.9.2021)
 
 Here finally a sign of life from me. My motivation is currently focused on other things, which is why updates will come a bit less often. But I'm still working on the datapacks. So, now to the update.
-With this update 6 new modules are added, most of them based on new 1.17 mechanics and items like the glow berries and the spyglass. I also changed the nerfed Elytra module so that you can now enchant the Elytra with unbreaking. The old version was too annoying. 
+With this update 6 new modules are added, most of them based on new 1.17 mechanics and items like the glow berries and the spyglass. I also changed the nerfed Elytra module so that you can now enchant the Elytra with unbreaking. The old version was too annoying.
 
 ### Added:
 - Glow berries glow module
