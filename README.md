@@ -10,7 +10,7 @@ This datapack adds over 43 small adjustable improvements and tweaks to the norma
 - Good performance
 - Multiplayer compatible
 
-All modules can be turned on and off via the in-game menu, so you only have to use the ones you want. The menu can be opened with the command `/function #2tw:menu`.                                                                     
+All modules can be turned on and off via the in-game menu, so you only have to use the ones you want. The menu can be opened with the command `/function #2tw:menu`.
 **At the beginning all modules are switched off.**
 
 ## 📝 Tweaks:
@@ -29,6 +29,7 @@ All modules can be turned on and off via the in-game menu, so you only have to u
 - **Dynamic Light**: Torches and other light sources emit actual light.
 - **Elytra Closing**: Sneak while flying with the Elytra to close it.
 - **End above Overworld**: The player can go the end by flying high up in the overworld, and back by falling into the void in the end.
+- **End Crystal Healing**: End Crystals heal players near them who are wearing a dragon head.
 - **Fish Traps**: Place a barrel in water to catch fish over time.
 - **Glow Berries glow**: Players who eat glow berries get a short glowing effect.
 - **Harder Powder Snow**: Powder Snow gives mining fatigue when sinking.

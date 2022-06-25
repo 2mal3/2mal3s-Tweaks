@@ -24,7 +24,7 @@ dir menu {
     tellraw @s {"text":"       2mal3's Tweaks Config","bold":true,"color":"gold"}
     tellraw @s [{"text":"<< ","color":"yellow"},{"text":"                  ","color":"yellow","strikethrough": true},{"text":" 1/3 ","color":"gold"},{"text":"                  ","color":"yellow","strikethrough": true},{"text":" >>","color":"gold","clickEvent":{"action":"run_command","value":"/function 2tw:menu/menu/page_1"}}]
     tellraw @s {"text":""}
-    
+
     scoreboard players set %page 2tw.data 1
     function 2tw:menu/click
 
@@ -141,9 +141,16 @@ dir menu {
     tellraw @s {"text":"       2mal3's Tweaks Config","bold":true,"color":"gold"}
     tellraw @s [{"text":"<< ","color":"gold","clickEvent":{"action":"run_command","value":"/function 2tw:menu/menu/page_0"}},{"text":"                  ","color":"yellow","strikethrough": true},{"text":" 2/3 ","color":"gold"},{"text":"                  ","color":"yellow","strikethrough": true},{"text":" >>","color":"gold","clickEvent":{"action":"run_command","value":"/function 2tw:menu/menu/page_2"}}]
     tellraw @s {"text":""}
-    
+
     scoreboard players set %page 2tw.data 2
     function 2tw:menu/click
+
+    execute if data storage 2tw:data gamerules{endCrystalHealing: 0b} run {
+      tellraw @s [{"text":"[❌]","color":"dark_red","clickEvent":{"action":"run_command","value":"/function 2tw:menu/buttons/end_crystal_healing/on"},"hoverEvent":{"action":"show_text","contents":"*click*"}},{"text":" End Crystal Healing","color":"gold","hoverEvent":{"action":"show_text","contents":"End Crystals heal players near them who are wearing a dragon head."}}]
+    }
+    execute if data storage 2tw:data gamerules{endCrystalHealing: 1b} run {
+      tellraw @s [{"text":"[✔]","color":"dark_green","clickEvent":{"action":"run_command","value":"/function 2tw:menu/buttons/end_crystal_healing/off"},"hoverEvent":{"action":"show_text","contents":"*click*"}},{"text":" End Crystal Healing","color":"gold","hoverEvent":{"action":"show_text","contents":"End Crystals heal players near them who are wearing a dragon head."}}]
+    }
 
     execute if data storage 2tw:data gamerules{fishTraps: 0b} run {
       tellraw @s [{"text":"[❌]","color":"dark_red","clickEvent":{"action":"run_command","value":"/function 2tw:menu/buttons/fish_traps/on"},"hoverEvent":{"action":"show_text","contents":"*click*"}},{"text":" Fish Traps","color":"gold","hoverEvent":{"action":"show_text","contents":"Place a barrel in water to catch fish over time."}}]
@@ -243,13 +250,6 @@ dir menu {
       tellraw @s [{"text":"[✔]","color":"dark_green","clickEvent":{"action":"run_command","value":"/function 2tw:menu/buttons/path_generator/off"},"hoverEvent":{"action":"show_text","contents":"*click*"}},{"text":" Path Generator","color":"gold","hoverEvent":{"action":"show_text","contents":"Slowly generates a path along much-used routes."}}]
     }
 
-    execute if data storage 2tw:data gamerules{projectileBlockDamage: 0b} run {
-      tellraw @s [{"text":"[❌]","color":"dark_red","clickEvent":{"action":"run_command","value":"/function 2tw:menu/buttons/projectile_block_damage/on"},"hoverEvent":{"action":"show_text","contents":"*click*"}},{"text":" Projectile Block Damage","color":"gold","hoverEvent":{"action":"show_text","contents":"Some projectiles can break glass panes."}}]
-    }
-    execute if data storage 2tw:data gamerules{projectileBlockDamage: 1b} run {
-      tellraw @s [{"text":"[✔]","color":"dark_green","clickEvent":{"action":"run_command","value":"/function 2tw:menu/buttons/projectile_block_damage/off"},"hoverEvent":{"action":"show_text","contents":"*click*"}},{"text":" Projectile Block Damage","color":"gold","hoverEvent":{"action":"show_text","contents":"Some projectiles can break glass panes."}}]
-    }
-
     tellraw @s {"text":""}
   }
 
@@ -258,9 +258,16 @@ dir menu {
     tellraw @s {"text":"       2mal3's Tweaks Config","bold":true,"color":"gold"}
     tellraw @s [{"text":"<< ","color":"gold","clickEvent":{"action":"run_command","value":"/function 2tw:menu/menu/page_1"}},{"text":"                  ","color":"yellow","strikethrough": true},{"text":" 3/3 ","color":"gold"},{"text":"                  ","color":"yellow","strikethrough": true},{"text":" >>","color":"yellow"}]
     tellraw @s {"text":""}
-    
+
     scoreboard players set %page 2tw.data 3
     function 2tw:menu/click
+
+    execute if data storage 2tw:data gamerules{projectileBlockDamage: 0b} run {
+      tellraw @s [{"text":"[❌]","color":"dark_red","clickEvent":{"action":"run_command","value":"/function 2tw:menu/buttons/projectile_block_damage/on"},"hoverEvent":{"action":"show_text","contents":"*click*"}},{"text":" Projectile Block Damage","color":"gold","hoverEvent":{"action":"show_text","contents":"Some projectiles can break glass panes."}}]
+    }
+    execute if data storage 2tw:data gamerules{projectileBlockDamage: 1b} run {
+      tellraw @s [{"text":"[✔]","color":"dark_green","clickEvent":{"action":"run_command","value":"/function 2tw:menu/buttons/projectile_block_damage/off"},"hoverEvent":{"action":"show_text","contents":"*click*"}},{"text":" Projectile Block Damage","color":"gold","hoverEvent":{"action":"show_text","contents":"Some projectiles can break glass panes."}}]
+    }
 
     execute if data storage 2tw:data gamerules{randomRespawn: 0b} run {
       tellraw @s [{"text":"[❌]","color":"dark_red","clickEvent":{"action":"run_command","value":"/function 2tw:menu/buttons/random_respawn/on"},"hoverEvent":{"action":"show_text","contents":"*click*"}},{"text":" Random Respawn","color":"gold","hoverEvent":{"action":"show_text","contents":"When you die, you respawn at a random location within a radius of 2000 blocks around the spawn."}}]
@@ -360,13 +367,24 @@ dir menu {
       tellraw @s [{"text":"[✔]","color":"dark_green","clickEvent":{"action":"run_command","value":"/function 2tw:menu/buttons/wandering_trader_notifications/off"},"hoverEvent":{"action":"show_text","contents":"*click*"}},{"text":" Wandering Trader Notifications","color":"gold","hoverEvent":{"action":"show_text","contents":"When a Wandering Trader appears a notification is sent to all players and gets a short glowing effect."}}]
     }
 
-    tellraw @s {"text":"\n\n"}
+    tellraw @s {"text":"\n"}
   }
 
 }
 
 
 dir buttons {
+  dir end_crystal_healing {
+   function on {
+      data modify storage 2tw:data gamerules.endCrystalHealing set value 1b
+      function 2tw:menu/page
+    }
+    function off {
+      data modify storage 2tw:data gamerules.endCrystalHealing set value 0b
+      function 2tw:menu/page
+    }
+  }
+
   dir item_sign {
     function on {
       data modify storage 2tw:data gamerules.itemSign set value 1b
