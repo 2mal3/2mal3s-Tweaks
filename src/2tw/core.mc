@@ -55,6 +55,7 @@ dir clocks {
     name 10_tick
 
     execute if data storage 2tw:data gamerules{blockDamage: 1b} run function 2tw:tweaks/block_damage/loop
+    execute if data storage 2tw:data gamerules{reducedDebugInfo: 1b} run function 2tw:tweaks/reduced_debug_info/loop
   }
 
   clock 5t {
@@ -119,7 +120,10 @@ function load {
     scoreboard objectives add 2tw.sneaking minecraft.custom:minecraft.sneak_time
     scoreboard objectives add 2tw.minedLadder minecraft.mined:minecraft.ladder
     scoreboard objectives add sign trigger
+    scoreboard players set $3 2tw.data 3
     scoreboard players set $16 2tw.data 16
+    scoreboard players set $50 2tw.data 50
+    scoreboard players set $1000 2tw.data 1000
     # Set the version in format: xx.xx.xx
     scoreboard players set $version 2tw.data 020300
 
@@ -181,7 +185,8 @@ function load {
           selfPlantingSaplings: 0b,
           invisibleItemFrames: 0b,
           itemSign: 0b,
-          endCrystalHealing: 0b
+          endCrystalHealing: 0b,
+          reducedDebugInfo: 0b
         }
       }
     )

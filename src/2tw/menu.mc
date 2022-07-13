@@ -290,6 +290,13 @@ dir menu {
     #  tellraw @s [{"text":"[✔]","color":"dark_green","clickEvent":{"action":"run_command","value":"/function 2tw:menu/buttons/realistic_torches/off"},"hoverEvent":{"action":"show_text","contents":"*click*"}},{"text":" Realistic Torches","color":"gold","hoverEvent":{"action":"show_text","contents":"Torches burn out over time."}}]
     #}
 
+    execute if data storage 2tw:data gamerules{reducedDebugInfo: 0b} run {
+      tellraw @s [{"text":"[❌]","color":"dark_red","clickEvent":{"action":"run_command","value":"/function 2tw:menu/buttons/reduced_debug_info/on"},"hoverEvent":{"action":"show_text","contents":"*click*"}},{"text":" Reduced Debug Info","color":"gold","hoverEvent":{"action":"show_text","contents":"Deactivates the F3 screen and provides access to its information only via the corresponding items."}}]
+    }
+    execute if data storage 2tw:data gamerules{reducedDebugInfo: 1b} run {
+      tellraw @s [{"text":"[✔]","color":"dark_green","clickEvent":{"action":"run_command","value":"/function 2tw:menu/buttons/reduced_debug_info/off"},"hoverEvent":{"action":"show_text","contents":"*click*"}},{"text":" Reduced Debug Info","color":"gold","hoverEvent":{"action":"show_text","contents":"Deactivates the F3 screen and provides access to its information only via the corresponding items."}}]
+    }
+
     execute if data storage 2tw:data gamerules{ropeLadder: 0b} run {
       tellraw @s [{"text":"[❌]","color":"dark_red","clickEvent":{"action":"run_command","value":"/function 2tw:menu/buttons/rope_ladder/on"},"hoverEvent":{"action":"show_text","contents":"*click*"}},{"text":" Rope Ladder","color":"gold","hoverEvent":{"action":"show_text","contents":"Place and destroy rope ladders with SHIFT."}}]
     }
@@ -367,13 +374,26 @@ dir menu {
       tellraw @s [{"text":"[✔]","color":"dark_green","clickEvent":{"action":"run_command","value":"/function 2tw:menu/buttons/wandering_trader_notifications/off"},"hoverEvent":{"action":"show_text","contents":"*click*"}},{"text":" Wandering Trader Notifications","color":"gold","hoverEvent":{"action":"show_text","contents":"When a Wandering Trader appears a notification is sent to all players and gets a short glowing effect."}}]
     }
 
-    tellraw @s {"text":"\n"}
+    tellraw @s {"text":""}
   }
 
 }
 
 
 dir buttons {
+  dir reduced_debug_info {
+   function on {
+      gamerule reducedDebugInfo true
+      data modify storage 2tw:data gamerules.reducedDebugInfo set value 1b
+      function 2tw:menu/page
+    }
+    function off {
+      gamerule reducedDebugInfo false
+      data modify storage 2tw:data gamerules.reducedDebugInfo set value 0b
+      function 2tw:menu/page
+    }
+  }
+
   dir end_crystal_healing {
    function on {
       data modify storage 2tw:data gamerules.endCrystalHealing set value 1b

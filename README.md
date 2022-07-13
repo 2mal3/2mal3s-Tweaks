@@ -1,10 +1,10 @@
 # 2mal3's Tweaks
 ![GitHub release (latest by date)](https://img.shields.io/github/v/release/2mal3/2mal3s-Tweaks?style=flat-square) ![GitHub all releases](https://img.shields.io/github/downloads/2mal3/2mal3s-Tweaks/total?style=flat-square) ![Minecraft](https://img.shields.io/badge/Minecraft-1.19-orange?style=flat-square)
 
-This datapack adds over 43 small adjustable improvements and tweaks to the normal vanilla game and spice it up a bit. At the same time no big changes are made to the gameplay, so it still feels "vanilla".
+This datapack adds over 44 small adjustable improvements and tweaks to the normal vanilla game and spice it up a bit. At the same time no big changes are made to the gameplay, so it still feels "vanilla".
 
 ## 📖 Features:
-- Over 43 different improvements and tweaks
+- Over 44 different improvements and tweaks
 - No drastic changes to the gameplay -> still feels "vanilla"
 - All modules can be easily switched on and off via the in-game menu
 - Good performance
@@ -47,6 +47,7 @@ All modules can be turned on and off via the in-game menu, so you only have to u
 - **Projectile Block Damage**: Some projectiles can break glass panes.
 - **Random Respawn**: When you die, you respawn at a random location within a radius of 2000 blocks around the spawn.
 - **Realistic Fire**: Fire is more realistic.
+- **Reduced Debug Info**: Deactivates the F3 screen and provides access to its information only via the corresponding items.
 - **Rope Ladder**: Place and destroy rope ladders with SHIFT.
 - **Self planting Saplings**: Tree saplings lying on the ground can plant themselves with a certain probability.
 - **Server Time**: As long as no player is on the server, the time is stopped.
