@@ -251,6 +251,12 @@ function load {
       data modify storage 2tw:data gamerules.itemSign set value 0b
     }
   }
+
+  # Init extensions to, for example, change settings
+  schedule 1s replace {
+    log 2TW info server <Init API>
+    function #2tw:api/init
+  }
 }
 
 
