@@ -137,7 +137,7 @@ function load {
     team add 2tw.end
     team modify 2tw.end color yellow
 
-    # Set gamerulese
+    # Set gamerules
     (
       data merge storage 2tw:data {
         gamerules: {
