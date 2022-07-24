@@ -154,7 +154,7 @@ function load {
           armorStandArms: 0b,
           antiCreeperGrief: 0b,
           wanderingTraderNotifications: 0b,
-          spyglassS2election: 0b,
+          spyglassSelection: 0b,
           serverTime: 0b,
           tntAutoPrime: 0b,
           creativeOnePunch: 0b,
