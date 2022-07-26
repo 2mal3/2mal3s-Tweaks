@@ -1,3 +1,5 @@
 
-functions init {
+dir v1 {
+  functions init {
+  }
 }

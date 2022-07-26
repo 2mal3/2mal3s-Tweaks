@@ -255,7 +255,7 @@ function load {
   # Init extensions to, for example, change settings
   schedule 1s replace {
     log 2TW info server <Init API>
-    function #2tw:api/init
+    function #2tw:api/v1/init
   }
 }
 
