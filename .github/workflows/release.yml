@@ -25,7 +25,7 @@ jobs:
         with:
           filename: "2mal3s-Tweaks.zip"
           type: "zip"
-          exclusions: "*macros* /*src/* /*.mcproject/* config.json"
+          exclusions: "/*macros*/ /*.git/* /*.github/* /*src/* /*.mcproject/* config.json"
 
       - name: Create release
         uses: softprops/action-gh-release@v1
