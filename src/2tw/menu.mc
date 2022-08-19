@@ -277,10 +277,10 @@ dir menu {
     }
 
     execute if data storage 2tw:data gamerules{realisticFire: 0b} run {
-      tellraw @s [{"text":"[❌]","color":"dark_red","clickEvent":{"action":"run_command","value":"/function 2tw:menu/buttons/realistic_fire/on"},"hoverEvent":{"action":"show_text","contents":"*click*"}},{"text":" Realistic Fire","color":"gold","hoverEvent":{"action":"show_text","contents":"Fire is more realistic."}}]
+      tellraw @s [{"text":"[❌]","color":"dark_red","clickEvent":{"action":"run_command","value":"/function 2tw:menu/buttons/realistic_fire/on"},"hoverEvent":{"action":"show_text","contents":"*click*"}},{"text":" Realistic Fire","color":"gold","hoverEvent":{"action":"show_text","contents":"Burning arrows ignite blocks, burning creepers explode and burning entities leave a fire trail behind them."}}]
     }
     execute if data storage 2tw:data gamerules{realisticFire: 1b} run {
-      tellraw @s [{"text":"[✔]","color":"dark_green","clickEvent":{"action":"run_command","value":"/function 2tw:menu/buttons/realistic_fire/off"},"hoverEvent":{"action":"show_text","contents":"*click*"}},{"text":" Realistic Fire","color":"gold","hoverEvent":{"action":"show_text","contents":"Fire is more realistic."}}]
+      tellraw @s [{"text":"[✔]","color":"dark_green","clickEvent":{"action":"run_command","value":"/function 2tw:menu/buttons/realistic_fire/off"},"hoverEvent":{"action":"show_text","contents":"*click*"}},{"text":" Realistic Fire","color":"gold","hoverEvent":{"action":"show_text","contents":"Burning arrows ignite blocks, burning creepers explode and burning entities leave a fire trail behind them."}}]
     }
 
     #execute if data storage 2tw:data gamerules{realisticTorches: 0b} run {

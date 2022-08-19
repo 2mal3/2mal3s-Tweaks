@@ -46,7 +46,7 @@ All modules can be turned on and off via the in-game menu, so you only have to u
 - **Path Generator**: Slowly generates a path along much-used routes.
 - **Projectile Block Damage**: Some projectiles can break glass panes.
 - **Random Respawn**: When you die, you respawn at a random location within a radius of 2000 blocks around the spawn.
-- **Realistic Fire**: Fire is more realistic.
+- **Realistic Fire**: Burning arrows ignite blocks, burning creepers explode and burning entities leave a fire trail behind them.
 - **Reduced Debug Info**: Deactivates the F3 screen and provides access to its information only via the corresponding items.
 - **Rope Ladder**: Place and destroy rope ladders with SHIFT.
 - **Self planting Saplings**: Tree saplings lying on the ground can plant themselves with a certain probability.
