@@ -1,9 +1,11 @@
 # 2mal3's Tweaks
+
 ![GitHub release (latest by date)](https://img.shields.io/github/v/release/2mal3/2mal3s-Tweaks?style=flat-square) ![GitHub all releases](https://img.shields.io/github/downloads/2mal3/2mal3s-Tweaks/total?style=flat-square) ![Minecraft](https://img.shields.io/badge/Minecraft-1.19-orange?style=flat-square)
 
 This datapack adds over 44 small adjustable improvements and tweaks to the normal vanilla game and spice it up a bit. At the same time no big changes are made to the gameplay, so it still feels "vanilla".
 
 ## 📖 Features:
+
 - Over 44 different improvements and tweaks
 - No drastic changes to the gameplay -> still feels "vanilla"
 - All modules can be easily switched on and off via the in-game menu
@@ -14,6 +16,7 @@ All modules can be turned on and off via the in-game menu, so you only have to u
 **At the beginning all modules are switched off.**
 
 ## 📝 Tweaks:
+
 - **Anti Creeper grief**: Prevents Creeper from causing block damage.
 - **Armor Stand Arms**: Gives all armor stands arms.
 - **Better End Crystals**: Prevents protected End Crystals from being easily destroyed from the ground.
@@ -61,8 +64,10 @@ All modules can be turned on and off via the in-game menu, so you only have to u
 - **Wandering Trader Notifications**: When a Wandering Trader appears a notification is sent to all players and gets a short glowing effect.
 
 ## Notes:
+
 - Tested for Fabric and Vanilla in 1.19
 - Not tested with Forge, Bukktit, Spigot and PaperSpigot but probably don't work
 - To uninstall run the command `/function #2tw:uninstall`
+- bug reports and suggestions are best done on [GitHub](https://github.com/2mal3/2mal3s-Tweaks/issues)
 - The performance of the datapack depends strongly on the activated modules, all modules have a different influence. As long as none is activated, the datapack consumes almost no resources. But normally there should be no noticeable lags on small or medium sized survival worlds.
 - The datapack was created with [mc-build](https://github.com/mc-build/mc-build).
