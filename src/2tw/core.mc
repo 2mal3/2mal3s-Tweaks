@@ -186,7 +186,8 @@ function load {
           invisibleItemFrames: 0b,
           itemSign: 0b,
           endCrystalHealing: 0b,
-          reducedDebugInfo: 0b
+          reducedDebugInfo: 0b,
+          firstJoinMessage: 0b
         }
       }
     )
@@ -272,6 +273,9 @@ function load {
 
 ## First join
 function first_join {
+  # Sends a welcome message if activated
+  execute if data storage 2tw:data gamerules{firstJoinMessage: 1b} run function 2tw:tweaks/first_join_message/message
+
   # Gives the player a unique id based on the UUID for the spectator sense module
   execute store result score .temp0 2tw.data run data get entity @s UUID[0]
   execute store result score .temp1 2tw.data run data get entity @s UUID[1]
@@ -290,7 +294,7 @@ function first_join {
   scoreboard players add %id 2tw.data 1
   scoreboard players operation @s 2tw.uuid = %id 2tw.data
 
-  ## Warns the player if he uses a not supported  minecraft version
+  # Warns the player if he uses a not supported  minecraft version
   execute store result score .temp0 2tw.data run data get entity @s DataVersion
   execute unless score .temp0 2tw.data matches 3105.. run tellraw @s [{"text":"[","color":"gray"},{"text":"2TW","color":"gold"},{"text":"/","color":"gray"},{"text":"WARN","color":"gold"},{"text": "/","color": "gray"},{"text": "Server","color": "gold"},{"text":"]: ","color":"gray"},{"text":"This Minecraft version is not supported by the datapack. Please use the 1.19 to prevent errors.","color":"gold"}]
 }

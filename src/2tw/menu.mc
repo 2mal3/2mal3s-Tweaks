@@ -152,6 +152,13 @@ dir menu {
       tellraw @s [{"text":"[✔]","color":"dark_green","clickEvent":{"action":"run_command","value":"/function 2tw:menu/buttons/end_crystal_healing/off"},"hoverEvent":{"action":"show_text","contents":"*click*"}},{"text":" End Crystal Healing","color":"gold","hoverEvent":{"action":"show_text","contents":"End Crystals heal players near them who are wearing a dragon head."}}]
     }
 
+    execute if data storage 2tw:data gamerules{firstJoinMessage: 0b} run {
+      tellraw @s [{"text":"[❌]","color":"dark_red","clickEvent":{"action":"run_command","value":"/function 2tw:menu/buttons/first_join_message/on"},"hoverEvent":{"action":"show_text","contents":"*click*"}},{"text":" First join Message","color":"gold","hoverEvent":{"action":"show_text","contents":"Sends a message to each player when they first enter the world."}}]
+    }
+    execute if data storage 2tw:data gamerules{firstJoinMessage: 1b} run {
+      tellraw @s [{"text":"[✔]","color":"dark_green","clickEvent":{"action":"run_command","value":"/function 2tw:menu/buttons/first_join_message/off"},"hoverEvent":{"action":"show_text","contents":"*click*"}},{"text":" First join Message","color":"gold","hoverEvent":{"action":"show_text","contents":"Sends a message to each player when they first enter the world."}}]
+    }
+
     execute if data storage 2tw:data gamerules{fishTraps: 0b} run {
       tellraw @s [{"text":"[❌]","color":"dark_red","clickEvent":{"action":"run_command","value":"/function 2tw:menu/buttons/fish_traps/on"},"hoverEvent":{"action":"show_text","contents":"*click*"}},{"text":" Fish Traps","color":"gold","hoverEvent":{"action":"show_text","contents":"Place a barrel in water to catch fish over time."}}]
     }
@@ -243,13 +250,6 @@ dir menu {
       tellraw @s [{"text":"[✔]","color":"dark_green","clickEvent":{"action":"run_command","value":"/function 2tw:menu/buttons/only_ruined_portals/off"},"hoverEvent":{"action":"show_text","contents":"*click*"}},{"text":" Only Ruined Portals","color":"gold","hoverEvent":{"action":"show_text","contents":"Traveling between dimensions is only possible with Ruined Portals."}}]
     }
 
-    execute if data storage 2tw:data gamerules{pathGenerator: 0b} run {
-      tellraw @s [{"text":"[❌]","color":"dark_red","clickEvent":{"action":"run_command","value":"/function 2tw:menu/buttons/path_generator/on"},"hoverEvent":{"action":"show_text","contents":"*click*"}},{"text":" Path Generator","color":"gold","hoverEvent":{"action":"show_text","contents":"Slowly generates a path along much-used routes."}}]
-    }
-    execute if data storage 2tw:data gamerules{pathGenerator: 1b} run {
-      tellraw @s [{"text":"[✔]","color":"dark_green","clickEvent":{"action":"run_command","value":"/function 2tw:menu/buttons/path_generator/off"},"hoverEvent":{"action":"show_text","contents":"*click*"}},{"text":" Path Generator","color":"gold","hoverEvent":{"action":"show_text","contents":"Slowly generates a path along much-used routes."}}]
-    }
-
     tellraw @s {"text":""}
   }
 
@@ -261,6 +261,13 @@ dir menu {
 
     scoreboard players set %page 2tw.data 3
     function 2tw:menu/click
+
+    execute if data storage 2tw:data gamerules{pathGenerator: 0b} run {
+      tellraw @s [{"text":"[❌]","color":"dark_red","clickEvent":{"action":"run_command","value":"/function 2tw:menu/buttons/path_generator/on"},"hoverEvent":{"action":"show_text","contents":"*click*"}},{"text":" Path Generator","color":"gold","hoverEvent":{"action":"show_text","contents":"Slowly generates a path along much-used routes."}}]
+    }
+    execute if data storage 2tw:data gamerules{pathGenerator: 1b} run {
+      tellraw @s [{"text":"[✔]","color":"dark_green","clickEvent":{"action":"run_command","value":"/function 2tw:menu/buttons/path_generator/off"},"hoverEvent":{"action":"show_text","contents":"*click*"}},{"text":" Path Generator","color":"gold","hoverEvent":{"action":"show_text","contents":"Slowly generates a path along much-used routes."}}]
+    }
 
     execute if data storage 2tw:data gamerules{projectileBlockDamage: 0b} run {
       tellraw @s [{"text":"[❌]","color":"dark_red","clickEvent":{"action":"run_command","value":"/function 2tw:menu/buttons/projectile_block_damage/on"},"hoverEvent":{"action":"show_text","contents":"*click*"}},{"text":" Projectile Block Damage","color":"gold","hoverEvent":{"action":"show_text","contents":"Some projectiles can break glass panes."}}]
@@ -367,13 +374,6 @@ dir menu {
       tellraw @s [{"text":"[✔]","color":"dark_green","clickEvent":{"action":"run_command","value":"/function 2tw:menu/buttons/visible_marker/off"},"hoverEvent":{"action":"show_text","contents":"*click*"}},{"text":" Visible Marker","color":"gold","hoverEvent":{"action":"show_text","contents":"Makes marker entities visible.\n§7Only useful for datapack programmers"}}]
     }
 
-    execute if data storage 2tw:data gamerules{wanderingTraderNotifications: 0b} run {
-      tellraw @s [{"text":"[❌]","color":"dark_red","clickEvent":{"action":"run_command","value":"/function 2tw:menu/buttons/wandering_trader_notifications/on"},"hoverEvent":{"action":"show_text","contents":"*click*"}},{"text":" Wandering Trader Notifications","color":"gold","hoverEvent":{"action":"show_text","contents":"When a Wandering Trader appears a notification is sent to all players and gets a short glowing effect."}}]
-    }
-    execute if data storage 2tw:data gamerules{wanderingTraderNotifications: 1b} run {
-      tellraw @s [{"text":"[✔]","color":"dark_green","clickEvent":{"action":"run_command","value":"/function 2tw:menu/buttons/wandering_trader_notifications/off"},"hoverEvent":{"action":"show_text","contents":"*click*"}},{"text":" Wandering Trader Notifications","color":"gold","hoverEvent":{"action":"show_text","contents":"When a Wandering Trader appears a notification is sent to all players and gets a short glowing effect."}}]
-    }
-
     tellraw @s {"text":""}
   }
 
@@ -386,13 +386,31 @@ dir menu {
     scoreboard players set %page 2tw.data 4
     function 2tw:menu/click
 
-    tellraw @s {"text": "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"}
+    execute if data storage 2tw:data gamerules{wanderingTraderNotifications: 0b} run {
+      tellraw @s [{"text":"[❌]","color":"dark_red","clickEvent":{"action":"run_command","value":"/function 2tw:menu/buttons/wandering_trader_notifications/on"},"hoverEvent":{"action":"show_text","contents":"*click*"}},{"text":" Wandering Trader Notifications","color":"gold","hoverEvent":{"action":"show_text","contents":"When a Wandering Trader appears a notification is sent to all players and gets a short glowing effect."}}]
+    }
+    execute if data storage 2tw:data gamerules{wanderingTraderNotifications: 1b} run {
+      tellraw @s [{"text":"[✔]","color":"dark_green","clickEvent":{"action":"run_command","value":"/function 2tw:menu/buttons/wandering_trader_notifications/off"},"hoverEvent":{"action":"show_text","contents":"*click*"}},{"text":" Wandering Trader Notifications","color":"gold","hoverEvent":{"action":"show_text","contents":"When a Wandering Trader appears a notification is sent to all players and gets a short glowing effect."}}]
+    }
+
+    tellraw @s {"text": "\n\n\n\n\n\n\n\n\n\n\n\n\n\n"}
   }
 
 }
 
 
 dir buttons {
+  dir first_join_message {
+    function on {
+      data modify storage 2tw:data gamerules.firstJoinMessage set value 1b
+      function 2tw:menu/page
+    }
+    function off {
+      data modify storage 2tw:data gamerules.firstJoinMessage set value 0b
+      function 2tw:menu/page
+    }
+  }
+
   dir reduced_debug_info {
    function on {
       gamerule reducedDebugInfo true

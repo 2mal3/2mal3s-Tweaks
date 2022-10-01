@@ -2,11 +2,11 @@
 
 ![GitHub release (latest by date)](https://img.shields.io/github/v/release/2mal3/2mal3s-Tweaks?style=flat-square) ![GitHub all releases](https://img.shields.io/github/downloads/2mal3/2mal3s-Tweaks/total?style=flat-square) ![Minecraft](https://img.shields.io/badge/Minecraft-1.19-orange?style=flat-square)
 
-This datapack adds over 44 small adjustable improvements and tweaks to the normal vanilla game and spice it up a bit. At the same time no big changes are made to the gameplay, so it still feels "vanilla".
+This datapack adds over 45 small adjustable improvements and tweaks to the normal vanilla game and spice it up a bit. At the same time no big changes are made to the gameplay, so it still feels "vanilla".
 
 ## 📖 Features:
 
-- Over 44 different improvements and tweaks
+- Over 45 different improvements and tweaks
 - No drastic changes to the gameplay -> still feels "vanilla"
 - All modules can be easily switched on and off via the in-game menu
 - Good performance
@@ -33,6 +33,7 @@ All modules can be turned on and off via the in-game menu, so you only have to u
 - **Elytra Closing**: Sneak while flying with the Elytra to close it.
 - **End above Overworld**: The player can go the end by flying high up in the overworld, and back by falling into the void in the end.
 - **End Crystal Healing**: End Crystals heal players near them who are wearing a dragon head.
+- **First join Message**: Sends a message to each player when they first enter the world.
 - **Fish Traps**: Place a barrel in water to catch fish over time.
 - **Glow Berries glow**: Players who eat glow berries get a short glowing effect.
 - **Harder Powder Snow**: Powder Snow gives mining fatigue when sinking.
