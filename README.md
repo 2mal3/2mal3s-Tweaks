@@ -2,11 +2,11 @@
 
 ![GitHub release (latest by date)](https://img.shields.io/github/v/release/2mal3/2mal3s-Tweaks?style=flat-square) ![GitHub all releases](https://img.shields.io/github/downloads/2mal3/2mal3s-Tweaks/total?style=flat-square) ![Minecraft](https://img.shields.io/badge/Minecraft-1.19-orange?style=flat-square)
 
-This datapack adds over 45 small adjustable improvements and tweaks to the normal vanilla game and spice it up a bit. At the same time no big changes are made to the gameplay, so it still feels "vanilla".
+This datapack adds over 46 small adjustable improvements and tweaks to the normal vanilla game and spice it up a bit. At the same time no big changes are made to the gameplay, so it still feels "vanilla".
 
 ## 📖 Features:
 
-- Over 45 different improvements and tweaks
+- Over 46 different improvements and tweaks
 - No drastic changes to the gameplay -> still feels "vanilla"
 - All modules can be easily switched on and off via the in-game menu
 - Good performance
@@ -63,6 +63,7 @@ All modules can be turned on and off via the in-game menu, so you only have to u
 - **Unlock all recipes**: Automatically unlocks all recipes.
 - **Visible Marker**
 - **Wandering Trader Notifications**: When a Wandering Trader appears a notification is sent to all players and gets a short glowing effect.
+- **Warden Tinnitus**: After being hit by a sonic boom attack, you can't hear anything for a short time.
 
 ## Notes:
 

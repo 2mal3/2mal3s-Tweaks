@@ -393,13 +393,31 @@ dir menu {
       tellraw @s [{"text":"[✔]","color":"dark_green","clickEvent":{"action":"run_command","value":"/function 2tw:menu/buttons/wandering_trader_notifications/off"},"hoverEvent":{"action":"show_text","contents":"*click*"}},{"text":" Wandering Trader Notifications","color":"gold","hoverEvent":{"action":"show_text","contents":"When a Wandering Trader appears a notification is sent to all players and gets a short glowing effect."}}]
     }
 
-    tellraw @s {"text": "\n\n\n\n\n\n\n\n\n\n\n\n\n\n"}
+    execute if data storage 2tw:data gamerules{wardenTinnitus: 0b} run {
+      tellraw @s [{"text":"[❌]","color":"dark_red","clickEvent":{"action":"run_command","value":"/function 2tw:menu/buttons/warden_tinnitus/on"},"hoverEvent":{"action":"show_text","contents":"*click*"}},{"text":" Warden Tinnitus","color":"gold","hoverEvent":{"action":"show_text","contents":"After being hit by a sonic boom attack, you can't hear anything for a short time."}}]
+    }
+    execute if data storage 2tw:data gamerules{wardenTinnitus: 1b} run {
+      tellraw @s [{"text":"[✔]","color":"dark_green","clickEvent":{"action":"run_command","value":"/function 2tw:menu/buttons/warden_tinnitus/off"},"hoverEvent":{"action":"show_text","contents":"*click*"}},{"text":" Warden Tinnitus","color":"gold","hoverEvent":{"action":"show_text","contents":"After being hit by a sonic boom attack, you can't hear anything for a short time."}}]
+    }
+
+    tellraw @s {"text": "\n\n\n\n\n\n\n\n\n\n\n\n\n"}
   }
 
 }
 
 
 dir buttons {
+  dir warden_tinnitus {
+    function on {
+      data modify storage 2tw:data gamerules.wardenTinnitus set value 1b
+      function 2tw:menu/page
+    }
+    function off {
+      data modify storage 2tw:data gamerules.wardenTinnitus set value 0b
+      function 2tw:menu/page
+    }
+  }
+
   dir first_join_message {
     function on {
       data modify storage 2tw:data gamerules.firstJoinMessage set value 1b

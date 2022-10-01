@@ -43,6 +43,7 @@ dir clocks {
     execute if data storage 2tw:data gamerules{visibleMarker: 1b} run function 2tw:tweaks/visible_marker/loop
     execute if data storage 2tw:data gamerules{itemSign: 1b} run function 2tw:tweaks/item_sign/loop
     execute if data storage 2tw:data gamerules{endCrystalHealing: 1b} run function 2tw:tweaks/end_crystal_healing/loop
+    execute if data storage 2tw:data gamerules{wardenTinnitus: 1b} run function 2tw:tweaks/warden_tinnitus/clock/second
 
     # Reset scoreboard triggers
     execute as @a run {
@@ -85,6 +86,7 @@ dir clocks {
     name tick
 
     execute if data storage 2tw:data gamerules{ropeLadder: 1b} run function 2tw:tweaks/rope_ladder/loop
+    execute if data storage 2tw:data gamerules{wardenTinnitus: 1b} run function 2tw:tweaks/warden_tinnitus/clock/tick_
   }
 }
 
@@ -120,6 +122,7 @@ function load {
     scoreboard objectives add 2tw.sneaking minecraft.custom:minecraft.sneak_time
     scoreboard objectives add 2tw.minedLadder minecraft.mined:minecraft.ladder
     scoreboard objectives add sign trigger
+    scoreboard objectives add 2tw.tinnitusTime dummy
     scoreboard players set $3 2tw.data 3
     scoreboard players set $16 2tw.data 16
     scoreboard players set $50 2tw.data 50
@@ -187,7 +190,8 @@ function load {
           itemSign: 0b,
           endCrystalHealing: 0b,
           reducedDebugInfo: 0b,
-          firstJoinMessage: 0b
+          firstJoinMessage: 0b,
+          wardenTinnitus: 0b
         }
       }
     )
@@ -352,6 +356,7 @@ function uninstall {
   scoreboard objectives remove 2tw.sneaking
   scoreboard objectives remove 2tw.schedule
   scoreboard objectives remove 2tw.minedLadder
+  scoreboard objectives remove 2tw.tinnitusTime
   # Remove teams
   team remove 2tw.invisible
   team remove 2tw.overworld
