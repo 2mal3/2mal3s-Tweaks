@@ -632,7 +632,7 @@ function loop {
     execute if score .temp0 2tw.data matches 0 positioned ~3 ~3 ~3 if block ~ ~ ~ #2tw:tweaks/death_chest/replaceable run function 2tw:tweaks/death_chest/find_facing
     # If the player falls in the void
     execute if score .temp0 2tw.data matches 0 positioned ~ 0 ~ run function 2tw:tweaks/death_chest/find_pos
-  
+
     # Clear inventory and xp
     clear @s
     xp set @s 0 points

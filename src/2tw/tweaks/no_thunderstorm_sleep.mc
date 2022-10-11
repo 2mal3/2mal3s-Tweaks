@@ -28,4 +28,3 @@ advancement sleep_while_thunder {
     "function": "2tw:tweaks/no_thunderstorm_sleep/sleep_while_thunder"
   }
 }
-

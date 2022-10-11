@@ -96,4 +96,3 @@ modifier remove_mending {
     "minecraft:mending": 0
   }
 }
-

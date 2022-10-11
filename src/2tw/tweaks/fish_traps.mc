@@ -24,9 +24,9 @@ function place {
     execute if block ~ ~ ~ minecraft:barrel if block ~1 ~ ~ #2tw:tweaks/fish_traps/water if block ~-1 ~ ~ #2tw:tweaks/fish_traps/water if block ~ ~ ~1 #2tw:tweaks/fish_traps/water if block ~ ~ ~-1 #2tw:tweaks/fish_traps/water if block ~1 ~ ~1 #2tw:tweaks/fish_traps/water if block ~1 ~ ~-1 #2tw:tweaks/fish_traps/water if block ~-1 ~ ~1 #2tw:tweaks/fish_traps/water if block ~-1 ~ ~-1 #2tw:tweaks/fish_traps/water run {
       log 2TW debug entity <Placed Fish Trap>
 
-      data merge block ~ ~ ~ {CustomName:'{"text":"Fish Trap","italic":false}'}
-      summon minecraft:marker ~ ~ ~ {Tags:["2tw.fishTrap", "global.ignore", "global.ignore.kill", "smithed.block"]}
-    } 
+      data merge block ~ ~ ~ {CustomName: '{"text":"Fish Trap","italic":false}'}
+      summon minecraft:marker ~ ~ ~ {Tags: ["2tw.fishTrap", "global.ignore", "global.ignore.kill", "smithed.block"]}
+    }
   }
 }
 

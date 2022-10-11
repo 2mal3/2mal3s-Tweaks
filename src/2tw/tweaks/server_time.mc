@@ -14,7 +14,7 @@ function loop {
     gamerule doFireTick true
     gamerule randomTickSpeed 3
   }
-  
+
   # Stops the server time
   execute if score .temp0 2tw.data matches 1.. if score %players 2tw.data matches 0 run {
     log 2TW debug server <Stop server time>

@@ -24,4 +24,3 @@ predicate original {
     "nbt": "{ShowBottom:1b}"
   }
 }
-

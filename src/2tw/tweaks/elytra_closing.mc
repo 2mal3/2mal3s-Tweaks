@@ -10,7 +10,7 @@ function loop {
     item modify entity @s armor.chest 2tw:tweaks/elytra_closing/store
     # Set the durability so low that the elytra breaks
     item modify entity @s armor.chest 2tw:tweaks/elytra_closing/close
-    
+
     execute at @s run playsound minecraft:entity.bat.takeoff player @a ~ ~ ~ 0.5 0.7
     title @s actionbar [{"text":"Press ","color":"white"},{"keybind":"key.jump","color":"white"},{"text":" to reopen elytra","color":"white"}]
 

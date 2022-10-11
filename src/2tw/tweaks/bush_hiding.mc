@@ -41,5 +41,3 @@ blocks tall_plants {
   minecraft:rose_bush
   minecraft:tall_seagrass
 }
-
-

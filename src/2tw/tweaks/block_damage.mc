@@ -21,4 +21,3 @@ blocks damage_blocks {
   minecraft:stonecutter
   minecraft:rose_bush
 }
-

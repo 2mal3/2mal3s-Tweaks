@@ -21,4 +21,3 @@ function loop {
     execute if score @s 2tw.spectatorId matches 15 run particle minecraft:dust 0.000 0.000 0.000 1 ~ ~1 ~ 0.3 0.5 0.3 0 1 normal
   }
 }
-  

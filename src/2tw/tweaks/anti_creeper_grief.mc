@@ -9,4 +9,3 @@ function loop {
     data modify entity @s ExplosionRadius set value -2
   }
 }
-

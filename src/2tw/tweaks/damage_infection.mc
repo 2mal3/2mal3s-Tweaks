@@ -23,4 +23,3 @@ predicate have_poison {
     }
   }
 }
-

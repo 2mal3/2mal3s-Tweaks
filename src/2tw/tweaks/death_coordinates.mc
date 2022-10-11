@@ -16,4 +16,3 @@ function loop {
     execute if score .temp3 2tw.data matches 17 run tellraw @s [{"text":"You died at ","color":"white"},{"score":{"name":".temp0","objective":"2tw.data"},"color":"gray"},{"text":", ","color":"white"},{"score":{"name":".temp1","objective":"2tw.data"},"color":"gray"},{"text":", ","color":"white"},{"score":{"name":".temp2","objective":"2tw.data"},"color":"gray"},{"text":" in the ","color":"white"},{"text":"end","color":"gray"},{"text":".","color":"white"}]
   }
 }
-

@@ -21,4 +21,3 @@ advancement use {
     "function": "2tw:tweaks/disabled_ender_eyes/use"
   }
 }
-

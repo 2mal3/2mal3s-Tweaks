@@ -12,7 +12,7 @@ function loop_4_tick {
 function loop_second {
   # Burning arrows place fire
   execute as @e[type=minecraft:arrow,predicate=2tw:tweaks/realistic_fire/on_fire,predicate=2tw:tweaks/realistic_fire/in_ground,tag=!global.ignore] at @s run setblock ~ ~ ~ minecraft:fire
-  
+
   # Burning creepers ignite
   execute as @e[type=minecraft:creeper,tag=!2tw.realisticFire.processed,predicate=2tw:tweaks/realistic_fire/on_fire,tag=!global.ignore] run {
     tag @s add 2tw.realisticFire.processed
@@ -37,5 +37,3 @@ predicate in_ground {
     "nbt": "{inGround:1b}"
   }
 }
-
-
