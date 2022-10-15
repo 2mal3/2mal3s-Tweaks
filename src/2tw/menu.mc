@@ -42,6 +42,13 @@ dir menu {
       tellraw @s [{"text":"[✔]","color":"dark_green","clickEvent":{"action":"run_command","value":"/function 2tw:menu/buttons/armor_stand_arms/off"},"hoverEvent":{"action":"show_text","contents":"*click*"}},{"text":" Armor Stand Arms","color":"gold","hoverEvent":{"action":"show_text","contents":"Gives all armor stands arms."}}]
     }
 
+    execute if data storage 2tw:data gamerules{autoHarvest: 0b} run {
+      tellraw @s [{"text":"[❌]","color":"dark_red","clickEvent":{"action":"run_command","value":"/function 2tw:menu/buttons/auto_harvest/on"},"hoverEvent":{"action":"show_text","contents":"*click*"}},{"text":" Auto Harvest","color":"gold","hoverEvent":{"action":"show_text","contents":"Automatically harvests and plants crops when held in the offhand."}}]
+    }
+    execute if data storage 2tw:data gamerules{autoHarvest: 1b} run {
+      tellraw @s [{"text":"[✔]","color":"dark_green","clickEvent":{"action":"run_command","value":"/function 2tw:menu/buttons/auto_harvest/off"},"hoverEvent":{"action":"show_text","contents":"*click*"}},{"text":" Auto Harvest","color":"gold","hoverEvent":{"action":"show_text","contents":"Automatically harvests and plants crops when held in the offhand."}}]
+    }
+
     execute if data storage 2tw:data gamerules{betterEndCrystals: 0b} run {
       tellraw @s [{"text":"[❌]","color":"dark_red","clickEvent":{"action":"run_command","value":"/function 2tw:menu/buttons/better_end_crystals/on"},"hoverEvent":{"action":"show_text","contents":"*click*"}},{"text":" Better End Crystals","color":"gold","hoverEvent":{"action":"show_text","contents":"Prevents protected End Crystals from being easily destroyed from the ground."}}]
     }
@@ -126,13 +133,6 @@ dir menu {
       tellraw @s [{"text":"[✔]","color":"dark_green","clickEvent":{"action":"run_command","value":"/function 2tw:menu/buttons/elytra_closing/off"},"hoverEvent":{"action":"show_text","contents":"*click*"}},{"text":" Elytra Closing","color":"gold","hoverEvent":{"action":"show_text","contents":"Sneak while flying with the Elytra to close it."}}]
     }
 
-    execute if data storage 2tw:data gamerules{endAboveOverworld: 0b} run {
-      tellraw @s [{"text":"[❌]","color":"dark_red","clickEvent":{"action":"run_command","value":"/function 2tw:menu/buttons/end_above_overworld/on"},"hoverEvent":{"action":"show_text","contents":"*click*"}},{"text":" End above Overworld","color":"gold","hoverEvent":{"action":"show_text","contents":"The player can go the end by flying high up in the overworld, and back by falling into the void in the end."}}]
-    }
-    execute if data storage 2tw:data gamerules{endAboveOverworld: 1b} run {
-      tellraw @s [{"text":"[✔]","color":"dark_green","clickEvent":{"action":"run_command","value":"/function 2tw:menu/buttons/end_above_overworld/off"},"hoverEvent":{"action":"show_text","contents":"*click*"}},{"text":" End above Overworld","color":"gold","hoverEvent":{"action":"show_text","contents":"The player can go the end by flying high up in the overworld, and back by falling into the void in the end."}}]
-    }
-
     tellraw @s {"text":""}
   }
 
@@ -144,6 +144,13 @@ dir menu {
 
     scoreboard players set %page 2tw.data 2
     function 2tw:menu/click
+
+    execute if data storage 2tw:data gamerules{endAboveOverworld: 0b} run {
+      tellraw @s [{"text":"[❌]","color":"dark_red","clickEvent":{"action":"run_command","value":"/function 2tw:menu/buttons/end_above_overworld/on"},"hoverEvent":{"action":"show_text","contents":"*click*"}},{"text":" End above Overworld","color":"gold","hoverEvent":{"action":"show_text","contents":"The player can go the end by flying high up in the overworld, and back by falling into the void in the end."}}]
+    }
+    execute if data storage 2tw:data gamerules{endAboveOverworld: 1b} run {
+      tellraw @s [{"text":"[✔]","color":"dark_green","clickEvent":{"action":"run_command","value":"/function 2tw:menu/buttons/end_above_overworld/off"},"hoverEvent":{"action":"show_text","contents":"*click*"}},{"text":" End above Overworld","color":"gold","hoverEvent":{"action":"show_text","contents":"The player can go the end by flying high up in the overworld, and back by falling into the void in the end."}}]
+    }
 
     execute if data storage 2tw:data gamerules{endCrystalHealing: 0b} run {
       tellraw @s [{"text":"[❌]","color":"dark_red","clickEvent":{"action":"run_command","value":"/function 2tw:menu/buttons/end_crystal_healing/on"},"hoverEvent":{"action":"show_text","contents":"*click*"}},{"text":" End Crystal Healing","color":"gold","hoverEvent":{"action":"show_text","contents":"End Crystals heal players near them who are wearing a dragon head."}}]
@@ -243,13 +250,6 @@ dir menu {
       tellraw @s [{"text":"[✔]","color":"dark_green","clickEvent":{"action":"run_command","value":"/function 2tw:menu/buttons/old_regeneration/off"},"hoverEvent":{"action":"show_text","contents":"*click*"}},{"text":" Old Regeneration","color":"gold","hoverEvent":{"action":"show_text","contents":"The old pre 1.9 regeneration."}}]
     }
 
-    execute if data storage 2tw:data gamerules{onlyRuinedPortals: 0b} run {
-      tellraw @s [{"text":"[❌]","color":"dark_red","clickEvent":{"action":"run_command","value":"/function 2tw:menu/buttons/only_ruined_portals/on"},"hoverEvent":{"action":"show_text","contents":"*click*"}},{"text":" Only Ruined Portals","color":"gold","hoverEvent":{"action":"show_text","contents":"Traveling between dimensions is only possible with Ruined Portals."}}]
-    }
-    execute if data storage 2tw:data gamerules{onlyRuinedPortals: 1b} run {
-      tellraw @s [{"text":"[✔]","color":"dark_green","clickEvent":{"action":"run_command","value":"/function 2tw:menu/buttons/only_ruined_portals/off"},"hoverEvent":{"action":"show_text","contents":"*click*"}},{"text":" Only Ruined Portals","color":"gold","hoverEvent":{"action":"show_text","contents":"Traveling between dimensions is only possible with Ruined Portals."}}]
-    }
-
     tellraw @s {"text":""}
   }
 
@@ -261,6 +261,13 @@ dir menu {
 
     scoreboard players set %page 2tw.data 3
     function 2tw:menu/click
+
+    execute if data storage 2tw:data gamerules{onlyRuinedPortals: 0b} run {
+      tellraw @s [{"text":"[❌]","color":"dark_red","clickEvent":{"action":"run_command","value":"/function 2tw:menu/buttons/only_ruined_portals/on"},"hoverEvent":{"action":"show_text","contents":"*click*"}},{"text":" Only Ruined Portals","color":"gold","hoverEvent":{"action":"show_text","contents":"Traveling between dimensions is only possible with Ruined Portals."}}]
+    }
+    execute if data storage 2tw:data gamerules{onlyRuinedPortals: 1b} run {
+      tellraw @s [{"text":"[✔]","color":"dark_green","clickEvent":{"action":"run_command","value":"/function 2tw:menu/buttons/only_ruined_portals/off"},"hoverEvent":{"action":"show_text","contents":"*click*"}},{"text":" Only Ruined Portals","color":"gold","hoverEvent":{"action":"show_text","contents":"Traveling between dimensions is only possible with Ruined Portals."}}]
+    }
 
     execute if data storage 2tw:data gamerules{pathGenerator: 0b} run {
       tellraw @s [{"text":"[❌]","color":"dark_red","clickEvent":{"action":"run_command","value":"/function 2tw:menu/buttons/path_generator/on"},"hoverEvent":{"action":"show_text","contents":"*click*"}},{"text":" Path Generator","color":"gold","hoverEvent":{"action":"show_text","contents":"Slowly generates a path along much-used routes."}}]
@@ -367,13 +374,6 @@ dir menu {
       tellraw @s [{"text":"[✔]","color":"dark_green","clickEvent":{"action":"run_command","value":"/function 2tw:menu/buttons/unlock_all_recipes/off"},"hoverEvent":{"action":"show_text","contents":"*click*"}},{"text":" Unlock all Recipes","color":"gold","hoverEvent":{"action":"show_text","contents":"Automatically unlocks all recipes."}}]
     }
 
-    execute if data storage 2tw:data gamerules{visibleMarker: 0b} run {
-      tellraw @s [{"text":"[❌]","color":"dark_red","clickEvent":{"action":"run_command","value":"/function 2tw:menu/buttons/visible_marker/on"},"hoverEvent":{"action":"show_text","contents":"*click*"}},{"text":" Visible Marker","color":"gold","hoverEvent":{"action":"show_text","contents":"Makes marker entities visible.\n§7Only useful for datapack programmers"}}]
-    }
-    execute if data storage 2tw:data gamerules{visibleMarker: 1b} run {
-      tellraw @s [{"text":"[✔]","color":"dark_green","clickEvent":{"action":"run_command","value":"/function 2tw:menu/buttons/visible_marker/off"},"hoverEvent":{"action":"show_text","contents":"*click*"}},{"text":" Visible Marker","color":"gold","hoverEvent":{"action":"show_text","contents":"Makes marker entities visible.\n§7Only useful for datapack programmers"}}]
-    }
-
     tellraw @s {"text":""}
   }
 
@@ -385,6 +385,13 @@ dir menu {
 
     scoreboard players set %page 2tw.data 4
     function 2tw:menu/click
+
+    execute if data storage 2tw:data gamerules{visibleMarker: 0b} run {
+      tellraw @s [{"text":"[❌]","color":"dark_red","clickEvent":{"action":"run_command","value":"/function 2tw:menu/buttons/visible_marker/on"},"hoverEvent":{"action":"show_text","contents":"*click*"}},{"text":" Visible Marker","color":"gold","hoverEvent":{"action":"show_text","contents":"Makes marker entities visible.\n§7Only useful for datapack programmers"}}]
+    }
+    execute if data storage 2tw:data gamerules{visibleMarker: 1b} run {
+      tellraw @s [{"text":"[✔]","color":"dark_green","clickEvent":{"action":"run_command","value":"/function 2tw:menu/buttons/visible_marker/off"},"hoverEvent":{"action":"show_text","contents":"*click*"}},{"text":" Visible Marker","color":"gold","hoverEvent":{"action":"show_text","contents":"Makes marker entities visible.\n§7Only useful for datapack programmers"}}]
+    }
 
     execute if data storage 2tw:data gamerules{wanderingTraderNotifications: 0b} run {
       tellraw @s [{"text":"[❌]","color":"dark_red","clickEvent":{"action":"run_command","value":"/function 2tw:menu/buttons/wandering_trader_notifications/on"},"hoverEvent":{"action":"show_text","contents":"*click*"}},{"text":" Wandering Trader Notifications","color":"gold","hoverEvent":{"action":"show_text","contents":"When a Wandering Trader appears a notification is sent to all players and gets a short glowing effect."}}]
@@ -400,13 +407,24 @@ dir menu {
       tellraw @s [{"text":"[✔]","color":"dark_green","clickEvent":{"action":"run_command","value":"/function 2tw:menu/buttons/warden_tinnitus/off"},"hoverEvent":{"action":"show_text","contents":"*click*"}},{"text":" Warden Tinnitus","color":"gold","hoverEvent":{"action":"show_text","contents":"After being hit by a sonic boom attack, you can't hear anything for a short time."}}]
     }
 
-    tellraw @s {"text": "\n\n\n\n\n\n\n\n\n\n\n\n\n"}
+    tellraw @s {"text": "\n\n\n\n\n\n\n\n\n\n\n\n"}
   }
 
 }
 
 
 dir buttons {
+  dir auto_harvest {
+    function on {
+      data modify storage 2tw:data gamerules.autoHarvest set value 1b
+      function 2tw:menu/page
+    }
+    function off {
+      data modify storage 2tw:data gamerules.autoHarvest set value 0b
+      function 2tw:menu/page
+    }
+  }
+
   dir warden_tinnitus {
     function on {
       data modify storage 2tw:data gamerules.wardenTinnitus set value 1b

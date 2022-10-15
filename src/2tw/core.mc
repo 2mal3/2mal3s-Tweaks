@@ -87,6 +87,7 @@ dir clocks {
 
     execute if data storage 2tw:data gamerules{ropeLadder: 1b} run function 2tw:tweaks/rope_ladder/loop
     execute if data storage 2tw:data gamerules{wardenTinnitus: 1b} run function 2tw:tweaks/warden_tinnitus/clock/tick_
+    execute if data storage 2tw:data gamerules{autoHarvest: 1b} run function 2tw:tweaks/auto_harvest/clock
   }
 }
 
@@ -191,7 +192,8 @@ function load {
           endCrystalHealing: 0b,
           reducedDebugInfo: 0b,
           firstJoinMessage: 0b,
-          wardenTinnitus: 0b
+          wardenTinnitus: 0b,
+          autoHarvest: 0b
         }
       }
     )

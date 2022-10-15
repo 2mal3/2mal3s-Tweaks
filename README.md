@@ -2,11 +2,11 @@
 
 ![GitHub release (latest by date)](https://img.shields.io/github/v/release/2mal3/2mal3s-Tweaks?style=flat-square) ![GitHub all releases](https://img.shields.io/github/downloads/2mal3/2mal3s-Tweaks/total?style=flat-square) ![Minecraft](https://img.shields.io/badge/Minecraft-1.19-orange?style=flat-square)
 
-This datapack adds over 46 small adjustable improvements and tweaks to the normal vanilla game and spice it up a bit. At the same time no big changes are made to the gameplay, so it still feels "vanilla".
+This datapack adds over 47 small adjustable improvements and tweaks to the normal vanilla game and spice it up a bit. At the same time no big changes are made to the gameplay, so it still feels "vanilla".
 
 ## 📖 Features:
 
-- Over 46 different improvements and tweaks
+- Over 47 different improvements and tweaks
 - No drastic changes to the gameplay -> still feels "vanilla"
 - All modules can be easily switched on and off via the in-game menu
 - Good performance
@@ -19,6 +19,7 @@ All modules can be turned on and off via the in-game menu, so you only have to u
 
 - **Anti Creeper grief**: Prevents Creeper from causing block damage.
 - **Armor Stand Arms**: Gives all armor stands arms.
+- **Auto Harvest**: Automatically harvests and plants crops when held in the offhand.
 - **Better End Crystals**: Prevents protected End Crystals from being easily destroyed from the ground.
 - **Block Damage**: Players standing in rose bushes or stonecutters get damage.
 - **Bush hiding**: Players who sneak in high plants become invisible.
