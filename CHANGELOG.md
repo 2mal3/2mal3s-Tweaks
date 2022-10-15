@@ -1,11 +1,12 @@
 
 ### Added:
- - reduced debug info module
- - end crystal healing module
- - api
+- warden tinnitus module
+- auto harvest module
+- first join message module
 
 ### Changed:
- - version number is now in the datapack description
+- license to LGPL-3.0
 
 ### Fixed:
- - [Spyglass Selection] not working at fresh install
+- [Realistic Fire] bad description
+- release include too many files

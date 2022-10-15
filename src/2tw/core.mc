@@ -129,7 +129,7 @@ function load {
     scoreboard players set $50 2tw.data 50
     scoreboard players set $1000 2tw.data 1000
     # Set the version in format: xx.xx.xx
-    scoreboard players set $version 2tw.data 020400
+    scoreboard players set $version 2tw.data 020500
 
     # Add teams
     team add 2tw.invisible
@@ -201,12 +201,12 @@ function load {
 
 
     schedule 4s replace {
-      tellraw @a {"text":"2mal3's Tweaks v2.4.0 by 2mal3 was installed!","color":"green"}
+      tellraw @a {"text":"2mal3's Tweaks v2.5.0 by 2mal3 was installed!","color":"green"}
     }
   }
 
   # Update datapack
-  execute if score %installed 2tw.data matches 1 unless score $version 2tw.data matches 020400 run {
+  execute if score %installed 2tw.data matches 1 unless score $version 2tw.data matches 020500 run {
     log 2TW info server <Update datapack ...>
 
     # v2.1.0
@@ -267,6 +267,16 @@ function load {
       data modify storage 2tw:data gamerules.reducedDebugInfo set value 0b
       data modify storage 2tw:data gamerules.spyglassSelection set value 0b
     }
+
+    # v2.5.0
+    execute if score $version 2tw.data matches 020400 run {
+      log 2TW info server <Updated from v2.4.0 to v2.5.0>
+      scoreboard players set $version 2tw.data 020500
+
+      data modify storage 2tw:data gamerules.firstJoinMessage set value 0b
+      data modify storage 2tw:data gamerules.wardenTinnitus set value 0b
+      data modify storage 2tw:data gamerules.autoHarvest set value 0b
+    }
   }
 
   # Init extensions to, for example, change settings
@@ -320,7 +330,7 @@ advancement first_join {
 ## Datapack advancement
 advancement 2tw {
   "display": {
-    "title": "2mal3s Tweaks v2.4.0",
+    "title": "2mal3s Tweaks v2.5.0",
     "description": "Adds many small improvements to the game.",
     "icon": {
       "item": "minecraft:redstone_torch"
@@ -375,7 +385,7 @@ function uninstall {
   schedule clear 2tw:core/clocks/4_tick
 
   # Sends an uninstallation message to all players
-  tellraw @a {"text":"2mal3's Tweaks v2.4.0 by 2mal3 was successfully uninstalled.","color": "green"}
+  tellraw @a {"text":"2mal3's Tweaks v2.5.0 by 2mal3 was successfully uninstalled.","color": "green"}
 
   # Disables the datapack
   datapack disable "file/2mal3s-Tweaks"
