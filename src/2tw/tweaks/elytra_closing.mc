@@ -3,7 +3,7 @@ import ../../../macros/wait.mcm
 
 
 function loop {
-  execute as @a[scores={2tw.useElytra=1..,2tw.sneaking=1..},predicate=2tw:tweaks/elytra_closing/have_elytra] run {
+  execute as @a[scores={2tw.use_elytra=1..,2tw.sneaking=1..},predicate=2tw:tweaks/elytra_closing/have_elytra] run {
     log 2TW debug entity <Closed Elytra>
 
     # Store the current durability of the elytra

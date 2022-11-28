@@ -7,11 +7,11 @@ function place {
   advancement revoke @s only 2tw:tweaks/invisible_item_frames/place
   log 2TW debug entity <Placed Invisible Item Frame>
 
-  execute as @e[type=minecraft:item_frame,sort=nearest,nbt={Invisible: 1b},tag=!2tw.invisibleItemFrames.processed] run {
-    tag @s add 2tw.invisibleItemFrames.processed
+  execute as @e[type=minecraft:item_frame,sort=nearest,nbt={Invisible: 1b},tag=!2tw.invisible_item_frames.processed] run {
+    tag @s add 2tw.invisible_item_frames.processed
 
-    tag @s add 2tw.invisibleItemFrames.test
-    wait as @e[type=minecraft:item_frame,tag=!2tw.2tw.invisibleItemFrames.test] in 2tw.schedule for 180s {
+    tag @s add 2tw.invisible_item_frames.test
+    wait as @e[type=minecraft:item_frame,tag=!2tw.2tw.invisible_item_frames.test] in 2tw.schedule for 180s {
       execute unless data entity @s Item run {
         log 2TW debug entity <Removed because no Item>
 
@@ -46,7 +46,7 @@ function craft {
 
   # Give new item
   clear @s minecraft:knowledge_book
-  execute if data storage 2tw:data gamerules{invisibleItemFrames: 1b} run loot give @s loot 2tw:tweaks/invisible_item_frames/invisible_item_frame
+  execute if data storage 2tw:data gamerules{invisible_item_frames: 1b} run loot give @s loot 2tw:tweaks/invisible_item_frames/invisible_item_frame
 
   # Stop pickup sound
   stopsound @s * minecraft:entity.item.pickup

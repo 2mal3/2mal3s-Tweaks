@@ -1,7 +1,7 @@
 
 function loop {
-  execute as @e[type=minecraft:item,predicate=2tw:tweaks/self_planting_saplings/is_sapling,tag=!2tw.selfPlantingSaplings.processed,tag=!global.ignore,tag=!smithed.entity] at @s unless block ~ ~-1 ~ #2tw:utilities/air run {
-    tag @s add 2tw.selfPlantingSaplings.processed
+  execute as @e[type=minecraft:item,predicate=2tw:tweaks/self_planting_saplings/is_sapling,tag=!2tw.self_planting_saplings.processed,tag=!global.ignore,tag=!smithed.entity] at @s unless block ~ ~-1 ~ #2tw:utilities/air run {
+    tag @s add 2tw.self_planting_saplings.processed
 
     execute if block ~ ~ ~ #2tw:utilities/air if block ~ ~-1 ~ #minecraft:dirt if predicate 2tw:utilities/random/60 at @s run {
       kill @s

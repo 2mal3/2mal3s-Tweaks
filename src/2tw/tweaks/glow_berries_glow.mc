@@ -5,7 +5,7 @@ function eat {
   log 2TW debug entity <Eat glow berries>
   advancement revoke @s only 2tw:tweaks/glow_berries_glow/eat
 
-  execute if data storage 2tw:data gamerules{glowBerriesGlow: 1b} run effect give @s minecraft:glowing 30 0 false
+  execute if data storage 2tw:data gamerules{glow_berries_glow: 1b} run effect give @s minecraft:glowing 30 0 false
 }
 
 advancement eat {

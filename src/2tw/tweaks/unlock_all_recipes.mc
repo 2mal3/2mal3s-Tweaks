@@ -2,9 +2,9 @@ import ../../../macros/log.mcm
 
 
 function loop {
-  execute as @a[tag=!2tw.unlockAllRecipes.processed] run {
+  execute as @a[tag=!2tw.unlock_all_recipes.processed] run {
     log 2TW debug entity <Unlocked all recipes>
-    tag @s add 2tw.unlockAllRecipes.processed
+    tag @s add 2tw.unlock_all_recipes.processed
 
     recipe give @s minecraft:acacia_boat
     recipe give @s minecraft:acacia_button

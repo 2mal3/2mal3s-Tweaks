@@ -5,7 +5,7 @@ dir overworld {
   function sky {
     advancement revoke @s only 2tw:tweaks/end_above_overworld/overworld/sky
 
-    execute if data storage 2tw:data gamerules{endAboveOverworld: 1b} run {
+    execute if data storage 2tw:data gamerules{end_above_overworld: 1b} run {
       # Tp the player in the end
       execute in minecraft:the_end positioned ~ -16 ~ run tp @s ~ ~ ~
 
@@ -44,7 +44,7 @@ dir end {
   function void {
     advancement revoke @s only 2tw:tweaks/end_above_overworld/end/void
 
-    execute if data storage 2tw:data gamerules{endAboveOverworld: 1b} run {
+    execute if data storage 2tw:data gamerules{end_above_overworld: 1b} run {
       # Tp the player in the overworld
       execute in minecraft:overworld positioned ~ 1016 ~ run tp @s ~ ~ ~
 

@@ -5,45 +5,45 @@ dir clocks {
   clock 60s {
     name minute
 
-    execute if data storage 2tw:data gamerules{realisticTorches: 1b} run function 2tw:tweaks/realistic_torches/loop
-    execute if data storage 2tw:data gamerules{serverTime: 1b} run function 2tw:tweaks/server_time/loop
-    execute if data storage 2tw:data gamerules{unlockAllRecipes: 1b} run function 2tw:tweaks/unlock_all_recipes/loop
-    execute if data storage 2tw:data gamerules{wanderingTraderNotifications: 1b} run function 2tw:tweaks/wandering_trader_notifications/loop
-    execute if data storage 2tw:data gamerules{fishTraps: 1b} run function 2tw:tweaks/fish_traps/loop
-    execute if data storage 2tw:data gamerules{selfPlantingSaplings: 1b} run function 2tw:tweaks/self_planting_saplings/loop
+    execute if data storage 2tw:data gamerules{realistic_torches: 1b} run function 2tw:tweaks/realistic_torches/loop
+    execute if data storage 2tw:data gamerules{server_time: 1b} run function 2tw:tweaks/server_time/loop
+    execute if data storage 2tw:data gamerules{unlock_all_recipes: 1b} run function 2tw:tweaks/unlock_all_recipes/loop
+    execute if data storage 2tw:data gamerules{wandering_trader_notifications: 1b} run function 2tw:tweaks/wandering_trader_notifications/loop
+    execute if data storage 2tw:data gamerules{fish_traps: 1b} run function 2tw:tweaks/fish_traps/loop
+    execute if data storage 2tw:data gamerules{self_planting_saplings: 1b} run function 2tw:tweaks/self_planting_saplings/loop
   }
 
   clock 10s {
     name 10_second
 
-    execute if data storage 2tw:data gamerules{longerEntityDeath: 1b} run function 2tw:tweaks/longer_entity_death/loop
+    execute if data storage 2tw:data gamerules{longer_entity_death: 1b} run function 2tw:tweaks/longer_entity_death/loop
   }
 
   clock 4s {
     name 4_second
 
-    execute if data storage 2tw:data gamerules{oldRegeneration: 1b} run function 2tw:tweaks/old_regeneration/loop
+    execute if data storage 2tw:data gamerules{old_regeneration: 1b} run function 2tw:tweaks/old_regeneration/loop
   }
 
   clock 1s {
     name second
 
-    execute if data storage 2tw:data gamerules{antiCreeperGrief: 1b} run function 2tw:tweaks/anti_creeper_grief/loop
-    execute if data storage 2tw:data gamerules{betterEndCrystals: 1b} run function 2tw:tweaks/better_end_crystals/loop
-    execute if data storage 2tw:data gamerules{creativeOnePunch: 1b} run function 2tw:tweaks/creative_one_punch/loop
-    execute if data storage 2tw:data gamerules{damageInfection: 1b} run function 2tw:tweaks/damage_infection/loop
-    execute if data storage 2tw:data gamerules{deathChest: 1b} run function 2tw:tweaks/death_chest/loop
-    execute if data storage 2tw:data gamerules{deathCoordinates: 1b} run function 2tw:tweaks/death_coordinates/loop
-    execute if data storage 2tw:data gamerules{harderPowderSnow: 1b} run function 2tw:tweaks/harder_powder_snow/loop
-    execute if data storage 2tw:data gamerules{nerfedElytra: 1b} run function 2tw:tweaks/nerfed_elytra/loop
-    execute if data storage 2tw:data gamerules{onlyRuinedPortals: 1b} run function 2tw:tweaks/only_ruined_portals/loop
-    execute if data storage 2tw:data gamerules{pathGenerator: 1b} run function 2tw:tweaks/path_generator/loop
-    execute if data storage 2tw:data gamerules{randomRespawn: 1b} run function 2tw:tweaks/random_respawn/loop
-    execute if data storage 2tw:data gamerules{realisticFire: 1b} run function 2tw:tweaks/realistic_fire/loop_second
-    execute if data storage 2tw:data gamerules{visibleMarker: 1b} run function 2tw:tweaks/visible_marker/loop
-    execute if data storage 2tw:data gamerules{itemSign: 1b} run function 2tw:tweaks/item_sign/loop
-    execute if data storage 2tw:data gamerules{endCrystalHealing: 1b} run function 2tw:tweaks/end_crystal_healing/loop
-    execute if data storage 2tw:data gamerules{wardenTinnitus: 1b} run function 2tw:tweaks/warden_tinnitus/clock/second
+    execute if data storage 2tw:data gamerules{anti_creeper_grief: 1b} run function 2tw:tweaks/anti_creeper_grief/loop
+    execute if data storage 2tw:data gamerules{better_end_crystals: 1b} run function 2tw:tweaks/better_end_crystals/loop
+    execute if data storage 2tw:data gamerules{creative_one_punch: 1b} run function 2tw:tweaks/creative_one_punch/loop
+    execute if data storage 2tw:data gamerules{damage_infection: 1b} run function 2tw:tweaks/damage_infection/loop
+    execute if data storage 2tw:data gamerules{death_chest: 1b} run function 2tw:tweaks/death_chest/loop
+    execute if data storage 2tw:data gamerules{death_coordinates: 1b} run function 2tw:tweaks/death_coordinates/loop
+    execute if data storage 2tw:data gamerules{harder_powder_snow: 1b} run function 2tw:tweaks/harder_powder_snow/loop
+    execute if data storage 2tw:data gamerules{nerfed_elytra: 1b} run function 2tw:tweaks/nerfed_elytra/loop
+    execute if data storage 2tw:data gamerules{only_ruined_portals: 1b} run function 2tw:tweaks/only_ruined_portals/loop
+    execute if data storage 2tw:data gamerules{path_generator: 1b} run function 2tw:tweaks/path_generator/loop
+    execute if data storage 2tw:data gamerules{random_respawn: 1b} run function 2tw:tweaks/random_respawn/loop
+    execute if data storage 2tw:data gamerules{realistic_fire: 1b} run function 2tw:tweaks/realistic_fire/loop_second
+    execute if data storage 2tw:data gamerules{visible_marker: 1b} run function 2tw:tweaks/visible_marker/loop
+    execute if data storage 2tw:data gamerules{item_sign: 1b} run function 2tw:tweaks/item_sign/loop
+    execute if data storage 2tw:data gamerules{end_crystal_healing: 1b} run function 2tw:tweaks/end_crystal_healing/loop
+    execute if data storage 2tw:data gamerules{warden_tinnitus: 1b} run function 2tw:tweaks/warden_tinnitus/clock/second
 
     # Reset scoreboard triggers
     execute as @a run {
@@ -55,39 +55,39 @@ dir clocks {
   clock 10t {
     name 10_tick
 
-    execute if data storage 2tw:data gamerules{blockDamage: 1b} run function 2tw:tweaks/block_damage/loop
-    execute if data storage 2tw:data gamerules{reducedDebugInfo: 1b} run function 2tw:tweaks/reduced_debug_info/loop
+    execute if data storage 2tw:data gamerules{block_damage: 1b} run function 2tw:tweaks/block_damage/loop
+    execute if data storage 2tw:data gamerules{reduced_debug_info: 1b} run function 2tw:tweaks/reduced_debug_info/loop
   }
 
   clock 5t {
     name 5_tick
 
-    execute if data storage 2tw:data gamerules{bushHiding: 1b} run function 2tw:tweaks/bush_hiding/loop
-    execute if data storage 2tw:data gamerules{dynamicLight: 1b} run function 2tw:tweaks/dynamic_light/loop
-    execute if data storage 2tw:data gamerules{elytraClosing: 1b} run function 2tw:tweaks/elytra_closing/loop
-    execute if data storage 2tw:data gamerules{projectileBlockDamage: 1b} run function 2tw:tweaks/projectile_block_damage/loop
-    execute if data storage 2tw:data gamerules{realisticFire: 1b} run function 2tw:tweaks/realistic_fire/loop_4_tick
-    execute if data storage 2tw:data gamerules{spectatorSense: 1b} run function 2tw:tweaks/spectator_sense/loop
+    execute if data storage 2tw:data gamerules{bush_hiding: 1b} run function 2tw:tweaks/bush_hiding/loop
+    execute if data storage 2tw:data gamerules{dynamic_light: 1b} run function 2tw:tweaks/dynamic_light/loop
+    execute if data storage 2tw:data gamerules{elytra_closing: 1b} run function 2tw:tweaks/elytra_closing/loop
+    execute if data storage 2tw:data gamerules{projectile_block_damage: 1b} run function 2tw:tweaks/projectile_block_damage/loop
+    execute if data storage 2tw:data gamerules{realistic_fire: 1b} run function 2tw:tweaks/realistic_fire/loop_4_tick
+    execute if data storage 2tw:data gamerules{spectator_sense: 1b} run function 2tw:tweaks/spectator_sense/loop
 
     # Reset scoreboard triggers
     execute as @a run {
       scoreboard players reset @s[scores={2tw.sneaking=1..}] 2tw.sneaking
-      scoreboard players reset @s[scores={2tw.useElytra=1..}] 2tw.useElytra
+      scoreboard players reset @s[scores={2tw.use_elytra=1..}] 2tw.use_elytra
     }
   }
 
   clock 4t {
     name 4_tick
 
-    execute if data storage 2tw:data gamerules{speedPaths: 1b} run function 2tw:tweaks/speed_paths/loop
+    execute if data storage 2tw:data gamerules{speed_paths: 1b} run function 2tw:tweaks/speed_paths/loop
   }
 
   clock 1t {
     name tick
 
-    execute if data storage 2tw:data gamerules{ropeLadder: 1b} run function 2tw:tweaks/rope_ladder/loop
-    execute if data storage 2tw:data gamerules{wardenTinnitus: 1b} run function 2tw:tweaks/warden_tinnitus/clock/tick_
-    execute if data storage 2tw:data gamerules{autoHarvest: 1b} run function 2tw:tweaks/auto_harvest/clock
+    execute if data storage 2tw:data gamerules{rope_ladder: 1b} run function 2tw:tweaks/rope_ladder/loop
+    execute if data storage 2tw:data gamerules{warden_tinnitus: 1b} run function 2tw:tweaks/warden_tinnitus/clock/tick_
+    execute if data storage 2tw:data gamerules{auto_harvest: 1b} run function 2tw:tweaks/auto_harvest/clock
   }
 }
 
@@ -107,23 +107,23 @@ function load {
     # Add scoreboards
     scoreboard objectives add 2tw.data dummy
     scoreboard objectives add 2tw.schedule dummy
-    scoreboard objectives add 2mal3.debugMode dummy
+    scoreboard objectives add 2mal3.debug_mode dummy
     scoreboard objectives add 2tw.uuid dummy
     scoreboard objectives add 2tw.death deathCount
-    scoreboard objectives add 2tw.spectatorId dummy
+    scoreboard objectives add 2tw.spectator_id dummy
     scoreboard objectives add 2tw.damage minecraft.custom:minecraft.damage_taken
     scoreboard objectives add 2tw.death deathCount
     scoreboard objectives add 2tw.food food
     scoreboard objectives add 2tw.health health
-    scoreboard objectives add 2tw.leaveGame minecraft.custom:minecraft.leave_game
+    scoreboard objectives add 2tw.leave_game minecraft.custom:minecraft.leave_game
     scoreboard objectives add 2tw.walk minecraft.custom:minecraft.walk_one_cm
     scoreboard objectives add 2tw.sprint minecraft.custom:minecraft.sprint_one_cm
-    scoreboard objectives add 2tw.realisticTorchesTime dummy
-    scoreboard objectives add 2tw.useElytra minecraft.custom:minecraft.aviate_one_cm
+    scoreboard objectives add 2tw.realistic_torches_time dummy
+    scoreboard objectives add 2tw.use_elytra minecraft.custom:minecraft.aviate_one_cm
     scoreboard objectives add 2tw.sneaking minecraft.custom:minecraft.sneak_time
-    scoreboard objectives add 2tw.minedLadder minecraft.mined:minecraft.ladder
+    scoreboard objectives add 2tw.mined_ladder minecraft.mined:minecraft.ladder
     scoreboard objectives add sign trigger
-    scoreboard objectives add 2tw.tinnitusTime dummy
+    scoreboard objectives add 2tw.tinnitus_time dummy
     scoreboard players set $3 2tw.data 3
     scoreboard players set $16 2tw.data 16
     scoreboard players set $50 2tw.data 50
@@ -145,59 +145,59 @@ function load {
     (
       data merge storage 2tw:data {
         gamerules: {
-          randomRespawn: 0b,
-          unlockAllRecipes: 0b,
-          spectatorSense: 0b,
-          nerfedElytra: 0b,
-          glowBerriesGlow: 0b,
-          disabledEnderEyes: 0b,
-          deathCoordinates: 0b,
-          damageInfection: 0b,
-          blockDamage: 0b,
-          betterEndCrystals: 0b,
-          armorStandArms: 0b,
-          antiCreeperGrief: 0b,
-          wanderingTraderNotifications: 0b,
-          spyglassSelection: 0b,
-          serverTime: 0b,
-          tntAutoPrime: 0b,
-          creativeOnePunch: 0b,
-          visibleMarker: 0b,
-          bushHiding: 0b,
-          higherBellRange: 0b,
-          dynamicLight: 0b,
-          invisibleSeeInvisible: 0b,
-          oldRegeneration: 0b,
-          squidInkBlindness: 0b,
-          endAboveOverworld: 0b,
-          pathGenerator: 0b,
-          longerEntityDeath: 0b,
-          realisticTorches: 0b,
-          realisticFire: 0b,
-          noToExpensive: 0b,
-          deathChest: 0b,
-          harderPowderSnow: 0b,
-          onlyRuinedPortals: 0b,
-          creativeInstaTame: 0b,
-          speedPaths: 0b,
-          projectileBlockDamage: 0b,
-          noThunderstormSleep: 0b,
-          elytraClosing: 0b,
-          ropeLadder: 0b,
-          colouredDimensionNames: 0b,
-          fishTraps: 0b,
-          selfPlantingSaplings: 0b,
-          invisibleItemFrames: 0b,
-          itemSign: 0b,
-          endCrystalHealing: 0b,
-          reducedDebugInfo: 0b,
-          firstJoinMessage: 0b,
-          wardenTinnitus: 0b,
-          autoHarvest: 0b
+          random_respawn: 0b,
+          unlock_all_recipes: 0b,
+          spectator_sense: 0b,
+          nerfed_elytra: 0b,
+          glow_berries_glow: 0b,
+          disabled_ender_eyes: 0b,
+          death_coordinates: 0b,
+          damage_infection: 0b,
+          block_damage: 0b,
+          better_end_crystals: 0b,
+          armor_stand_arms: 0b,
+          anti_creeper_grief: 0b,
+          wandering_trader_notifications: 0b,
+          spyglass_selection: 0b,
+          server_time: 0b,
+          tnt_auto_prime: 0b,
+          creative_one_punch: 0b,
+          visible_marker: 0b,
+          bush_hiding: 0b,
+          higher_bell_range: 0b,
+          dynamic_light: 0b,
+          invisible_see_invisible: 0b,
+          old_regeneration: 0b,
+          squid_ink_blindness: 0b,
+          end_above_overworld: 0b,
+          path_generator: 0b,
+          longer_entity_death: 0b,
+          realistic_torches: 0b,
+          realistic_fire: 0b,
+          no_to_expensive: 0b,
+          death_chest: 0b,
+          harder_powder_snow: 0b,
+          only_ruined_portals: 0b,
+          creative_insta_tame: 0b,
+          speed_paths: 0b,
+          projectile_block_damage: 0b,
+          no_thunderstorm_sleep: 0b,
+          elytra_closing: 0b,
+          rope_ladder: 0b,
+          coloured_dimension_names: 0b,
+          fish_traps: 0b,
+          self_planting_saplings: 0b,
+          invisible_item_frames: 0b,
+          item_sign: 0b,
+          end_crystal_healing: 0b,
+          reduced_debug_info: 0b,
+          first_join_message: 0b,
+          warden_tinnitus: 0b,
+          auto_harvest: 0b
         }
       }
     )
-    scoreboard players set $maxTime 2tw.realisticTorchesTime 20
+    scoreboard players set $maxTime 2tw.realistic_torches_time 20
 
 
     schedule 4s replace {
@@ -215,17 +215,17 @@ function load {
       scoreboard players set $version 2tw.data 020010
 
       # Init new modules in the settings
-      data modify storage 2tw:data gamerules.noThunderstormSleep set value 0b
-      data modify storage 2tw:data gamerules.elytraClosing set value 0b
-      data modify storage 2tw:data gamerules.ropeLadder set value 0b
-      data modify storage 2tw:data gamerules.colouredDimensionNames set value 0b
-      data modify storage 2tw:data gamerules.fishTraps set value 0b
+      data modify storage 2tw:data gamerules.no_thunderstorm_sleep set value 0b
+      data modify storage 2tw:data gamerules.elytra_closing set value 0b
+      data modify storage 2tw:data gamerules.rope_ladder set value 0b
+      data modify storage 2tw:data gamerules.coloured_dimension_names set value 0b
+      data modify storage 2tw:data gamerules.fish_traps set value 0b
 
       # Add new scoreboards
-      scoreboard objectives add 2tw.useElytra minecraft.custom:minecraft.aviate_one_cm
+      scoreboard objectives add 2tw.use_elytra minecraft.custom:minecraft.aviate_one_cm
       scoreboard objectives add 2tw.sneaking minecraft.custom:minecraft.sneak_time
       scoreboard objectives add 2tw.schedule dummy
-      scoreboard objectives add 2tw.minedLadder minecraft.mined:minecraft.ladder
+      scoreboard objectives add 2tw.mined_ladder minecraft.mined:minecraft.ladder
       # Add new teams
       team modify 2tw.invisible seeFriendlyInvisibles true
       team add 2tw.overworld
@@ -242,8 +242,8 @@ function load {
       scoreboard players set $version 2tw.data 020200
 
       # Init new modules in the settings
-      data modify storage 2tw:data gamerules.selfPlantingSaplings set value 0b
-      data modify storage 2tw:data gamerules.invisibleItemFrames set value 0b
+      data modify storage 2tw:data gamerules.self_planting_saplings set value 0b
+      data modify storage 2tw:data gamerules.invisible_item_frames set value 0b
 
       # Add new scoreboards
       scoreboard objectives add 2tw.schedule dummy
@@ -255,7 +255,7 @@ function load {
       scoreboard players set $version 2tw.data 020300
 
       # Init new modules in the settings
-      data modify storage 2tw:data gamerules.itemSign set value 0b
+      data modify storage 2tw:data gamerules.item_sign set value 0b
     }
 
     # v2.4.0
@@ -263,9 +263,9 @@ function load {
       log 2TW info server <Updated from v2.3.0 to v2.4.0>
       scoreboard players set $version 2tw.data 020400
 
-      data modify storage 2tw:data gamerules.endCrystalHealing set value 0b
-      data modify storage 2tw:data gamerules.reducedDebugInfo set value 0b
-      data modify storage 2tw:data gamerules.spyglassSelection set value 0b
+      data modify storage 2tw:data gamerules.end_crystal_healing set value 0b
+      data modify storage 2tw:data gamerules.reduced_debug_info set value 0b
+      data modify storage 2tw:data gamerules.spyglass_selection set value 0b
     }
 
     # v2.5.0
@@ -273,9 +273,9 @@ function load {
       log 2TW info server <Updated from v2.4.0 to v2.5.0>
       scoreboard players set $version 2tw.data 020500
 
-      data modify storage 2tw:data gamerules.firstJoinMessage set value 0b
-      data modify storage 2tw:data gamerules.wardenTinnitus set value 0b
-      data modify storage 2tw:data gamerules.autoHarvest set value 0b
+      data modify storage 2tw:data gamerules.first_join_message set value 0b
+      data modify storage 2tw:data gamerules.warden_tinnitus set value 0b
+      data modify storage 2tw:data gamerules.auto_harvest set value 0b
     }
   }
 
@@ -290,29 +290,29 @@ function load {
 ## First join
 function first_join {
   # Sends a welcome message if activated
-  execute if data storage 2tw:data gamerules{firstJoinMessage: 1b} run function 2tw:tweaks/first_join_message/message
+  execute if data storage 2tw:data gamerules{first_join_message: 1b} run function 2tw:tweaks/first_join_message/message
 
   # Gives the player a unique id based on the UUID for the spectator sense module
-  execute store result score .temp0 2tw.data run data get entity @s UUID[0]
-  execute store result score .temp1 2tw.data run data get entity @s UUID[1]
-  execute store result score .temp2 2tw.data run data get entity @s UUID[2]
-  execute store result score .temp3 2tw.data run data get entity @s UUID[3]
+  execute store result score .temp_0 2tw.data run data get entity @s UUID[0]
+  execute store result score .temp_1 2tw.data run data get entity @s UUID[1]
+  execute store result score .temp_2 2tw.data run data get entity @s UUID[2]
+  execute store result score .temp_3 2tw.data run data get entity @s UUID[3]
 
-  scoreboard players operation .temp0 2tw.data += .temp1 2tw.data
-  scoreboard players operation .temp0 2tw.data += .temp2 2tw.data
-  scoreboard players operation .temp0 2tw.data += .temp3 2tw.data
+  scoreboard players operation .temp_0 2tw.data += .temp_1 2tw.data
+  scoreboard players operation .temp_0 2tw.data += .temp_2 2tw.data
+  scoreboard players operation .temp_0 2tw.data += .temp_3 2tw.data
 
-  scoreboard players operation .temp0 2tw.data %= $16 2tw.data
+  scoreboard players operation .temp_0 2tw.data %= $16 2tw.data
 
-  scoreboard players operation @s 2tw.spectatorId = .temp0 2tw.data
+  scoreboard players operation @s 2tw.spectator_id = .temp_0 2tw.data
 
   # Gives the player a unique id
   scoreboard players add %id 2tw.data 1
   scoreboard players operation @s 2tw.uuid = %id 2tw.data
 
   # Warns the player if he uses a not supported  minecraft version
-  execute store result score .temp0 2tw.data run data get entity @s DataVersion
-  execute unless score .temp0 2tw.data matches 3105.. run tellraw @s [{"text":"[","color":"gray"},{"text":"2TW","color":"gold"},{"text":"/","color":"gray"},{"text":"WARN","color":"gold"},{"text": "/","color": "gray"},{"text": "Server","color": "gold"},{"text":"]: ","color":"gray"},{"text":"This Minecraft version is not supported by the datapack. Please use the 1.19 to prevent errors.","color":"gold"}]
+  execute store result score .temp_0 2tw.data run data get entity @s DataVersion
+  execute unless score .temp_0 2tw.data matches 3105.. run tellraw @s [{"text":"[","color":"gray"},{"text":"2TW","color":"gold"},{"text":"/","color":"gray"},{"text":"WARN","color":"gold"},{"text": "/","color": "gray"},{"text": "Server","color": "gold"},{"text":"]: ","color":"gray"},{"text":"This Minecraft version is not supported by the datapack. Please use the 1.19 to prevent errors.","color":"gold"}]
 }
 
 advancement first_join {
@@ -355,20 +355,20 @@ function uninstall {
   scoreboard objectives remove 2tw.data
   scoreboard objectives remove 2tw.uuid
   scoreboard objectives remove 2tw.death
-  scoreboard objectives remove 2tw.spectatorId
+  scoreboard objectives remove 2tw.spectator_id
   scoreboard objectives remove 2tw.damage
   scoreboard objectives remove 2tw.death
   scoreboard objectives remove 2tw.food
   scoreboard objectives remove 2tw.health
-  scoreboard objectives remove 2tw.leaveGame
+  scoreboard objectives remove 2tw.leave_game
   scoreboard objectives remove 2tw.sprint
   scoreboard objectives remove 2tw.walk
-  scoreboard objectives remove 2tw.realisticTorchesTime
-  scoreboard objectives remove 2tw.useElytra
+  scoreboard objectives remove 2tw.realistic_torches_time
+  scoreboard objectives remove 2tw.use_elytra
   scoreboard objectives remove 2tw.sneaking
   scoreboard objectives remove 2tw.schedule
-  scoreboard objectives remove 2tw.minedLadder
-  scoreboard objectives remove 2tw.tinnitusTime
+  scoreboard objectives remove 2tw.mined_ladder
+  scoreboard objectives remove 2tw.tinnitus_time
   # Remove teams
   team remove 2tw.invisible
   team remove 2tw.overworld

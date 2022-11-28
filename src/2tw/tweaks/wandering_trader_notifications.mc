@@ -2,9 +2,9 @@ import ../../../macros/log.mcm
 
 
 function loop {
-  execute as @e[type=minecraft:wandering_trader,tag=!2tw.wanderingTraderNotifications.processed,tag=!global.ignore,tag=!smithed.entity] run {
+  execute as @e[type=minecraft:wandering_trader,tag=!2tw.wandering_trader_notifications.processed,tag=!global.ignore,tag=!smithed.entity] run {
     log 2TW debug entity Spawned
-    tag @s add 2tw.wanderingTraderNotifications.processed
+    tag @s add 2tw.wandering_trader_notifications.processed
 
     effect give @s minecraft:glowing 180 0 true
     tellraw @a [{"text":"A "},{"selector":"@s"},{"text":" has arrived near "},{"selector":"@p"},{"text":"."}]

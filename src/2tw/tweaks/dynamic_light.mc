@@ -3,14 +3,14 @@ function loop {
   # Place light
   execute as @a[gamemode=!spectator,tag=!global.ignore] at @s if predicate 2tw:tweaks/dynamic_light/holding_light_emitting_item positioned ~ ~1 ~ run {
     execute if block ~ ~ ~ #2tw:tweaks/dynamic_light/light_replaceable run {
-      summon minecraft:marker ~ ~ ~ {Tags: ["2tw.dynamicLight", "global.ignore"]}
+      summon minecraft:marker ~ ~ ~ {Tags: ["2tw.dynamic_light", "global.ignore"]}
       execute unless block ~ ~ ~ minecraft:water run setblock ~ ~ ~ minecraft:light[level=15,waterlogged=false]
       execute if block ~ ~ ~ minecraft:water run setblock ~ ~ ~ minecraft:light[level=15,waterlogged=true]
     }
   }
 
   # Remove light
-  execute as @e[type=minecraft:marker,tag=2tw.dynamicLight] at @s unless entity @p[distance=..1,predicate=2tw:tweaks/dynamic_light/holding_light_emitting_item] run {
+  execute as @e[type=minecraft:marker,tag=2tw.dynamic_light] at @s unless entity @p[distance=..1,predicate=2tw:tweaks/dynamic_light/holding_light_emitting_item] run {
     execute if block ~ ~ ~ minecraft:light[waterlogged=false] run setblock ~ ~ ~ minecraft:air
     execute if block ~ ~ ~ minecraft:light[waterlogged=true] run setblock ~ ~ ~ minecraft:water
     kill @s

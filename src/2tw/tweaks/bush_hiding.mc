@@ -5,11 +5,11 @@ function loop {
   execute as @a at @s run {
       execute if entity @s[predicate=2tw:tweaks/bush_hiding/is_sneaking] if block ~ ~ ~ #2tw:tweaks/bush_hiding/tall_plants run {
         effect give @s minecraft:invisibility 1 0 true
-        tag @s add 2tw.bushHiding.hiding
+        tag @s add 2tw.bush_hiding.hiding
     }
 
     # Takes away the player's invisibility when he is no longer in a bush or no longer sneaking
-    execute if entity @s[tag=2tw.bushHiding.hiding] run {
+    execute if entity @s[tag=2tw.bush_hiding.hiding] run {
       execute unless block ~ ~ ~ #2tw:tweaks/bush_hiding/tall_plants run {
         effect clear @s minecraft:invisibility
         tag @s remove 2tw.bush_hiding.hiding

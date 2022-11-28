@@ -26,12 +26,12 @@ function hit_with_sonic_boom {
   advancement revoke @s only 2tw:tweaks/warden_tinnitus/hit_with_sonic_boom
   log 2TW debug entity <Warden Tinnitus>
 
-  execute if data storage 2tw:data gamerules{wardenTinnitus: 1b} run scoreboard players set @s 2tw.tinnitusTime 30
+  execute if data storage 2tw:data gamerules{warden_tinnitus: 1b} run scoreboard players set @s 2tw.tinnitus_time 30
 }
 
 dir clock {
   function tick_ {
-    execute as @a[scores={2tw.tinnitusTime=1..}] run {
+    execute as @a[scores={2tw.tinnitus_time=1..}] run {
       stopsound @s ambient
       stopsound @s block
       stopsound @s hostile
@@ -46,6 +46,6 @@ dir clock {
   }
 
   function second {
-    scoreboard players remove @a[scores={2tw.tinnitusTime=1..}] 2tw.tinnitusTime 1
+    scoreboard players remove @a[scores={2tw.tinnitus_time=1..}] 2tw.tinnitus_time 1
   }
 }

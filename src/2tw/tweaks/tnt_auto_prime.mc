@@ -4,7 +4,7 @@ import ../../../macros/log.mcm
 function place_tnt {
   advancement revoke @s only 2tw:tweaks/tnt_auto_prime/place_tnt
 
-  execute if data storage 2tw:data gamerules{tntAutoPrime: 1b} run {
+  execute if data storage 2tw:data gamerules{tnt_auto_prime: 1b} run {
     log 2TW debug entity <Placed TNT>
     execute anchored eyes positioned ^ ^ ^0.1 run {
       execute if block ~ ~ ~ #2tw:utilities/air positioned ^ ^ ^0.1 run function $block

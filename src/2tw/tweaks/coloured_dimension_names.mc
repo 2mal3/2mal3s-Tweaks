@@ -26,7 +26,7 @@ function overworld {
   advancement revoke @s only 2tw:tweaks/coloured_dimension_names/nether
   advancement revoke @s only 2tw:tweaks/coloured_dimension_names/end
 
-  execute if data storage 2tw:data gamerules{colouredDimensionNames: 1b} run team join 2tw.overworld @s
+  execute if data storage 2tw:data gamerules{coloured_dimension_names: 1b} run team join 2tw.overworld @s
 }
 
 
@@ -55,7 +55,7 @@ function nether {
   advancement revoke @s only 2tw:tweaks/coloured_dimension_names/overworld
   advancement revoke @s only 2tw:tweaks/coloured_dimension_names/end
 
-  execute if data storage 2tw:data gamerules{colouredDimensionNames: 1b} run team join 2tw.nether @s
+  execute if data storage 2tw:data gamerules{coloured_dimension_names: 1b} run team join 2tw.nether @s
 }
 
 
@@ -84,5 +84,5 @@ function end {
   advancement revoke @s only 2tw:tweaks/coloured_dimension_names/overworld
   advancement revoke @s only 2tw:tweaks/coloured_dimension_names/nether
 
-  execute if data storage 2tw:data gamerules{colouredDimensionNames: 1b} run team join 2tw.end @s
+  execute if data storage 2tw:data gamerules{coloured_dimension_names: 1b} run team join 2tw.end @s
 }

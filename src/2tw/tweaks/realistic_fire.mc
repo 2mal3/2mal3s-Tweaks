@@ -14,8 +14,8 @@ function loop_second {
   execute as @e[type=minecraft:arrow,predicate=2tw:tweaks/realistic_fire/on_fire,predicate=2tw:tweaks/realistic_fire/in_ground,tag=!global.ignore] at @s run setblock ~ ~ ~ minecraft:fire
 
   # Burning creepers ignite
-  execute as @e[type=minecraft:creeper,tag=!2tw.realisticFire.processed,predicate=2tw:tweaks/realistic_fire/on_fire,tag=!global.ignore] run {
-    tag @s add 2tw.realisticFire.processed
+  execute as @e[type=minecraft:creeper,tag=!2tw.realistic_fire.processed,predicate=2tw:tweaks/realistic_fire/on_fire,tag=!global.ignore] run {
+    tag @s add 2tw.realistic_fire.processed
     data modify entity @s ignited set value 1
   }
 }

@@ -3,7 +3,7 @@ import ../../../macros/log.mcm
 
 function get_invisibility {
   #advancement revoke @s only 2tw:tweaks/invisible_see_invisible/get_invisibility
-  execute if data storage 2tw:data gamerules{invisibleSeeInvisible: 1b} run {
+  execute if data storage 2tw:data gamerules{invisible_see_invisible: 1b} run {
     log 2TW debug entity <Get invisibility>
     team join 2tw.invisible @s
   }

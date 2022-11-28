@@ -4,10 +4,10 @@ import ../../../macros/log.mcm
 function repair {
   advancement revoke @s only 2tw:tweaks/no_to_expensive/used_item_on_anvil
 
-  execute if data storage 2tw:data gamerules{noToExpensive: 1b} run {
-    scoreboard players set .temp0 2tw.data 0
-    execute store result score .temp0 2tw.data run data get entity @s SelectedItem.tag.RepairCost
-    execute if score .temp0 2tw.data matches 10.. run {
+  execute if data storage 2tw:data gamerules{no_to_expensive: 1b} run {
+    scoreboard players set .temp_0 2tw.data 0
+    execute store result score .temp_0 2tw.data run data get entity @s SelectedItem.tag.RepairCost
+    execute if score .temp_0 2tw.data matches 10.. run {
       log 2TW debug entity <Reset repair cost>
       item modify entity @s weapon.mainhand 2tw:tweaks/no_to_expensive/reset_repair_cost
       playsound minecraft:block.anvil.use block @a ~ ~ ~ 8 1
