@@ -29,10 +29,10 @@ dir menu {
     function 2tw:menu/click
 
     execute if data storage 2tw:data gamerules{anti_creeper_grief: 0b} run {
-      tellraw @s [{"text":"[❌]","color":"dark_red","clickEvent":{"action":"run_command","value":"/function 2tw:menu/buttons/anti_creeper_grief/on"},"hoverEvent":{"action":"show_text","contents":"*click*"}},{"text":" Anti Creeper grief","color":"gold","hoverEvent":{"action":"show_text","contents":"Prevents Creeper from causing block damage."}}]
+      tellraw @s [{"text":"[❌]","color":"dark_red","clickEvent":{"action":"run_command","value":"/function 2tw:menu/buttons/anti_creeper_grief/on"},"hoverEvent":{"action":"show_text","contents":"*click*"}},{"text":" Anti Creeper Grief","color":"gold","hoverEvent":{"action":"show_text","contents":"Prevents Creeper from causing block damage."}}]
     }
     execute if data storage 2tw:data gamerules{anti_creeper_grief: 1b} run {
-      tellraw @s [{"text":"[✔]","color":"dark_green","clickEvent":{"action":"run_command","value":"/function 2tw:menu/buttons/anti_creeper_grief/off"},"hoverEvent":{"action":"show_text","contents":"*click*"}},{"text":" Anti Creeper grief","color":"gold","hoverEvent":{"action":"show_text","contents":"Prevents Creeper from causing block damage."}}]
+      tellraw @s [{"text":"[✔]","color":"dark_green","clickEvent":{"action":"run_command","value":"/function 2tw:menu/buttons/anti_creeper_grief/off"},"hoverEvent":{"action":"show_text","contents":"*click*"}},{"text":" Anti Creeper Grief","color":"gold","hoverEvent":{"action":"show_text","contents":"Prevents Creeper from causing block damage."}}]
     }
 
     execute if data storage 2tw:data gamerules{armor_stand_arms: 0b} run {
@@ -64,17 +64,17 @@ dir menu {
     }
 
     execute if data storage 2tw:data gamerules{bush_hiding: 0b} run {
-      tellraw @s [{"text":"[❌]","color":"dark_red","clickEvent":{"action":"run_command","value":"/function 2tw:menu/buttons/bush_hiding/on"},"hoverEvent":{"action":"show_text","contents":"*click*"}},{"text":" Bush hiding","color":"gold","hoverEvent":{"action":"show_text","contents":"Players who sneak in high plants become invisible."}}]
+      tellraw @s [{"text":"[❌]","color":"dark_red","clickEvent":{"action":"run_command","value":"/function 2tw:menu/buttons/bush_hiding/on"},"hoverEvent":{"action":"show_text","contents":"*click*"}},{"text":" Bush Hiding","color":"gold","hoverEvent":{"action":"show_text","contents":"Players who sneak in high plants become invisible."}}]
     }
     execute if data storage 2tw:data gamerules{bush_hiding: 1b} run {
-      tellraw @s [{"text":"[✔]","color":"dark_green","clickEvent":{"action":"run_command","value":"/function 2tw:menu/buttons/bush_hiding/off"},"hoverEvent":{"action":"show_text","contents":"*click*"}},{"text":" Bush hiding","color":"gold","hoverEvent":{"action":"show_text","contents":"Players who sneak in high plants become invisible."}}]
+      tellraw @s [{"text":"[✔]","color":"dark_green","clickEvent":{"action":"run_command","value":"/function 2tw:menu/buttons/bush_hiding/off"},"hoverEvent":{"action":"show_text","contents":"*click*"}},{"text":" Bush Hiding","color":"gold","hoverEvent":{"action":"show_text","contents":"Players who sneak in high plants become invisible."}}]
     }
 
     execute if data storage 2tw:data gamerules{creative_insta_tame: 0b} run {
-      tellraw @s [{"text":"[❌]","color":"dark_red","clickEvent":{"action":"run_command","value":"/function 2tw:menu/buttons/creative_insta_tame/on"},"hoverEvent":{"action":"show_text","contents":"*click*"}},{"text":" Creative insta tame","color":"gold","hoverEvent":{"action":"show_text","contents":"Horses are tamed immediately in creative mode."}}]
+      tellraw @s [{"text":"[❌]","color":"dark_red","clickEvent":{"action":"run_command","value":"/function 2tw:menu/buttons/creative_insta_tame/on"},"hoverEvent":{"action":"show_text","contents":"*click*"}},{"text":" Creative Insta Tame","color":"gold","hoverEvent":{"action":"show_text","contents":"Horses are tamed immediately in creative mode."}}]
     }
     execute if data storage 2tw:data gamerules{creative_insta_tame: 1b} run {
-      tellraw @s [{"text":"[✔]","color":"dark_green","clickEvent":{"action":"run_command","value":"/function 2tw:menu/buttons/creative_insta_tame/off"},"hoverEvent":{"action":"show_text","contents":"*click*"}},{"text":" Creative insta tame","color":"gold","hoverEvent":{"action":"show_text","contents":"Horses are tamed immediately in creative mode."}}]
+      tellraw @s [{"text":"[✔]","color":"dark_green","clickEvent":{"action":"run_command","value":"/function 2tw:menu/buttons/creative_insta_tame/off"},"hoverEvent":{"action":"show_text","contents":"*click*"}},{"text":" Creative Insta Tame","color":"gold","hoverEvent":{"action":"show_text","contents":"Horses are tamed immediately in creative mode."}}]
     }
 
     execute if data storage 2tw:data gamerules{creative_one_punch: 0b} run {
@@ -146,10 +146,10 @@ dir menu {
     function 2tw:menu/click
 
     execute if data storage 2tw:data gamerules{end_above_overworld: 0b} run {
-      tellraw @s [{"text":"[❌]","color":"dark_red","clickEvent":{"action":"run_command","value":"/function 2tw:menu/buttons/end_above_overworld/on"},"hoverEvent":{"action":"show_text","contents":"*click*"}},{"text":" End above Overworld","color":"gold","hoverEvent":{"action":"show_text","contents":"The player can go the end by flying high up in the overworld, and back by falling into the void in the end."}}]
+      tellraw @s [{"text":"[❌]","color":"dark_red","clickEvent":{"action":"run_command","value":"/function 2tw:menu/buttons/end_above_overworld/on"},"hoverEvent":{"action":"show_text","contents":"*click*"}},{"text":" End Above Overworld","color":"gold","hoverEvent":{"action":"show_text","contents":"The player can go the end by flying high up in the overworld, and back by falling into the void in the end."}}]
     }
     execute if data storage 2tw:data gamerules{end_above_overworld: 1b} run {
-      tellraw @s [{"text":"[✔]","color":"dark_green","clickEvent":{"action":"run_command","value":"/function 2tw:menu/buttons/end_above_overworld/off"},"hoverEvent":{"action":"show_text","contents":"*click*"}},{"text":" End above Overworld","color":"gold","hoverEvent":{"action":"show_text","contents":"The player can go the end by flying high up in the overworld, and back by falling into the void in the end."}}]
+      tellraw @s [{"text":"[✔]","color":"dark_green","clickEvent":{"action":"run_command","value":"/function 2tw:menu/buttons/end_above_overworld/off"},"hoverEvent":{"action":"show_text","contents":"*click*"}},{"text":" End Above Overworld","color":"gold","hoverEvent":{"action":"show_text","contents":"The player can go the end by flying high up in the overworld, and back by falling into the void in the end."}}]
     }
 
     execute if data storage 2tw:data gamerules{end_crystal_healing: 0b} run {
@@ -160,10 +160,10 @@ dir menu {
     }
 
     execute if data storage 2tw:data gamerules{first_join_message: 0b} run {
-      tellraw @s [{"text":"[❌]","color":"dark_red","clickEvent":{"action":"run_command","value":"/function 2tw:menu/buttons/first_join_message/on"},"hoverEvent":{"action":"show_text","contents":"*click*"}},{"text":" First join Message","color":"gold","hoverEvent":{"action":"show_text","contents":"Sends a message to each player when they first enter the world."}}]
+      tellraw @s [{"text":"[❌]","color":"dark_red","clickEvent":{"action":"run_command","value":"/function 2tw:menu/buttons/first_join_message/on"},"hoverEvent":{"action":"show_text","contents":"*click*"}},{"text":" First Join Message","color":"gold","hoverEvent":{"action":"show_text","contents":"Sends a message to each player when they first enter the world."}}]
     }
     execute if data storage 2tw:data gamerules{first_join_message: 1b} run {
-      tellraw @s [{"text":"[✔]","color":"dark_green","clickEvent":{"action":"run_command","value":"/function 2tw:menu/buttons/first_join_message/off"},"hoverEvent":{"action":"show_text","contents":"*click*"}},{"text":" First join Message","color":"gold","hoverEvent":{"action":"show_text","contents":"Sends a message to each player when they first enter the world."}}]
+      tellraw @s [{"text":"[✔]","color":"dark_green","clickEvent":{"action":"run_command","value":"/function 2tw:menu/buttons/first_join_message/off"},"hoverEvent":{"action":"show_text","contents":"*click*"}},{"text":" First Join Message","color":"gold","hoverEvent":{"action":"show_text","contents":"Sends a message to each player when they first enter the world."}}]
     }
 
     execute if data storage 2tw:data gamerules{fish_traps: 0b} run {
@@ -174,10 +174,10 @@ dir menu {
     }
 
     execute if data storage 2tw:data gamerules{glow_berries_glow: 0b} run {
-      tellraw @s [{"text":"[❌]","color":"dark_red","clickEvent":{"action":"run_command","value":"/function 2tw:menu/buttons/glow_berries_glow/on"},"hoverEvent":{"action":"show_text","contents":"*click*"}},{"text":" Glow Berries glow","color":"gold","hoverEvent":{"action":"show_text","contents":"Players who eat glow berries get a short glowing effect."}}]
+      tellraw @s [{"text":"[❌]","color":"dark_red","clickEvent":{"action":"run_command","value":"/function 2tw:menu/buttons/glow_berries_glow/on"},"hoverEvent":{"action":"show_text","contents":"*click*"}},{"text":" Glow Berries Glow","color":"gold","hoverEvent":{"action":"show_text","contents":"Players who eat glow berries get a short glowing effect."}}]
     }
     execute if data storage 2tw:data gamerules{glow_berries_glow: 1b} run {
-      tellraw @s [{"text":"[✔]","color":"dark_green","clickEvent":{"action":"run_command","value":"/function 2tw:menu/buttons/glow_berries_glow/off"},"hoverEvent":{"action":"show_text","contents":"*click*"}},{"text":" Glow Berries glow","color":"gold","hoverEvent":{"action":"show_text","contents":"Players who eat glow berries get a short glowing effect."}}]
+      tellraw @s [{"text":"[✔]","color":"dark_green","clickEvent":{"action":"run_command","value":"/function 2tw:menu/buttons/glow_berries_glow/off"},"hoverEvent":{"action":"show_text","contents":"*click*"}},{"text":" Glow Berries Glow","color":"gold","hoverEvent":{"action":"show_text","contents":"Players who eat glow berries get a short glowing effect."}}]
     }
 
     execute if data storage 2tw:data gamerules{harder_powder_snow: 0b} run {
@@ -195,10 +195,10 @@ dir menu {
     }
 
     execute if data storage 2tw:data gamerules{invisible_see_invisible: 0b} run {
-      tellraw @s [{"text":"[❌]","color":"dark_red","clickEvent":{"action":"run_command","value":"/function 2tw:menu/buttons/invisible_see_invisible/on"},"hoverEvent":{"action":"show_text","contents":"*click*"}},{"text":" Invisible see Invisible","color":"gold","hoverEvent":{"action":"show_text","contents":"Invisible can see each other."}}]
+      tellraw @s [{"text":"[❌]","color":"dark_red","clickEvent":{"action":"run_command","value":"/function 2tw:menu/buttons/invisible_see_invisible/on"},"hoverEvent":{"action":"show_text","contents":"*click*"}},{"text":" Invisible See Invisible","color":"gold","hoverEvent":{"action":"show_text","contents":"Invisible can see each other."}}]
     }
     execute if data storage 2tw:data gamerules{invisible_see_invisible: 1b} run {
-      tellraw @s [{"text":"[✔]","color":"dark_green","clickEvent":{"action":"run_command","value":"/function 2tw:menu/buttons/invisible_see_invisible/off"},"hoverEvent":{"action":"show_text","contents":"*click*"}},{"text":" Invisible see Invisible","color":"gold","hoverEvent":{"action":"show_text","contents":"Invisible can see each other."}}]
+      tellraw @s [{"text":"[✔]","color":"dark_green","clickEvent":{"action":"run_command","value":"/function 2tw:menu/buttons/invisible_see_invisible/off"},"hoverEvent":{"action":"show_text","contents":"*click*"}},{"text":" Invisible See Invisible","color":"gold","hoverEvent":{"action":"show_text","contents":"Invisible can see each other."}}]
     }
 
     execute if data storage 2tw:data gamerules{item_sign: 0b} run {
@@ -237,10 +237,10 @@ dir menu {
     }
 
     execute if data storage 2tw:data gamerules{no_to_expensive: 0b} run {
-      tellraw @s [{"text":"[❌]","color":"dark_red","clickEvent":{"action":"run_command","value":"/function 2tw:menu/buttons/no_to_expensive/on"},"hoverEvent":{"action":"show_text","contents":"*click*"}},{"text":" No to expensive","color":"gold","hoverEvent":{"action":"show_text","contents":"Place an unrepairable item in an item frame on an anvil to reset its repair cost."}}]
+      tellraw @s [{"text":"[❌]","color":"dark_red","clickEvent":{"action":"run_command","value":"/function 2tw:menu/buttons/no_to_expensive/on"},"hoverEvent":{"action":"show_text","contents":"*click*"}},{"text":" No To Expensive","color":"gold","hoverEvent":{"action":"show_text","contents":"Place an unrepairable item in an item frame on an anvil to reset its repair cost."}}]
     }
     execute if data storage 2tw:data gamerules{no_to_expensive: 1b} run {
-      tellraw @s [{"text":"[✔]","color":"dark_green","clickEvent":{"action":"run_command","value":"/function 2tw:menu/buttons/no_to_expensive/off"},"hoverEvent":{"action":"show_text","contents":"*click*"}},{"text":" No to expensive","color":"gold","hoverEvent":{"action":"show_text","contents":"Place an unrepairable item in an item frame on an anvil to reset its repair cost."}}]
+      tellraw @s [{"text":"[✔]","color":"dark_green","clickEvent":{"action":"run_command","value":"/function 2tw:menu/buttons/no_to_expensive/off"},"hoverEvent":{"action":"show_text","contents":"*click*"}},{"text":" No To Expensive","color":"gold","hoverEvent":{"action":"show_text","contents":"Place an unrepairable item in an item frame on an anvil to reset its repair cost."}}]
     }
 
     execute if data storage 2tw:data gamerules{old_regeneration: 0b} run {
@@ -319,10 +319,10 @@ dir menu {
     }
 
     execute if data storage 2tw:data gamerules{self_planting_saplings: 0b} run {
-      tellraw @s [{"text":"[❌]","color":"dark_red","clickEvent":{"action":"run_command","value":"/function 2tw:menu/buttons/self_planting_saplings/on"},"hoverEvent":{"action":"show_text","contents":"*click*"}},{"text":" Self planting Saplings","color":"gold","hoverEvent":{"action":"show_text","contents":"Tree saplings lying on the ground can plant themselves with a certain probability."}}]
+      tellraw @s [{"text":"[❌]","color":"dark_red","clickEvent":{"action":"run_command","value":"/function 2tw:menu/buttons/self_planting_saplings/on"},"hoverEvent":{"action":"show_text","contents":"*click*"}},{"text":" Self Planting Saplings","color":"gold","hoverEvent":{"action":"show_text","contents":"Tree saplings lying on the ground can plant themselves with a certain probability."}}]
     }
     execute if data storage 2tw:data gamerules{self_planting_saplings: 1b} run {
-      tellraw @s [{"text":"[✔]","color":"dark_green","clickEvent":{"action":"run_command","value":"/function 2tw:menu/buttons/self_planting_saplings/off"},"hoverEvent":{"action":"show_text","contents":"*click*"}},{"text":" Self planting Saplings","color":"gold","hoverEvent":{"action":"show_text","contents":"Tree saplings lying on the ground can plant themselves with a certain probability."}}]
+      tellraw @s [{"text":"[✔]","color":"dark_green","clickEvent":{"action":"run_command","value":"/function 2tw:menu/buttons/self_planting_saplings/off"},"hoverEvent":{"action":"show_text","contents":"*click*"}},{"text":" Self Planting Saplings","color":"gold","hoverEvent":{"action":"show_text","contents":"Tree saplings lying on the ground can plant themselves with a certain probability."}}]
     }
 
     execute if data storage 2tw:data gamerules{server_time: 0b} run {
@@ -361,17 +361,17 @@ dir menu {
     }
 
     execute if data storage 2tw:data gamerules{tnt_auto_prime: 0b} run {
-      tellraw @s [{"text":"[❌]","color":"dark_red","clickEvent":{"action":"run_command","value":"/function 2tw:menu/buttons/tnt_auto_prime/on"},"hoverEvent":{"action":"show_text","contents":"*click*"}},{"text":" TNT auto prime","color":"gold","hoverEvent":{"action":"show_text","contents":"TNT ignite automatically as soon as they are placed."}}]
+      tellraw @s [{"text":"[❌]","color":"dark_red","clickEvent":{"action":"run_command","value":"/function 2tw:menu/buttons/tnt_auto_prime/on"},"hoverEvent":{"action":"show_text","contents":"*click*"}},{"text":" TNT Auto Prime","color":"gold","hoverEvent":{"action":"show_text","contents":"TNT ignite automatically as soon as they are placed."}}]
     }
     execute if data storage 2tw:data gamerules{tnt_auto_prime: 1b} run {
-      tellraw @s [{"text":"[✔]","color":"dark_green","clickEvent":{"action":"run_command","value":"/function 2tw:menu/buttons/tnt_auto_prime/off"},"hoverEvent":{"action":"show_text","contents":"*click*"}},{"text":" TNT auto prime","color":"gold","hoverEvent":{"action":"show_text","contents":"TNT ignite automatically as soon as they are placed."}}]
+      tellraw @s [{"text":"[✔]","color":"dark_green","clickEvent":{"action":"run_command","value":"/function 2tw:menu/buttons/tnt_auto_prime/off"},"hoverEvent":{"action":"show_text","contents":"*click*"}},{"text":" TNT Auto Prime","color":"gold","hoverEvent":{"action":"show_text","contents":"TNT ignite automatically as soon as they are placed."}}]
     }
 
     execute if data storage 2tw:data gamerules{unlock_all_recipes: 0b} run {
-      tellraw @s [{"text":"[❌]","color":"dark_red","clickEvent":{"action":"run_command","value":"/function 2tw:menu/buttons/unlock_all_recipes/on"},"hoverEvent":{"action":"show_text","contents":"*click*"}},{"text":" Unlock all Recipes","color":"gold","hoverEvent":{"action":"show_text","contents":"Automatically unlocks all recipes."}}]
+      tellraw @s [{"text":"[❌]","color":"dark_red","clickEvent":{"action":"run_command","value":"/function 2tw:menu/buttons/unlock_all_recipes/on"},"hoverEvent":{"action":"show_text","contents":"*click*"}},{"text":" Unlock All Recipes","color":"gold","hoverEvent":{"action":"show_text","contents":"Automatically unlocks all recipes."}}]
     }
     execute if data storage 2tw:data gamerules{unlock_all_recipes: 1b} run {
-      tellraw @s [{"text":"[✔]","color":"dark_green","clickEvent":{"action":"run_command","value":"/function 2tw:menu/buttons/unlock_all_recipes/off"},"hoverEvent":{"action":"show_text","contents":"*click*"}},{"text":" Unlock all Recipes","color":"gold","hoverEvent":{"action":"show_text","contents":"Automatically unlocks all recipes."}}]
+      tellraw @s [{"text":"[✔]","color":"dark_green","clickEvent":{"action":"run_command","value":"/function 2tw:menu/buttons/unlock_all_recipes/off"},"hoverEvent":{"action":"show_text","contents":"*click*"}},{"text":" Unlock All Recipes","color":"gold","hoverEvent":{"action":"show_text","contents":"Automatically unlocks all recipes."}}]
     }
 
     tellraw @s {"text":""}
